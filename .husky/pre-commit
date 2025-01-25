@@ -1,0 +1,2 @@
+./vendor/bin/pint
+npm run format
