@@ -2,19 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/career', function () {
-    return view('career');
-});
-
-Route::get('/sustainability', function () {
-    return view('sustainability');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
+Route::view('/', 'pages/home');
+Route::view('/career', 'pages/career');
+Route::view('/sustainability', 'pages/sustainability');
+Route::view('/contact', 'pages/contact');

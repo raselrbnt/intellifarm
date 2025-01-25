@@ -1,13 +1,13 @@
-.sustainability .main {
+.main {
     display: flex;
     flex-direction: column;
     background-color: rgb(250, 250, 250);
 }
-.sustainability .aboutUsSection {
+.aboutUsSection {
     display: flex;
     flex-direction: column;
 }
-.sustainability .flexRowContainer {
+.flexRowContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,12 +18,12 @@
     padding: 0 8px 0 0;
 }
 @media (max-width: 383px) {
-    .sustainability .flexRowContainer {
+    .flexRowContainer {
         -moz-column-gap: 8px;
         column-gap: 8px;
     }
 }
-.sustainability .flexRowTop {
+.flexRowTop {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,17 +32,17 @@
     min-width: 0;
 }
 @media (max-width: 991px) {
-    .sustainability .flexRowTop {
+    .flexRowTop {
         width: auto;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flexRowTop {
+    .flexRowTop {
         -moz-column-gap: 8px;
         column-gap: 8px;
     }
 }
-.sustainability .companyLogoImg {
+.companyLogoImg {
     width: 32px;
     height: 52px;
     aspect-ratio: 0.62;
@@ -50,7 +50,7 @@
     -o-object-fit: contain;
     object-fit: contain;
 }
-.sustainability .flexRowNav {
+.flexRowNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,11 +59,11 @@
     min-width: 0;
 }
 @media (max-width: 991px) {
-    .sustainability .flexRowNav {
+    .flexRowNav {
         display: none;
     }
 }
-.sustainability .aboutText {
+.aboutText {
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
     cursor: pointer;
@@ -72,16 +72,16 @@
     padding: 8px;
 }
 @media (max-width: 991px) {
-    .sustainability .aboutText {
+    .aboutText {
         align-items: flex-start;
         font-size: 16px;
     }
 }
-.sustainability .aboutText:hover {
+.aboutText:hover {
     box-shadow: inset 0 0 0 1.5px #4e9f3d, 0 0 1px rgba(0, 0, 0, 0);
     border-radius: 10px;
 }
-.sustainability .productText {
+.productText {
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
     cursor: pointer;
@@ -90,16 +90,16 @@
     padding: 8px;
 }
 @media (max-width: 991px) {
-    .sustainability .productText {
+    .productText {
         align-items: flex-start;
         font-size: 16px;
     }
 }
-.sustainability .productText:hover {
+.productText:hover {
     box-shadow: inset 0 0 0 1.5px #4e9f3d, 0 0 1px rgba(0, 0, 0, 0);
     border-radius: 10px;
 }
-.sustainability .btnSustainability {
+.btnSustainability {
     display: flex;
     justify-content: center;
     min-width: 170px;
@@ -111,7 +111,7 @@
     outline: 2px solid #4e9f3d;
     outline-offset: -2px;
 }
-.sustainability .careerText {
+.careerText {
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
     cursor: pointer;
@@ -120,50 +120,50 @@
     padding: 8px;
 }
 @media (max-width: 991px) {
-    .sustainability .careerText {
+    .careerText {
         align-items: flex-start;
         font-size: 16px;
     }
 }
-.sustainability .careerText:hover {
+.careerText:hover {
     box-shadow: inset 0 0 0 1.5px #4e9f3d, 0 0 1px rgba(0, 0, 0, 0);
     border-radius: 10px;
 }
-.sustainability .flexRowBottom {
+.flexRowBottom {
     display: flex;
     gap: 0 23px;
     width: 432px;
     min-width: 0;
 }
 @media (max-width: 575px) {
-    .sustainability .flexRowBottom {
+    .flexRowBottom {
         -moz-column-gap: 16px;
         column-gap: 16px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .flexRowBottom {
+    .flexRowBottom {
         width: auto;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flexRowBottom {
+    .flexRowBottom {
         -moz-column-gap: 8px;
         column-gap: 8px;
     }
 }
-.sustainability .contentBoxContainer {
+.contentBoxContainer {
     position: relative;
     width: 315px;
     min-width: 0;
     min-height: 33px;
 }
 @media (max-width: 479px) {
-    .sustainability .contentBoxContainer {
+    .contentBoxContainer {
         display: none;
     }
 }
-.sustainability .contentBox {
+.contentBox {
     position: absolute;
     top: 0;
     left: 50%;
@@ -175,7 +175,7 @@
     outline-offset: -1px;
     transform: translate(-50%, 0);
 }
-.sustainability .searchIconImg {
+.searchIconImg {
     margin: 0 0 0 auto;
     width: 39px;
     height: 33px;
@@ -183,7 +183,7 @@
     -o-object-fit: cover;
     object-fit: cover;
 }
-.sustainability .searchText_box {
+.searchText_box {
     position: absolute;
     top: 4px;
     left: 19px;
@@ -192,11 +192,11 @@
     opacity: 0.5;
 }
 @media (max-width: 991px) {
-    .sustainability .searchText_box {
+    .searchText_box {
         align-items: flex-start;
     }
 }
-.sustainability .searchText {
+.searchText {
     width: 100%;
     font: 400 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
@@ -206,25 +206,25 @@
     vertical-align: top;
 }
 @media (max-width: 991px) {
-    .sustainability .searchText {
+    .searchText {
         font-size: 16px;
     }
 }
-.sustainability .searchText:focus {
+.searchText:focus {
     outline: none;
 }
-.sustainability .additionalImage {
+.additionalImage {
     width: 94px;
     min-width: 0;
     height: 33px;
     -o-object-fit: cover;
     object-fit: cover;
 }
-.sustainability .environmentalSustainabilitySection {
+.environmentalSustainabilitySection {
     display: flex;
     flex-direction: column;
 }
-.sustainability .flexColumn {
+.flexColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,18 +234,18 @@
     max-width: 1416px;
 }
 @media (max-width: 383px) {
-    .sustainability .flexColumn {
+    .flexColumn {
         gap: 50px 0;
     }
 }
-.sustainability .contentBoxPrimary {
+.contentBoxPrimary {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     background: var(--src) center center/cover no-repeat;
 }
-.sustainability .rect15 {
+.rect15 {
     position: absolute;
     bottom: -4px;
     left: -65px;
@@ -258,11 +258,11 @@
     outline-style: none;
 }
 @media (max-width: 1399px) {
-    .sustainability .rect15 {
+    .rect15 {
         left: -44px;
     }
 }
-.sustainability .flex_row {
+.flex_row {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -272,23 +272,23 @@
     width: 93.65%;
 }
 @media (max-width: 991px) {
-    .sustainability .flex_row {
+    .flex_row {
         flex-direction: column;
         gap: 30px 10px;
         margin: 43px 32px 113px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .flex_row {
+    .flex_row {
         margin: 43px 16px 80px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flex_row {
+    .flex_row {
         margin: 43px 8px 50px;
     }
 }
-.sustainability .content_box5 {
+.content_box5 {
     display: flex;
     flex-direction: column;
     width: 894px;
@@ -296,27 +296,27 @@
     background: var(--src) center center/cover no-repeat;
 }
 @media (max-width: 991px) {
-    .sustainability .content_box5 {
+    .content_box5 {
         width: 100%;
         min-width: unset;
     }
 }
-.sustainability .content_box4 {
+.content_box4 {
     position: relative;
     margin: 29px 23px 7px 10px;
     min-height: 562px;
 }
 @media (max-width: 575px) {
-    .sustainability .content_box4 {
+    .content_box4 {
         margin: 29px 16px 7px 10px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .content_box4 {
+    .content_box4 {
         margin: 29px 8px 7px;
     }
 }
-.sustainability .flex_col {
+.flex_col {
     position: absolute;
     top: 50%;
     left: 0;
@@ -327,49 +327,49 @@
     transform: translate(0, -50%);
 }
 @media (max-width: 383px) {
-    .sustainability .flex_col {
+    .flex_col {
         gap: 50px 0;
     }
 }
-.sustainability .flexColumnTwo {
+.flexColumnTwo {
     display: flex;
     flex-direction: column;
     gap: 25px 0;
     margin: 0 0 0 12px;
 }
 @media (max-width: 383px) {
-    .sustainability .flexColumnTwo {
+    .flexColumnTwo {
         margin: 0 0 0 8px;
     }
 }
-.sustainability .flexColumnThree {
+.flexColumnThree {
     display: flex;
     flex-direction: column;
     gap: 26px 0;
 }
-.sustainability .environmentalCommitmentTitle {
+.environmentalCommitmentTitle {
     font: 700 64px/1.15 Play, Helvetica, Arial, serif;
     color: rgb(250, 250, 250);
 }
 @media (max-width: 991px) {
-    .sustainability .environmentalCommitmentTitle {
+    .environmentalCommitmentTitle {
         align-items: flex-start;
         font-size: 52px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .environmentalCommitmentTitle {
+    .environmentalCommitmentTitle {
         font-size: 36px;
     }
 }
-.sustainability .commitmentHighlightText {
+.commitmentHighlightText {
     width: 448.9886474609px;
     max-width: 85%;
     font: 400 15px/1.14 Ubuntu, Helvetica, Arial, serif;
     color: rgb(250, 250, 250);
     text-align: justify;
 }
-.sustainability .readMoreButton {
+.readMoreButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -383,7 +383,7 @@
     border-radius: 5px;
     padding: 2.5px 36px;
 }
-.sustainability .content_box {
+.content_box {
     display: flex;
     flex-direction: column;
     width: 168px;
@@ -393,7 +393,7 @@
     outline: 2px solid rgb(250, 250, 250);
     outline-offset: -2px;
 }
-.sustainability .reportSubtitle {
+.reportSubtitle {
     display: flex;
     justify-content: center;
     margin: 85px 38px 12px 37px;
@@ -402,29 +402,29 @@
     text-align: center;
 }
 @media (max-width: 991px) {
-    .sustainability .reportSubtitle {
+    .reportSubtitle {
         align-items: flex-start;
         margin: 85px 32px 12px;
         font-size: 18px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .reportSubtitle {
+    .reportSubtitle {
         margin: 80px 16px 12px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .reportSubtitle {
+    .reportSubtitle {
         margin: 80px auto 12px;
         font-size: 16px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .reportSubtitle {
+    .reportSubtitle {
         margin: 50px auto 12px;
     }
 }
-.sustainability .group {
+.group {
     position: absolute;
     top: 141px;
     right: 0;
@@ -432,7 +432,7 @@
     flex-direction: column;
     width: 352px;
 }
-.sustainability .flex_row1 {
+.flex_row1 {
     position: absolute;
     top: 8px;
     left: 10.9772338867px;
@@ -442,12 +442,12 @@
     width: 325px;
 }
 @media (max-width: 383px) {
-    .sustainability .flex_row1 {
+    .flex_row1 {
         -moz-column-gap: 8px;
         column-gap: 8px;
     }
 }
-.sustainability .flex_col1 {
+.flex_col1 {
     display: flex;
     flex-direction: column;
     gap: 122px 0;
@@ -456,48 +456,48 @@
     min-width: 0;
 }
 @media (max-width: 575px) {
-    .sustainability .flex_col1 {
+    .flex_col1 {
         gap: 80px 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flex_col1 {
+    .flex_col1 {
         gap: 50px 0;
     }
 }
-.sustainability .flex_col2 {
+.flex_col2 {
     display: flex;
     flex-direction: column;
     gap: 53px 0;
     margin: 0 18px 0 0;
 }
 @media (max-width: 575px) {
-    .sustainability .flex_col2 {
+    .flex_col2 {
         margin: 0 16px 0 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flex_col2 {
+    .flex_col2 {
         gap: 50px 0;
         margin: 0 8px 0 0;
     }
 }
-.sustainability .sustainabilityStatsTitle {
+.sustainabilityStatsTitle {
     font: 700 40px/1.14 Play, Helvetica, Arial, serif;
     color: rgb(255, 255, 255);
 }
 @media (max-width: 991px) {
-    .sustainability .sustainabilityStatsTitle {
+    .sustainabilityStatsTitle {
         align-items: flex-start;
         font-size: 36px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .sustainabilityStatsTitle {
+    .sustainabilityStatsTitle {
         font-size: 32px;
     }
 }
-.sustainability .sustainabilityImageOne {
+.sustainabilityImageOne {
     margin: 0 35px 0 5px;
     width: 28px;
     height: 28px;
@@ -506,49 +506,49 @@
     object-fit: cover;
 }
 @media (max-width: 991px) {
-    .sustainability .sustainabilityImageOne {
+    .sustainabilityImageOne {
         margin: 0 32px 0 5px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .sustainabilityImageOne {
+    .sustainabilityImageOne {
         margin: 0 16px 0 5px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .sustainabilityImageOne {
+    .sustainabilityImageOne {
         margin: 0 8px 0 5px;
     }
 }
-.sustainability .flex_col3 {
+.flex_col3 {
     display: flex;
     flex-direction: column;
     gap: 46px 0;
     margin: 0 0 0 5px;
 }
-.sustainability .sustainabilityImpactTitle {
+.sustainabilityImpactTitle {
     font: 700 40px/1.14 Play, Helvetica, Arial, serif;
     color: rgb(255, 255, 255);
 }
 @media (max-width: 991px) {
-    .sustainability .sustainabilityImpactTitle {
+    .sustainabilityImpactTitle {
         align-items: flex-start;
         font-size: 36px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .sustainabilityImpactTitle {
+    .sustainabilityImpactTitle {
         font-size: 32px;
     }
 }
-.sustainability .sustainabilityPercentImage {
+.sustainabilityPercentImage {
     width: 31px;
     height: 31px;
     aspect-ratio: 1;
     -o-object-fit: cover;
     object-fit: cover;
 }
-.sustainability .flex_col4 {
+.flex_col4 {
     display: flex;
     flex-direction: column;
     gap: 35px 0;
@@ -557,47 +557,47 @@
     min-width: 0;
 }
 @media (max-width: 575px) {
-    .sustainability .flex_col4 {
+    .flex_col4 {
         margin: 80px 0 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flex_col4 {
+    .flex_col4 {
         margin: 50px 0 0;
     }
 }
-.sustainability .flex_col5 {
+.flex_col5 {
     display: flex;
     flex-direction: column;
     gap: 44px 0;
     margin: 0 0 0 21px;
 }
 @media (max-width: 575px) {
-    .sustainability .flex_col5 {
+    .flex_col5 {
         margin: 0 0 0 16px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flex_col5 {
+    .flex_col5 {
         margin: 0 0 0 8px;
     }
 }
-.sustainability .hero_title2 {
+.hero_title2 {
     font: 700 40px/1.14 Play, Helvetica, Arial, serif;
     color: rgb(255, 255, 255);
 }
 @media (max-width: 991px) {
-    .sustainability .hero_title2 {
+    .hero_title2 {
         align-items: flex-start;
         font-size: 36px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .hero_title2 {
+    .hero_title2 {
         font-size: 32px;
     }
 }
-.sustainability .sustainabilityImageDetail {
+.sustainabilityImageDetail {
     margin: 0 0 0 auto;
     width: 31px;
     height: 31px;
@@ -605,7 +605,7 @@
     -o-object-fit: cover;
     object-fit: cover;
 }
-.sustainability .image1 {
+.image1 {
     margin: 0 5px 0 0;
     width: 95.1%;
     height: 99px;
@@ -613,14 +613,14 @@
     -o-object-fit: cover;
     object-fit: cover;
 }
-.sustainability .coverImage {
+.coverImage {
     position: relative;
     width: 100%;
     aspect-ratio: 0.89;
     -o-object-fit: cover;
     object-fit: cover;
 }
-.sustainability .flexRowTwo {
+.flexRowTwo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -629,18 +629,18 @@
     min-width: 0;
 }
 @media (max-width: 991px) {
-    .sustainability .flexRowTwo {
+    .flexRowTwo {
         width: 100%;
         min-width: unset;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .flexRowTwo {
+    .flexRowTwo {
         flex-direction: column;
         gap: 30px 10px;
     }
 }
-.sustainability .flex_col6 {
+.flex_col6 {
     display: flex;
     flex-direction: column;
     gap: 33px 0;
@@ -648,18 +648,18 @@
     min-width: 0;
 }
 @media (max-width: 479px) {
-    .sustainability .flex_col6 {
+    .flex_col6 {
         width: 100%;
         min-width: unset;
     }
 }
-.sustainability .contentBoxSecondary {
+.contentBoxSecondary {
     display: flex;
     flex-direction: column;
     background-color: rgb(250, 250, 250);
     border-radius: 20px;
 }
-.sustainability .flex_col7 {
+.flex_col7 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -667,17 +667,17 @@
     margin: 8px 9px 11.5px 10px;
 }
 @media (max-width: 383px) {
-    .sustainability .flex_col7 {
+    .flex_col7 {
         margin: 8px 8px 11.5px;
     }
 }
-.sustainability .contentBoxHighlight {
+.contentBoxHighlight {
     display: flex;
     flex-direction: column;
     width: 100%;
     background: var(--src) center center/cover no-repeat;
 }
-.sustainability .image29 {
+.image29 {
     margin: 13px 9px 235px auto;
     width: 39px;
     height: 39px;
@@ -686,34 +686,34 @@
     object-fit: cover;
 }
 @media (max-width: 991px) {
-    .sustainability .image29 {
+    .image29 {
         margin: 13px 9px 150px auto;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .image29 {
+    .image29 {
         margin: 13px 9px 80px auto;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .image29 {
+    .image29 {
         margin: 13px 8px 50px auto;
     }
 }
-.sustainability .natureFutureHighlightText {
+.natureFutureHighlightText {
     display: flex;
     align-items: center;
     width: 92.78%;
     font: 400 15px/1.15 Play, Helvetica, Arial, serif;
     color: rgb(0, 0, 0);
 }
-.sustainability .content_box1 {
+.content_box1 {
     position: relative;
     display: flex;
     flex-direction: column;
     background: var(--src) center center/cover no-repeat;
 }
-.sustainability .futureOfFarmingTitle {
+.futureOfFarmingTitle {
     position: absolute;
     top: 56.5px;
     right: -128.9545288086px;
@@ -725,16 +725,16 @@
     color: rgb(250, 250, 250);
 }
 @media (max-width: 991px) {
-    .sustainability .futureOfFarmingTitle {
+    .futureOfFarmingTitle {
         font-size: 44px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .futureOfFarmingTitle {
+    .futureOfFarmingTitle {
         font-size: 36px;
     }
 }
-.sustainability .rect12 {
+.rect12 {
     position: relative;
     margin: 198px 0 18px 22px;
     width: 15px;
@@ -744,45 +744,45 @@
     border-radius: 8px;
 }
 @media (max-width: 991px) {
-    .sustainability .rect12 {
+    .rect12 {
         margin: 150px 0 18px 22px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .rect12 {
+    .rect12 {
         margin: 80px 0 18px 16px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .rect12 {
+    .rect12 {
         margin: 50px 0 18px 8px;
     }
 }
-.sustainability .flex_row2 {
+.flex_row2 {
     display: flex;
     gap: 0 17px;
     width: 108px;
     min-width: 0;
 }
 @media (max-width: 575px) {
-    .sustainability .flex_row2 {
+    .flex_row2 {
         -moz-column-gap: 16px;
         column-gap: 16px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .flex_row2 {
+    .flex_row2 {
         width: 100%;
         min-width: unset;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flex_row2 {
+    .flex_row2 {
         -moz-column-gap: 8px;
         column-gap: 8px;
     }
 }
-.sustainability .group1 {
+.group1 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -791,21 +791,21 @@
     min-width: 0;
 }
 @media (max-width: 991px) {
-    .sustainability .group1 {
+    .group1 {
         margin: 105px 0 150px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .group1 {
+    .group1 {
         margin: 80px 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .group1 {
+    .group1 {
         margin: 50px 0;
     }
 }
-.sustainability .hero_title21 {
+.hero_title21 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -814,17 +814,17 @@
     text-align: center;
 }
 @media (max-width: 991px) {
-    .sustainability .hero_title21 {
+    .hero_title21 {
         align-items: flex-start;
         font-size: 36px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .hero_title21 {
+    .hero_title21 {
         font-size: 32px;
     }
 }
-.sustainability .rect10 {
+.rect10 {
     position: absolute;
     top: 0;
     left: 45.9544677734px;
@@ -834,63 +834,63 @@
     outline: 2px solid rgb(250, 250, 250);
     outline-offset: -2px;
 }
-.sustainability .flex_col8 {
+.flex_col8 {
     display: flex;
     flex-direction: column;
     gap: 46px 0;
     width: 2px;
 }
-.sustainability .image26 {
+.image26 {
     width: 2px;
     height: 105px;
     aspect-ratio: 0.02;
     -o-object-fit: cover;
     object-fit: cover;
 }
-.sustainability .image25 {
+.image25 {
     width: 100%;
     aspect-ratio: 0;
     -o-object-fit: cover;
     object-fit: cover;
 }
-.sustainability .flex_row3 {
+.flex_row3 {
     display: flex;
     justify-content: space-between;
     gap: 0 10px;
     width: 93.86%;
 }
 @media (max-width: 383px) {
-    .sustainability .flex_row3 {
+    .flex_row3 {
         -moz-column-gap: 8px;
         column-gap: 8px;
     }
 }
-.sustainability .sustainabilityAchievementTitle {
+.sustainabilityAchievementTitle {
     font: 700 40px/1.25 Montserrat, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
 }
 @media (max-width: 991px) {
-    .sustainability .sustainabilityAchievementTitle {
+    .sustainabilityAchievementTitle {
         align-items: flex-start;
         font-size: 36px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .sustainabilityAchievementTitle {
+    .sustainabilityAchievementTitle {
         font-size: 32px;
     }
 }
-.sustainability .yearHighlightText {
+.yearHighlightText {
     margin: 19px 0 14px;
     font: 300 16px/1.14 Ubuntu, Helvetica, Arial, serif;
     color: rgb(0, 0, 0);
     text-align: justify;
 }
-.sustainability .sustainabilityImpactSection {
+.sustainabilityImpactSection {
     display: flex;
     flex-direction: column;
 }
-.sustainability .flexRowDiv {
+.flexRowDiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -901,25 +901,25 @@
     padding: 0 115px 0 0;
 }
 @media (max-width: 991px) {
-    .sustainability .flexRowDiv {
+    .flexRowDiv {
         flex-direction: column;
         gap: 30px 10px;
         padding: 0 32px 0 0;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .flexRowDiv {
+    .flexRowDiv {
         margin: 9px auto 80px;
         padding: 0 16px 0 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flexRowDiv {
+    .flexRowDiv {
         margin: 9px auto 50px;
         padding: 0 8px 0 0;
     }
 }
-.sustainability .waterUsageImage {
+.waterUsageImage {
     width: 770px;
     min-width: 0;
     aspect-ratio: 1.26;
@@ -927,13 +927,13 @@
     object-fit: cover;
 }
 @media (max-width: 991px) {
-    .sustainability .waterUsageImage {
+    .waterUsageImage {
         width: 100%;
         min-width: unset;
         max-width: 770px;
     }
 }
-.sustainability .flexColDiv {
+.flexColDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -942,61 +942,61 @@
     min-width: 0;
 }
 @media (max-width: 991px) {
-    .sustainability .flexColDiv {
+    .flexColDiv {
         width: 100%;
         min-width: unset;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flexColDiv {
+    .flexColDiv {
         gap: 50px 0;
     }
 }
-.sustainability .waterUsageGroup {
+.waterUsageGroup {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 96.55%;
 }
-.sustainability .waterUsageTitle_box {
+.waterUsageTitle_box {
     position: relative;
 }
 @media (max-width: 991px) {
-    .sustainability .waterUsageTitle_box {
+    .waterUsageTitle_box {
         align-items: flex-start;
     }
 }
-.sustainability .waterUsageTitle {
+.waterUsageTitle {
     font: 700 24px/1.14 Ubuntu, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
     text-align: justify;
 }
 @media (max-width: 991px) {
-    .sustainability .waterUsageTitle {
+    .waterUsageTitle {
         font-size: 22px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .waterUsageTitle {
+    .waterUsageTitle {
         font-size: 20px;
     }
 }
-.sustainability .waterUsageTitle_span0 {
+.waterUsageTitle_span0 {
     font: 700 1em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .waterUsageTitle_span1 {
+.waterUsageTitle_span1 {
     font: 700 0.8333333333em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .waterUsageTitle_span2 {
+.waterUsageTitle_span2 {
     font: 0.625em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .waterUsageTitle_span3 {
+.waterUsageTitle_span3 {
     font: 700 0.625em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .waterUsageTitle_span4 {
+.waterUsageTitle_span4 {
     font: 0.625em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .image36 {
+.image36 {
     position: absolute;
     top: 4px;
     right: -4.0227050781px;
@@ -1004,48 +1004,48 @@
     height: 19px;
     aspect-ratio: 0.74;
 }
-.sustainability .fertilizerEfficiencyGroup {
+.fertilizerEfficiencyGroup {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 97.7%;
 }
-.sustainability .fertilizerEfficiencyTitle_box {
+.fertilizerEfficiencyTitle_box {
     position: relative;
 }
 @media (max-width: 991px) {
-    .sustainability .fertilizerEfficiencyTitle_box {
+    .fertilizerEfficiencyTitle_box {
         align-items: flex-start;
     }
 }
-.sustainability .fertilizerEfficiencyTitle {
+.fertilizerEfficiencyTitle {
     font: 700 24px/1.14 Ubuntu, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
     text-align: justify;
 }
 @media (max-width: 991px) {
-    .sustainability .fertilizerEfficiencyTitle {
+    .fertilizerEfficiencyTitle {
         font-size: 22px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .fertilizerEfficiencyTitle {
+    .fertilizerEfficiencyTitle {
         font-size: 20px;
     }
 }
-.sustainability .fertilizerEfficiencyTitle_span0 {
+.fertilizerEfficiencyTitle_span0 {
     font: 700 1em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .fertilizerEfficiencyTitle_span1 {
+.fertilizerEfficiencyTitle_span1 {
     font: 700 0.8333333333em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .fertilizerEfficiencyTitle_span2 {
+.fertilizerEfficiencyTitle_span2 {
     font: 0.625em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .fertilizerEfficiencyTitle_span3 {
+.fertilizerEfficiencyTitle_span3 {
     font: 700 0.625em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .image38 {
+.image38 {
     position: absolute;
     top: 9px;
     right: -8.0227050781px;
@@ -1053,51 +1053,51 @@
     height: 14px;
     aspect-ratio: 1.36;
 }
-.sustainability .trainingGroup {
+.trainingGroup {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 98.85%;
 }
-.sustainability .farmerTrainingTitle_box {
+.farmerTrainingTitle_box {
     position: relative;
 }
 @media (max-width: 991px) {
-    .sustainability .farmerTrainingTitle_box {
+    .farmerTrainingTitle_box {
         align-items: flex-start;
     }
 }
-.sustainability .farmerTrainingTitle {
+.farmerTrainingTitle {
     font: 700 24px/1.14 Ubuntu, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
     text-align: justify;
 }
 @media (max-width: 991px) {
-    .sustainability .farmerTrainingTitle {
+    .farmerTrainingTitle {
         font-size: 22px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .farmerTrainingTitle {
+    .farmerTrainingTitle {
         font-size: 20px;
     }
 }
-.sustainability .farmerTrainingTitle_span0 {
+.farmerTrainingTitle_span0 {
     font: 700 1em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .farmerTrainingTitle_span1 {
+.farmerTrainingTitle_span1 {
     font: 700 0.8333333333em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .farmerTrainingTitle_span2 {
+.farmerTrainingTitle_span2 {
     font: 0.625em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .farmerTrainingTitle_span3 {
+.farmerTrainingTitle_span3 {
     font: 700 0.625em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .farmerTrainingTitle_span4 {
+.farmerTrainingTitle_span4 {
     font: 0.625em/1.14 Ubuntu, Helvetica, Arial, serif;
 }
-.sustainability .image37 {
+.image37 {
     position: absolute;
     top: 7px;
     right: 0;
@@ -1105,11 +1105,11 @@
     height: 16px;
     aspect-ratio: 1.19;
 }
-.sustainability .howItWorksSection {
+.howItWorksSection {
     display: flex;
     flex-direction: column;
 }
-.sustainability .flexRowPrimary {
+.flexRowPrimary {
     display: flex;
     justify-content: space-between;
     gap: 0 10px;
@@ -1119,7 +1119,7 @@
     padding: 0 37px 0 0;
 }
 @media (max-width: 991px) {
-    .sustainability .flexRowPrimary {
+    .flexRowPrimary {
         flex-direction: column;
         align-items: center;
         gap: 30px 10px;
@@ -1128,18 +1128,18 @@
     }
 }
 @media (max-width: 575px) {
-    .sustainability .flexRowPrimary {
+    .flexRowPrimary {
         margin: 71px auto 80px;
         padding: 0 16px 0 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flexRowPrimary {
+    .flexRowPrimary {
         margin: 50px auto;
         padding: 0 8px 0 0;
     }
 }
-.sustainability .flexColPrimary {
+.flexColPrimary {
     display: flex;
     flex-direction: column;
     gap: 82px 0;
@@ -1147,37 +1147,37 @@
     min-width: 0;
 }
 @media (max-width: 991px) {
-    .sustainability .flexColPrimary {
+    .flexColPrimary {
         width: 100%;
         min-width: unset;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .flexColPrimary {
+    .flexColPrimary {
         gap: 80px 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flexColPrimary {
+    .flexColPrimary {
         gap: 50px 0;
     }
 }
-.sustainability .heroTitle {
+.heroTitle {
     font: 700 48px/1.16 Play, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
 }
 @media (max-width: 991px) {
-    .sustainability .heroTitle {
+    .heroTitle {
         align-items: flex-start;
         font-size: 44px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .heroTitle {
+    .heroTitle {
         font-size: 36px;
     }
 }
-.sustainability .flexRowSecondary {
+.flexRowSecondary {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1185,12 +1185,12 @@
     margin: 0 0 0 1px;
 }
 @media (max-width: 767px) {
-    .sustainability .flexRowSecondary {
+    .flexRowSecondary {
         flex-direction: column;
         gap: 30px 10px;
     }
 }
-.sustainability .flexColFirstContentBox {
+.flexColFirstContentBox {
     display: flex;
     flex-direction: column;
     gap: 41px 0;
@@ -1198,23 +1198,23 @@
     min-width: 0;
 }
 @media (max-width: 767px) {
-    .sustainability .flexColFirstContentBox {
+    .flexColFirstContentBox {
         width: 100%;
         min-width: unset;
     }
 }
-.sustainability .flexColSecondary {
+.flexColSecondary {
     display: flex;
     flex-direction: column;
     gap: 23px 0;
 }
-.sustainability .contentBoxIoT {
+.contentBoxIoT {
     display: flex;
     flex-direction: column;
     background-color: rgb(78, 159, 61);
     border-radius: 5px;
 }
-.sustainability .highlightIoT {
+.highlightIoT {
     display: flex;
     justify-content: center;
     margin: 10px 37px 9px;
@@ -1223,37 +1223,37 @@
     text-align: center;
 }
 @media (max-width: 991px) {
-    .sustainability .highlightIoT {
+    .highlightIoT {
         margin: 10px 32px 9px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .highlightIoT {
+    .highlightIoT {
         margin: 10px 16px 9px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .highlightIoT {
+    .highlightIoT {
         margin: 10px 8px 9px;
     }
 }
-.sustainability .descriptionIoT {
+.descriptionIoT {
     font: 400 15px/1.14 Ubuntu, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
     text-align: justify;
 }
-.sustainability .flexColDataAnalysis {
+.flexColDataAnalysis {
     display: flex;
     flex-direction: column;
     gap: 23px 0;
 }
-.sustainability .contentBoxDataAnalysis {
+.contentBoxDataAnalysis {
     display: flex;
     flex-direction: column;
     background-color: rgb(78, 159, 61);
     border-radius: 5px;
 }
-.sustainability .highlightDataAnalysis {
+.highlightDataAnalysis {
     display: flex;
     justify-content: center;
     margin: 10px 39px 9px;
@@ -1262,26 +1262,26 @@
     text-align: center;
 }
 @media (max-width: 991px) {
-    .sustainability .highlightDataAnalysis {
+    .highlightDataAnalysis {
         margin: 10px 32px 9px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .highlightDataAnalysis {
+    .highlightDataAnalysis {
         margin: 10px 16px 9px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .highlightDataAnalysis {
+    .highlightDataAnalysis {
         margin: 10px 8px 9px;
     }
 }
-.sustainability .descriptionDataAnalysis {
+.descriptionDataAnalysis {
     font: 400 15px/1.14 Ubuntu, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
     text-align: justify;
 }
-.sustainability .flexColEmissionReduction {
+.flexColEmissionReduction {
     display: flex;
     flex-direction: column;
     gap: 58px 0;
@@ -1289,28 +1289,28 @@
     min-width: 0;
 }
 @media (max-width: 767px) {
-    .sustainability .flexColEmissionReduction {
+    .flexColEmissionReduction {
         width: 100%;
         min-width: unset;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flexColEmissionReduction {
+    .flexColEmissionReduction {
         gap: 50px 0;
     }
 }
-.sustainability .flexColEducation {
+.flexColEducation {
     display: flex;
     flex-direction: column;
     gap: 23px 0;
 }
-.sustainability .contentBoxEmissionReduction {
+.contentBoxEmissionReduction {
     display: flex;
     flex-direction: column;
     background-color: rgb(78, 159, 61);
     border-radius: 5px;
 }
-.sustainability .highlightEmissionReduction {
+.highlightEmissionReduction {
     display: flex;
     justify-content: center;
     margin: 10px auto 9px;
@@ -1318,23 +1318,23 @@
     color: rgb(250, 250, 250);
     text-align: center;
 }
-.sustainability .descriptionEmissionReduction {
+.descriptionEmissionReduction {
     font: 400 15px/1.14 Ubuntu, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
     text-align: justify;
 }
-.sustainability .flex_col9 {
+.flex_col9 {
     display: flex;
     flex-direction: column;
     gap: 23px 0;
 }
-.sustainability .contentBoxFarmerEducation {
+.contentBoxFarmerEducation {
     display: flex;
     flex-direction: column;
     background-color: rgb(78, 159, 61);
     border-radius: 5px;
 }
-.sustainability .highlightFarmerEducation {
+.highlightFarmerEducation {
     display: flex;
     justify-content: center;
     margin: 10px auto 9px;
@@ -1342,12 +1342,12 @@
     color: rgb(250, 250, 250);
     text-align: center;
 }
-.sustainability .descriptionFarmerEducation {
+.descriptionFarmerEducation {
     font: 400 15px/1.14 Ubuntu, Helvetica, Arial, serif;
     color: rgb(30, 30, 30);
     text-align: justify;
 }
-.sustainability .flexRowImageContent {
+.flexRowImageContent {
     display: flex;
     gap: 0 3px;
     margin: 0 0 119px;
@@ -1355,20 +1355,20 @@
     min-width: 0;
 }
 @media (max-width: 991px) {
-    .sustainability .flexRowImageContent {
+    .flexRowImageContent {
         margin: 0;
         width: 100%;
         min-width: unset;
     }
 }
-.sustainability .imageGroup {
+.imageGroup {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 281px;
     min-width: 0;
 }
-.sustainability .researchImage2024 {
+.researchImage2024 {
     position: relative;
     width: 100%;
     min-width: 0;
@@ -1377,7 +1377,7 @@
     -o-object-fit: cover;
     object-fit: cover;
 }
-.sustainability .contentBoxResearch2024 {
+.contentBoxResearch2024 {
     position: absolute;
     top: 56px;
     left: 55px;
@@ -1386,7 +1386,7 @@
     width: 265px;
     background: var(--src) center center/100% 100% no-repeat;
 }
-.sustainability .highlightResearch2024 {
+.highlightResearch2024 {
     display: flex;
     align-items: center;
     margin: 402.5px 9px 11.5px auto;
@@ -1396,21 +1396,21 @@
     color: rgb(255, 255, 255);
 }
 @media (max-width: 991px) {
-    .sustainability .highlightResearch2024 {
+    .highlightResearch2024 {
         margin: 150px 9px 11.5px auto;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .highlightResearch2024 {
+    .highlightResearch2024 {
         margin: 80px 9px 11.5px auto;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .highlightResearch2024 {
+    .highlightResearch2024 {
         margin: 50px 8px 11.5px auto;
     }
 }
-.sustainability .additionalResearchImage {
+.additionalResearchImage {
     margin: 10px 0 337px;
     width: 24px;
     height: 24px;
@@ -1419,25 +1419,25 @@
     object-fit: cover;
 }
 @media (max-width: 991px) {
-    .sustainability .additionalResearchImage {
+    .additionalResearchImage {
         margin: 10px 0 150px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .additionalResearchImage {
+    .additionalResearchImage {
         margin: 10px 0 80px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .additionalResearchImage {
+    .additionalResearchImage {
         margin: 10px 0 50px;
     }
 }
-.sustainability .achievementsSection {
+.achievementsSection {
     display: flex;
     flex-direction: column;
 }
-.sustainability .achievementHighlightDiv {
+.achievementHighlightDiv {
     display: flex;
     flex-direction: column;
     margin: 114px auto 110px;
@@ -1446,16 +1446,16 @@
     background: var(--src) center center/cover no-repeat;
 }
 @media (max-width: 575px) {
-    .sustainability .achievementHighlightDiv {
+    .achievementHighlightDiv {
         margin: 80px auto;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .achievementHighlightDiv {
+    .achievementHighlightDiv {
         margin: 50px auto;
     }
 }
-.sustainability .flexColumnDiv {
+.flexColumnDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1465,11 +1465,11 @@
     max-width: 85%;
 }
 @media (max-width: 383px) {
-    .sustainability .flexColumnDiv {
+    .flexColumnDiv {
         margin: 50px auto;
     }
 }
-.sustainability .achievementsSubtitle {
+.achievementsSubtitle {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1478,17 +1478,17 @@
     text-align: center;
 }
 @media (max-width: 991px) {
-    .sustainability .achievementsSubtitle {
+    .achievementsSubtitle {
         align-items: flex-start;
         font-size: 18px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .achievementsSubtitle {
+    .achievementsSubtitle {
         font-size: 16px;
     }
 }
-.sustainability .supportButton {
+.supportButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1502,17 +1502,17 @@
     border-radius: 10px;
     padding: 5.5px 8px;
 }
-.sustainability .contactUsSection {
+.contactUsSection {
     display: flex;
     flex-direction: column;
     gap: 57px 0;
 }
 @media (max-width: 383px) {
-    .sustainability .contactUsSection {
+    .contactUsSection {
         gap: 50px 0;
     }
 }
-.sustainability .contentBox1 {
+.contentBox1 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1522,7 +1522,7 @@
     background-color: rgb(30, 30, 30);
     border-radius: 20px;
 }
-.sustainability .dividerLine {
+.dividerLine {
     position: absolute;
     bottom: 60px;
     left: 50%;
@@ -1531,7 +1531,7 @@
     background-color: rgb(255, 255, 255);
     transform: translate(-50%, 0);
 }
-.sustainability .flexColumn1 {
+.flexColumn1 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1540,28 +1540,28 @@
     width: 94.93%;
 }
 @media (max-width: 1199px) {
-    .sustainability .flexColumn1 {
+    .flexColumn1 {
         margin: 34px auto 20px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flexColumn1 {
+    .flexColumn1 {
         gap: 50px 0;
     }
 }
-.sustainability .flexRow {
+.flexRow {
     display: flex;
     justify-content: space-between;
     gap: 0 10px;
 }
 @media (max-width: 1199px) {
-    .sustainability .flexRow {
+    .flexRow {
         flex-direction: column;
         align-items: center;
         gap: 30px 10px;
     }
 }
-.sustainability .flexColumn11 {
+.flexColumn11 {
     display: flex;
     flex-direction: column;
     gap: 28px 0;
@@ -1570,50 +1570,50 @@
     min-width: 0;
 }
 @media (max-width: 1199px) {
-    .sustainability .flexColumn11 {
+    .flexColumn11 {
         margin: 0;
         width: 100%;
         min-width: unset;
     }
 }
-.sustainability .followContactText {
+.followContactText {
     margin: 0 29px 0 3px;
     font: 400 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(255, 255, 255);
 }
 @media (max-width: 991px) {
-    .sustainability .followContactText {
+    .followContactText {
         align-items: flex-start;
         font-size: 16px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .followContactText {
+    .followContactText {
         margin: 0 16px 0 3px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .followContactText {
+    .followContactText {
         margin: 0 8px 0 3px;
     }
 }
-.sustainability .flexRow1 {
+.flexRow1 {
     display: flex;
     gap: 0 19px;
 }
 @media (max-width: 575px) {
-    .sustainability .flexRow1 {
+    .flexRow1 {
         -moz-column-gap: 16px;
         column-gap: 16px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flexRow1 {
+    .flexRow1 {
         -moz-column-gap: 8px;
         column-gap: 8px;
     }
 }
-.sustainability .companyImage1 {
+.companyImage1 {
     margin: 0 0 1px;
     width: 25px;
     height: 25px;
@@ -1623,10 +1623,10 @@
     transition-duration: 0.3s;
     transition-property: transform;
 }
-.sustainability .companyImage1:hover {
+.companyImage1:hover {
     transform: scale(1.1);
 }
-.sustainability .companyImage2 {
+.companyImage2 {
     margin: 0 0 1px;
     width: 25px;
     height: 25px;
@@ -1636,10 +1636,10 @@
     transition-duration: 0.3s;
     transition-property: transform;
 }
-.sustainability .companyImage2:hover {
+.companyImage2:hover {
     transform: scale(1.1);
 }
-.sustainability .companyImage3 {
+.companyImage3 {
     margin: 0 0 1px;
     width: 25px;
     height: 25px;
@@ -1649,10 +1649,10 @@
     transition-duration: 0.3s;
     transition-property: transform;
 }
-.sustainability .companyImage3:hover {
+.companyImage3:hover {
     transform: scale(1.1);
 }
-.sustainability .companyImage4 {
+.companyImage4 {
     margin: 0 0 1px;
     width: 25px;
     height: 25px;
@@ -1662,10 +1662,10 @@
     transition-duration: 0.3s;
     transition-property: transform;
 }
-.sustainability .companyImage4:hover {
+.companyImage4:hover {
     transform: scale(1.1);
 }
-.sustainability .companyImage5 {
+.companyImage5 {
     width: 26px;
     height: 26px;
     aspect-ratio: 1;
@@ -1674,10 +1674,10 @@
     transition-duration: 0.3s;
     transition-property: transform;
 }
-.sustainability .companyImage5:hover {
+.companyImage5:hover {
     transform: scale(1.1);
 }
-.sustainability .flexRow2 {
+.flexRow2 {
     display: flex;
     justify-content: space-between;
     gap: 0 10px;
@@ -1686,20 +1686,20 @@
     min-width: 0;
 }
 @media (max-width: 1199px) {
-    .sustainability .flexRow2 {
+    .flexRow2 {
         margin: 0;
         width: 100%;
         min-width: unset;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .flexRow2 {
+    .flexRow2 {
         flex-direction: column;
         align-items: center;
         gap: 30px 10px;
     }
 }
-.sustainability .flexColumn2 {
+.flexColumn2 {
     display: flex;
     flex-direction: column;
     gap: 14px 0;
@@ -1707,111 +1707,111 @@
     min-width: 0;
 }
 @media (max-width: 479px) {
-    .sustainability .flexColumn2 {
+    .flexColumn2 {
         width: 100%;
         min-width: unset;
     }
 }
-.sustainability .categoryTitle {
+.categoryTitle {
     margin: 0 31px 0 0;
     font: 600 19px/1.21 Montserrat, Helvetica, Arial, serif;
     color: rgb(255, 255, 255);
 }
 @media (max-width: 991px) {
-    .sustainability .categoryTitle {
+    .categoryTitle {
         align-items: flex-start;
         font-size: 18px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .categoryTitle {
+    .categoryTitle {
         margin: 0 16px 0 0;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .categoryTitle {
+    .categoryTitle {
         font-size: 16px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .categoryTitle {
+    .categoryTitle {
         margin: 0 8px 0 0;
     }
 }
-.sustainability .categoryAgriculture {
+.categoryAgriculture {
     margin: 0 21px 0 0;
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .categoryAgriculture {
+    .categoryAgriculture {
         align-items: flex-start;
         font-size: 16px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .categoryAgriculture {
+    .categoryAgriculture {
         margin: 0 16px 0 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .categoryAgriculture {
+    .categoryAgriculture {
         margin: 0 8px 0 0;
     }
 }
-.sustainability .categoryInfrastructure {
+.categoryInfrastructure {
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .categoryInfrastructure {
+    .categoryInfrastructure {
         align-items: flex-start;
         font-size: 16px;
     }
 }
-.sustainability .categoryTechnology {
+.categoryTechnology {
     margin: 0 19px 0 0;
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .categoryTechnology {
+    .categoryTechnology {
         align-items: flex-start;
         font-size: 16px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .categoryTechnology {
+    .categoryTechnology {
         margin: 0 16px 0 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .categoryTechnology {
+    .categoryTechnology {
         margin: 0 8px 0 0;
     }
 }
-.sustainability .categoryEducation {
+.categoryEducation {
     margin: 0 31px 0 0;
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .categoryEducation {
+    .categoryEducation {
         align-items: flex-start;
         font-size: 16px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .categoryEducation {
+    .categoryEducation {
         margin: 0 16px 0 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .categoryEducation {
+    .categoryEducation {
         margin: 0 8px 0 0;
     }
 }
-.sustainability .flexColumn3 {
+.flexColumn3 {
     display: flex;
     flex-direction: column;
     gap: 14px 0;
@@ -1819,85 +1819,85 @@
     min-width: 0;
 }
 @media (max-width: 479px) {
-    .sustainability .flexColumn3 {
+    .flexColumn3 {
         width: 100%;
         min-width: unset;
     }
 }
-.sustainability .companyText {
+.companyText {
     margin: 0 15px 0 0;
     font: 600 19px/1.21 Montserrat, Helvetica, Arial, serif;
     color: rgb(255, 255, 255);
 }
 @media (max-width: 991px) {
-    .sustainability .companyText {
+    .companyText {
         align-items: flex-start;
         font-size: 18px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .companyText {
+    .companyText {
         font-size: 16px;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .companyText {
+    .companyText {
         margin: 0 8px 0 0;
     }
 }
-.sustainability .aboutLink {
+.aboutLink {
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .aboutLink {
+    .aboutLink {
         align-items: flex-start;
         font-size: 16px;
     }
 }
-.sustainability .productLink {
+.productLink {
     margin: 0 38px 0 0;
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .productLink {
+    .productLink {
         align-items: flex-start;
         margin: 0 32px 0 0;
         font-size: 16px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .productLink {
+    .productLink {
         margin: 0 16px 0 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .productLink {
+    .productLink {
         margin: 0 8px 0 0;
     }
 }
-.sustainability .sustainabilityLink {
+.sustainabilityLink {
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .sustainabilityLink {
+    .sustainabilityLink {
         align-items: flex-start;
         font-size: 16px;
     }
 }
-.sustainability .careerLink {
+.careerLink {
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .careerLink {
+    .careerLink {
         align-items: flex-start;
         font-size: 16px;
     }
 }
-.sustainability .flexColumn4 {
+.flexColumn4 {
     display: flex;
     flex-direction: column;
     gap: 14px 0;
@@ -1906,60 +1906,60 @@
     min-width: 0;
 }
 @media (max-width: 479px) {
-    .sustainability .flexColumn4 {
+    .flexColumn4 {
         margin: 0;
         width: 100%;
         min-width: unset;
     }
 }
-.sustainability .supportLink {
+.supportLink {
     font: 600 19px/1.21 Montserrat, Helvetica, Arial, serif;
     color: rgb(255, 255, 255);
 }
 @media (max-width: 991px) {
-    .sustainability .supportLink {
+    .supportLink {
         align-items: flex-start;
         font-size: 18px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .supportLink {
+    .supportLink {
         font-size: 16px;
     }
 }
-.sustainability .contactUsLink {
+.contactUsLink {
     margin: 0 38px 0 0;
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .contactUsLink {
+    .contactUsLink {
         align-items: flex-start;
         margin: 0 32px 0 0;
         font-size: 16px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .contactUsLink {
+    .contactUsLink {
         margin: 0 16px 0 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .contactUsLink {
+    .contactUsLink {
         margin: 0 8px 0 0;
     }
 }
-.sustainability .supportCenterLink {
+.supportCenterLink {
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .supportCenterLink {
+    .supportCenterLink {
         align-items: flex-start;
         font-size: 16px;
     }
 }
-.sustainability .flexColumn5 {
+.flexColumn5 {
     display: flex;
     flex-direction: column;
     gap: 14px 0;
@@ -1968,73 +1968,73 @@
     min-width: 0;
 }
 @media (max-width: 479px) {
-    .sustainability .flexColumn5 {
+    .flexColumn5 {
         margin: 0;
         width: 100%;
         min-width: unset;
     }
 }
-.sustainability .legalsLink {
+.legalsLink {
     font: 600 19px/1.21 Montserrat, Helvetica, Arial, serif;
     color: rgb(255, 255, 255);
 }
 @media (max-width: 991px) {
-    .sustainability .legalsLink {
+    .legalsLink {
         align-items: flex-start;
         font-size: 18px;
     }
 }
 @media (max-width: 479px) {
-    .sustainability .legalsLink {
+    .legalsLink {
         font-size: 16px;
     }
 }
-.sustainability .fAQLink {
+.fAQLink {
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .fAQLink {
+    .fAQLink {
         align-items: flex-start;
         font-size: 16px;
     }
 }
-.sustainability .privacyPolicyLink {
+.privacyPolicyLink {
     margin: 0 31px 0 0;
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .privacyPolicyLink {
+    .privacyPolicyLink {
         align-items: flex-start;
         font-size: 16px;
     }
 }
 @media (max-width: 575px) {
-    .sustainability .privacyPolicyLink {
+    .privacyPolicyLink {
         margin: 0 16px 0 0;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .privacyPolicyLink {
+    .privacyPolicyLink {
         margin: 0 8px 0 0;
     }
 }
-.sustainability .termsConditionLink {
+.termsConditionLink {
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
     color: rgb(173, 173, 173);
 }
 @media (max-width: 991px) {
-    .sustainability .termsConditionLink {
+    .termsConditionLink {
         align-items: flex-start;
         font-size: 16px;
     }
 }
-.sustainability .copyrightNotice {
+.copyrightNotice {
     font: 400 16px/1.6 Play, Helvetica, Arial, serif;
     color: rgb(250, 250, 250);
 }
-.sustainability .contentBox11 {
+.contentBox11 {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -2042,7 +2042,7 @@
     max-width: 1440px;
     background-color: rgb(250, 250, 250);
 }
-.sustainability .flexRow3 {
+.flexRow3 {
     display: flex;
     gap: 0 17px;
     margin: 12px auto;
@@ -2050,40 +2050,40 @@
     max-width: 85%;
 }
 @media (max-width: 1199px) {
-    .sustainability .flexRow3 {
+    .flexRow3 {
         flex-direction: column;
         align-items: center;
         gap: 30px 17px;
     }
 }
-.sustainability .cookieConsentMessage {
+.cookieConsentMessage {
     font: 400 16px/1.6 Play, Helvetica, Arial, serif;
     color: rgb(0, 0, 0);
 }
 @media (max-width: 1199px) {
-    .sustainability .cookieConsentMessage {
+    .cookieConsentMessage {
         width: 100%;
     }
 }
-.sustainability .flexRow4 {
+.flexRow4 {
     display: flex;
     gap: 0 9px;
     width: 202px;
     min-width: 0;
 }
 @media (max-width: 1199px) {
-    .sustainability .flexRow4 {
+    .flexRow4 {
         width: 100%;
         min-width: unset;
     }
 }
 @media (max-width: 383px) {
-    .sustainability .flexRow4 {
+    .flexRow4 {
         -moz-column-gap: 8px;
         column-gap: 8px;
     }
 }
-.sustainability .customizeButton {
+.customizeButton {
     display: flex;
     justify-content: center;
     min-width: 109px;
@@ -2095,7 +2095,7 @@
     outline: 1px solid rgb(78, 159, 61);
     outline-offset: -1px;
 }
-.sustainability .acceptButton {
+.acceptButton {
     display: flex;
     justify-content: center;
     min-width: 84px;
