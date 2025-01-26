@@ -1,3 +1,7 @@
+@push('styles')
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/intellifarm.css') }}" />
+@endpush
+
 <section class="contactUsSection">
     <!-- This section contains contact information and links to various company categories. -->
     <div class="content-Box1">
