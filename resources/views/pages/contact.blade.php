@@ -1,58 +1,11 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.app')
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>FarmHUB-Contact</title>
+@section('title', 'Contacts')
 
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/common.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/fonts.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/Contact.css') }}" />
-</head>
+@section('content')
+    @include('partials.navbar')
 
-<body class="flex-column">
-    <main class="contact main">
-        <section class="aboutUsSection">
-            <!-- This section provides an overview of the company and its values. -->
-            <div class="flexRowContainer">
-                <!-- A flex container for aligning elements in a row. -->
-                <div class="flexRowImageContainer">
-                    <!-- Container holding the main image of the company. -->
-                    <img class="mainImage" src="{{ asset('assets/43fa406488b93e476db137757b3e31be.png') }}"
-                        alt="alt text" onclick="window.open('{{ url('/') }}', '_self')" />
-                    <div class="flexRowTextContainer">
-                        <!-- Container for navigation or highlighted text items. -->
-                        <p class="aboutText" onclick="window.open('{{ url('/') }}', '_self')">
-                            <!-- Text link to learn more about the company. -->
-                            ABOUT
-                        </p>
-                        <p class="productText" onclick="window.open('{{ url('/product') }}', '_self')">
-                            <!-- Text link to learn more about the products offered. -->
-                            PRODUCT
-                        </p>
-                        <p class="sustainabilityText" onclick="window.open('{{ url('/sustainability') }}', '_self')">
-                            <!-- Text link pertaining to sustainability efforts. -->
-                            SUSTAINBILITY
-                        </p>
-                        <p class="careerText" onclick="window.open('{{ url('/career') }}', '_self')">
-                            <!-- Text link to available career opportunities. -->
-                            CAREER
-                        </p>
-                    </div>
-                </div>
-                <img class="secondaryImage" src="{{ asset('assets/302958ef4a6811348969a2badbfad7ac.svg') }}"
-                    alt="alt text" />
-            </div>
-        </section>
-
-        <section class="contactUsSection">
+    <section class="contactUsSection">
             <!-- This section provides a contact form for users to get in touch with FarmHUB. -->
             <div class="flexRowContainer1">
                 <!-- This container arranges its children in a horizontal row. -->
@@ -79,7 +32,7 @@
                     </div>
                     <div class="flexColumnSecondary">
                         <!-- This column contains the contact information and office hours. -->
-                        <hr class="dividerLine" size="1" />
+                        <hr class="dividerLine1" size="1" />
                         <h2 class="contactInfoTitle_box">
                             <!-- Title for the contact information section. -->
                             <span class="contactInfoTitle">
@@ -118,13 +71,13 @@
                                     <span class="fullNameRequiredIndicator_span1">*</span>
                                 </span>
                             </p>
-                            <div class="content_box2">
+                            <div class="content_box3">
                                 <p class="highlight1_box">
                                     <input type="text" class="highlight1" placeholder="Type" />
                                 </p>
                             </div>
                         </div>
-                        <div class="flex_col">
+                        <div class="flex-col">
                             <p class="highlight2_box">
                                 <span class="highlight2">
                                     <span class="highlight2_span0">Email
@@ -132,7 +85,7 @@
                                     <span class="highlight2_span1">*</span>
                                 </span>
                             </p>
-                            <div class="content_box2">
+                            <div class="content_box3">
                                 <p class="highlight1_box1">
                                     <input type="text" class="highlight1" placeholder="Type" />
                                 </p>
@@ -140,7 +93,7 @@
                         </div>
                         <div class="messageSection">
                             <!-- This section contains the message input field. -->
-                            <div class="flex_col1">
+                            <div class="flex-col1">
                                 <p class="highlight3_box">
                                     <textarea type="text" class="highlight3" placeholder="Massage"></textarea>
                                 </p>
@@ -173,9 +126,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
 
-        <section class="clientReviewsSection">
+    <section class="clientReviewsSection">
             <!-- Section displaying client reviews and social media connections. -->
             <div class="socialMediaContainer"
                 style="
@@ -324,9 +277,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
 
-        <section class="cookieConsentSection">
+    <section class="cookieConsentSection">
             <!-- This section handles cookie consent notifications and related user actions. -->
             <div class="cookieConsentContainer"
                 style="
@@ -352,11 +305,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-</body>
+    </section>
+@endsection
 
-</html>
+@push('styles')
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/contact.css') }}" />
+@endpush

@@ -371,8 +371,10 @@
             </div>
         </div>
     </section>
+
+    @include('partials.footer')
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/Sustainability.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/sustainability.css') }}" />
 @endpush

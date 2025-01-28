@@ -695,12 +695,14 @@
             </h3>
         </div>
     </section>
+
+    @include('partials.footer')
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/Home.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" />
 @endpush
 
 @push('scripts')
-    <script src="{{ asset('js/Home.js') }}"></script>
+    <script src="{{ asset('js/home.js') }}"></script>
 @endpush

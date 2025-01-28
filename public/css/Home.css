@@ -285,9 +285,9 @@
     position: absolute;
     top: 4px;
     left: 19.01251220703125px;
-    width: 59px;
+    width: 76%;
     height: 21px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 @media (max-width: 991px) {
@@ -298,8 +298,8 @@
 
 .searchLabelP {
     width: 100%;
-    font: 400 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(250 250 250);
+    font: 450 17px/1.23 Montserrat, Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
     background-color: transparent;
     border: 0;
     padding: 0;

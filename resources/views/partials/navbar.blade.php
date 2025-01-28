@@ -16,10 +16,10 @@
                     <!-- Text indicating the &#x27;Product&#x27; section. -->
                     PRODUCT
                 </p>
-                <button class="btnSustainability">
+                <p class="sustainabilityText" onclick="window.open('{{ url('/sustainability') }}', '_self')">
                     <!-- Button to learn more about sustainability efforts. -->
                     SUSTAINBILITY
-                </button>
+                </p>
                 <p class="careerText" onclick="window.open('{{ url('/career') }}', '_self')">
                     <!-- Text indicating the &#x27;Career&#x27; section. -->
                     CAREER

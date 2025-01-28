@@ -1,73 +1,11 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.app')
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>FarmHUB-Career</title>
+@section('title', 'Careers')
 
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+@section('content')
+    @include('partials.navbar')
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/common.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/fonts.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/Career.css') }}" />
-</head>
-
-<body class="flex-column">
-    <main class="career main">
-        <section class="aboutUsSection">
-            <!-- This section presents information about the company and its products. -->
-            <div class="flexRowContainer">
-                <!-- A container for aligning elements in a flexible row layout. -->
-                <div class="flexRowContent">
-                    <!-- A sub-container for organizing content in a row format. -->
-                    <img class="productImage" src="{{ asset('assets/43fa406488b93e476db137757b3e31be.png') }}"
-                        alt="alt text" onclick="window.open('{{ url('/') }}', '_self')" />
-                    <div class="flexRowHighlights">
-                        <!-- Display for highlight text details about the company. -->
-                        <p class="aboutText" onclick="window.open('{{ url('/') }}', '_self')">
-                            ABOUT
-                        </p>
-                        <p class="productText" onclick="window.open('{{ url('/product') }}', '_self')">
-                            PRODUCT
-                        </p>
-                        <p class="sustainabilityText" onclick="window.open('{{ url('/sustainability') }}', '_self')">
-                            SUSTAINBILITY
-                        </p>
-                        <button class="careerButton">
-                            <!-- TODO -->
-                            CAREER
-                        </button>
-                    </div>
-                </div>
-                <div class="flexRowSearch">
-                    <!-- A container for search-related elements arranged in a row. -->
-                    <div class="contentBoxSearch">
-                        <!-- A box for search input and related elements. -->
-                        <div class="flexRowSearchInput">
-                            <!-- Row layout for the search text and image. -->
-                            <p class="searchText_box">
-                                <input type="text" class="searchText" placeholder="Search" />
-                            </p>
-                            <div class="contentBoxImage">
-                                <!-- A box for displaying an image. -->
-                                <img class="additionalImage"
-                                    src="{{ asset('assets/b90b10a10b9b940fd19c5907a5cc2dad.png') }}" alt="alt text" />
-                            </div>
-                        </div>
-                    </div>
-                    <img class="secondaryImage" src="{{ asset('assets/302958ef4a6811348969a2badbfad7ac.svg') }}"
-                        alt="alt text" />
-                </div>
-            </div>
-        </section>
-
-        <section class="joinUsSection">
+    <section class="joinUsSection">
             <!-- Section that encourages users to join the organization -->
             <div class="flexColumnLayout">
                 <!-- Flexible column layout for the main content -->
@@ -105,9 +43,9 @@
                     </h2>
                 </div>
             </div>
-        </section>
+    </section>
 
-        <section class="aboutUsSection">
+    <section class="aboutUs-Section">
             <!-- This section highlights the various aspects of the company and its culture, aimed at informing potential candidates. -->
             <div class="flexRowContainer1">
                 <!-- Container for the main content organized in a flexible row layout. -->
@@ -234,13 +172,13 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
 
-        <section class="careerOpportunitiesSection">
+    <section class="careerOpportunitiesSection">
             <!-- Section displaying career opportunities and team invitation. -->
             <div class="flexContainer">
                 <!-- Container for flexible layout elements. -->
-                <div class="contentBox"
+                <div class="content-Box"
                     style="
                             --src:url('{{ asset('assets/f5b8a3357c0ada178237b1a9a89b64b2.png') }}'); ">
                     <!-- Box containing subordinate text elements. -->
@@ -261,9 +199,9 @@
                     </h2>
                 </div>
             </div>
-        </section>
+    </section>
 
-        <section class="careerOpportunitiesSection">
+    <section class="careerOpportunitiesSection">
             <!-- This section lists available job positions in the company. -->
             <div class="flexContainer1">
                 <!-- Container for job categories and positions. -->
@@ -274,7 +212,7 @@
                         <div class="jobTitleContainer">
                             <!-- Container for individual job titles. -->
                             <h2 class="developerJobTitle">Developer</h2>
-                            <hr class="dividerLine" size="1" />
+                            <hr class="dividerLine2" size="1" />
                             <!-- Horizontal line separator. -->
                         </div>
                         <h2 class="marketingJobTitle">Marketing</h2>
@@ -422,132 +360,11 @@
                     </span>
                 </p>
             </div>
-        </section>
+    </section>
 
-        <section class="contactSection">
-            <!-- This section provides contact information and navigation links to various parts of the website. -->
-            <div class="contactContentBox1">
-                <!-- This box contains the primary content related to contact information and social media links. -->
-                <img class="dividerImage" src="{{ asset('assets/23e2f7ebad24044cc670fb2edd63d6ec.png') }}"
-                    alt="alt text" />
-                <div class="contactFlexColumn">
-                    <div class="flexRow">
-                        <!-- This row contains the social media icons. -->
-                        <div class="flexColumn1">
-                            <!-- This column displays the header for contact options. -->
-                            <p class="contactHeader">
-                                <!-- Header text for contact section. -->
-                                Follow &amp; Contact Us
-                            </p>
-                            <div class="socialIconsContainer">
-                                <!-- Container for the social media icons. -->
-                                <img class="socialIcon1"
-                                    src="{{ asset('assets/155bd93fa984ed3a383e63be7bad347e.png') }}"
-                                    alt="alt text" />
-                                <img class="socialIcon2"
-                                    src="{{ asset('assets/72dc44cac0dffdc22e6e0de8a5752d0b.png') }}"
-                                    alt="alt text" />
-                                <img class="socialIcon3"
-                                    src="{{ asset('assets/aeb5aa60ade29595c63a901b2deb3572.png') }}"
-                                    alt="alt text" />
-                                <img class="socialIcon4"
-                                    src="{{ asset('assets/8ee3c1cbaf22d387f3241067cb8118b6.png') }}"
-                                    alt="alt text" />
-                                <img class="socialIcon5"
-                                    src="{{ asset('assets/7650ee1dcc2bdf1e27be2ba3c78df8d9.png') }}"
-                                    alt="alt text" />
-                            </div>
-                        </div>
-                        <div class="contactFlexRow2">
-                            <!-- This row contains the categories for navigation. -->
-                            <div class="flexColumnCategories">
-                                <!-- This column provides category navigation. -->
-                                <p class="categoryHeader">
-                                    <!-- Header for the category section. -->
-                                    Category
-                                </p>
-                                <p class="categoryAgriculture">
-                                    Agriculture
-                                </p>
-                                <p class="categoryInfrastructure">
-                                    infrastructure
-                                </p>
-                                <p class="categoryTechnology">Technology</p>
-                                <p class="categoryEducation">Education</p>
-                            </div>
-                            <div class="flexColumnCompany">
-                                <!-- This column provides links about the company. -->
-                                <p class="companyHeader">
-                                    <!-- Header for the company links. -->
-                                    Company
-                                </p>
-                                <p class="aboutLink">About</p>
-                                <p class="productLink">Product</p>
-                                <p class="sustainabilityLink">
-                                    Sustainbility
-                                </p>
-                                <p class="careerLink">Career</p>
-                            </div>
-                            <div class="flexColumnSupport">
-                                <!-- This column provides support-related links. -->
-                                <p class="supportHeader">
-                                    <!-- Header for support links. -->
-                                    Support
-                                </p>
-                                <p class="contactUsLink">Contact Us</p>
-                                <p class="supportCenterLink">
-                                    Support Center
-                                </p>
-                            </div>
-                            <div class="flexColumnLegals">
-                                <!-- This column provides legal-related links. -->
-                                <p class="legalsHeader">
-                                    <!-- Header for legal links. -->
-                                    Legals
-                                </p>
-                                <p class="faqLink">FAQ</p>
-                                <p class="privacyPolicyLink">
-                                    Privacy Police
-                                </p>
-                                <p class="termsAndConditionsLink">
-                                    Term &amp; Condition
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="copyrightNotice">
-                        <!-- Copyright notice for the website. -->
-                        © 2024 FarmHUB. All rights reserved.
-                    </p>
-                </div>
-            </div>
-            <div class="cookieConsentBox">
-                <!-- Box for cookie consent message and actions. -->
-                <div class="cookieFlexRow">
-                    <!-- Row for cookie consent message and buttons. -->
-                    <p class="cookieConsentMessage">
-                        <!-- Message about cookie usage on the website. -->
-                        We use cookies to improve website performance and
-                        ensure you get the best experience.
-                    </p>
-                    <div class="cookieActionRow">
-                        <!-- Row containing the actions for cookie consent. -->
-                        <button class="customizeButton">
-                            <!-- TODO -->
-                            CUSTOMIZE
-                        </button>
-                        <button class="acceptButton">
-                            <!-- TODO -->
-                            ACCEPT
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-</body>
+    @include('partials.footer')
+@endsection
 
-</html>
+@push('styles')
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/career.css') }}" />
+@endpush
