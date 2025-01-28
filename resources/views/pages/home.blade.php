@@ -18,27 +18,29 @@
                     <!-- Row container for showcasing different elements. -->
                     <div class="showcaseSubRowDiv">
                         <!-- Sub-row containing main image and controls. -->
-                        <img class="showcaseMainImageFig" src="{{ asset('assets/43fa406488b93e476db137757b3e31be.png') }}"
-                            alt="alt text" onclick="window.open('{{ url('/') }}', `_self`)" />
+                        <a href="{{ route('home') }}">
+                            <img class="showcaseMainImageFig"
+                                src="{{ asset('assets/43fa406488b93e476db137757b3e31be.png') }}" alt="alt text" />
+                        </a>
                         <!-- Main showcase image. -->
                         <div class="showcaseControlsDiv">
                             <!-- Controls for navigating through showcase. -->
-                            <button class="aboutBtn" onclick="window.open('{{ url('/') }}', `_self`)">
+                            <a class="aboutBtn" href="{{ route('home') }}">
                                 <!-- Button to learn more about the showcase. -->
                                 ABOUT
-                            </button>
-                            <p class="productLabelP" onclick="window.open('{{ url('/product') }}', `_self`)">
+                            </a>
+                            <a class="productLabelP" href="#">
                                 <!-- Label for product details. -->
                                 PRODUCT
-                            </p>
-                            <p class="sustainabilityLabelP" onclick="window.open('{{ url('/sustainability') }}', `_self`)">
+                            </a>
+                            <a class="sustainabilityLabelP" href="{{ route('sustainability') }}">
                                 <!-- Label for sustainability aspect. -->
                                 SUSTAINBILITY
-                            </p>
-                            <p class="careerLabelP" onclick="window.open('{{ url('/career') }}', `_self`)">
+                            </a>
+                            <a class="careerLabelP" href="{{ route('career') }}">
                                 <!-- Label for career opportunities. -->
                                 CAREER
-                            </p>
+                            </a>
                         </div>
                     </div>
 
@@ -700,7 +702,7 @@
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/pages/home.css') }}" />
 @endpush
 
 @push('scripts')
