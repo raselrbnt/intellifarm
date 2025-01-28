@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'pages/home');
-Route::view('/career', 'pages/career');
-Route::view('/sustainability', 'pages/sustainability');
-Route::view('/contact', 'pages/contact');
+Route::view('/', 'pages/home')->name('home');
+Route::view('/career', 'pages/career')->name('career');
+Route::view('/sustainability', 'pages/sustainability')->name('sustainability');
+Route::view('/contact', 'pages/contact')->name('contact');
