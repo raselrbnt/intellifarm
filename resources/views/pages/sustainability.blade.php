@@ -376,5 +376,5 @@
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/sustainability.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/pages/sustainability.css') }}" />
 @endpush

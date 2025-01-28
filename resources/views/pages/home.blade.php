@@ -700,7 +700,7 @@
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/pages/home.css') }}" />
 @endpush
 
 @push('scripts')
