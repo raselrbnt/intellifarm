@@ -12,16 +12,16 @@
                     </p>
                     <div class="flex-Row1">
                         <!-- Row for containing images. -->
-                        <img class="companyImage1" src="{{ asset('assets/155bd93fa984ed3a383e63be7bad347e.png') }}"
-                            alt="alt text" />
-                        <img class="companyImage2" src="{{ asset('assets/72dc44cac0dffdc22e6e0de8a5752d0b.png') }}"
-                            alt="alt text" />
-                        <img class="companyImage3" src="{{ asset('assets/aeb5aa60ade29595c63a901b2deb3572.png') }}"
-                            alt="alt text" />
-                        <img class="companyImage4" src="{{ asset('assets/8ee3c1cbaf22d387f3241067cb8118b6.png') }}"
-                            alt="alt text" />
-                        <img class="companyImage5" src="{{ asset('assets/7650ee1dcc2bdf1e27be2ba3c78df8d9.png') }}"
-                            alt="alt text" />
+                        <a href="#" class="text-decoration-none"><img class="companyImage1" src="{{ asset('assets/155bd93fa984ed3a383e63be7bad347e.png') }}"
+                            alt="alt text" /></a>
+                        <a href="#" class="text-decoration-none"><img class="companyImage2" src="{{ asset('assets/72dc44cac0dffdc22e6e0de8a5752d0b.png') }}"
+                            alt="alt text" /></a>
+                        <a href="#" class="text-decoration-none"><img class="companyImage3" src="{{ asset('assets/aeb5aa60ade29595c63a901b2deb3572.png') }}"
+                            alt="alt text" /></a>
+                        <a href="#" class="text-decoration-none"><img class="companyImage4" src="{{ asset('assets/8ee3c1cbaf22d387f3241067cb8118b6.png') }}"
+                            alt="alt text" /></a>
+                        <a href="#" class="text-decoration-none"><img class="companyImage5" src="{{ asset('assets/7650ee1dcc2bdf1e27be2ba3c78df8d9.png') }}"
+                            alt="alt text" /></a>
                     </div>
                 </div>
                 <div class="flexRow2">
@@ -31,43 +31,43 @@
                             <!-- Title for the category section. -->
                             Category
                         </p>
-                        <p class="categoryAgriculture">
+                        <a href="#" class="text-decoration-none"><p class="footerCategory">
                             Agriculture
-                        </p>
-                        <p class="categoryInfrastructure">
+                        </p></a>
+                        <a href="#" class="text-decoration-none"><p class="footerCategory">
                             infrastructure
-                        </p>
-                        <p class="categoryTechnology">Technology</p>
-                        <p class="categoryEducation">Education</p>
+                        </p></a>
+                        <a href="#" class="text-decoration-none"><p class="footerCategory">Technology</p></a>
+                        <a href="#" class="text-decoration-none"><p class="footerCategory">Education</p></a>
                     </div>
                     <div class="flexColumn3">
                         <p class="companyText">
                             <!-- Title for the company-related links. -->
                             Company
                         </p>
-                        <p class="aboutLink">About</p>
-                        <p class="productLink">Product</p>
-                        <p class="sustainabilityLink">
-                            Sustainbility
-                        </p>
-                        <p class="careerLink">Career</p>
+                        <a href="{{ route('home') }}" class="text-decoration-none"><p class="footerCompany">About</p></a>
+                        <a href="#" class="text-decoration-none"><p class="footerCompany">Product</p></a>
+                        <a href="{{ route('sustainability') }}" class="text-decoration-none"><p class="footerCompany">
+                            Sustainability
+                        </p></a>
+                        <a href="{{ route('career') }}" class="text-decoration-none"><p class="footerCompany">Career</p></a>
                     </div>
                     <div class="flexColumn4">
                         <p class="supportLink">Support</p>
-                        <p class="contactUsLink">Contact Us</p>
-                        <p class="supportCenterLink">
+                        <a href="{{ route ('contact') }}" class="text-decoration-none"><p class="footerSupport">Contact Us</p></a>
+                        <a href="#" class="text-decoration-none"><p class="footerSupport">
                             Support Center
-                        </p>
+                        </p></a>
                     </div>
                     <div class="flexColumn5">
                         <p class="legalsLink">Legals</p>
-                        <p class="fAQLink">FAQ</p>
-                        <p class="privacyPolicyLink">
+                        <a href="#" class="text-decoration-none"><p class="footerLegal">FAQ</p></a>
+                        <a href="#" class="text-decoration-none"><p class="footerLegal">
                             Privacy Police
-                        </p>
-                        <p class="termsConditionLink">
+                        </p></a>
+                        <a href="#" class="text-decoration-none"><p class="footerLegal">
                             Term &amp; Condition
-                        </p>
+                        </p></a>
                     </div>
                 </div>
             </div>
@@ -88,15 +88,23 @@
             </p>
             <div class="flex-Row4">
                 <!-- Container for action buttons related to cookie consent. -->
-                <button class="customizeButton">
-                    <!-- TODO -->
-                    CUSTOMIZE
-                </button>
-                <button class="acceptButton">
-                    <!-- TODO -->
-                    ACCEPT
-                </button>
+                <a href="#" class="text-decoration-none">
+                    <button class="customizeButton">
+                        <!-- TODO -->
+                        CUSTOMIZE
+                    </button>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <button class="acceptButton">
+                        <!-- TODO -->
+                        ACCEPT
+                    </button>
+                </a>
             </div>
         </div>
     </div>
 </section>
+
+@push('styles')
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/footer.css') }}" />
+@endpush

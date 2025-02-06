@@ -25,19 +25,19 @@
                         <!-- Main showcase image. -->
                         <div class="showcaseControlsDiv">
                             <!-- Controls for navigating through showcase. -->
-                            <a class="aboutBtn" href="{{ route('home') }}">
+                            <a class="aboutBtn text-decoration-none" href="{{ route('home') }}">
                                 <!-- Button to learn more about the showcase. -->
                                 ABOUT
                             </a>
-                            <a class="productLabelP" href="#">
+                            <a class="productLabelP text-decoration-none" href="#">
                                 <!-- Label for product details. -->
                                 PRODUCT
                             </a>
-                            <a class="sustainabilityLabelP" href="{{ route('sustainability') }}">
+                            <a class="sustainabilityLabelP text-decoration-none" href="{{ route('sustainability') }}">
                                 <!-- Label for sustainability aspect. -->
-                                SUSTAINBILITY
+                                SUSTAINABILITY
                             </a>
-                            <a class="careerLabelP" href="{{ route('career') }}">
+                            <a class="careerLabelP text-decoration-none" href="{{ route('career') }}">
                                 <!-- Label for career opportunities. -->
                                 CAREER
                             </a>
@@ -109,7 +109,8 @@
                                         </span>
                                     </h1>
                                     <hr class="separatorLineHR" size="1" />
-                                    <button class="contactUsBtn" onclick="window.open('{{ url('/contact') }}', `_self`)">
+                                    <a href="{{ route('contact') }}" class="text-decoration-none">
+                                        <button class="contactUsBtn">
                                         <!-- Button to contact for more information. -->
                                         <div class="contactUsBtnTextDiv">
                                             Contact Us
@@ -118,7 +119,8 @@
                                             src="{{ asset('assets/9e2f256a748bb3e9be50c1dae6c41687.png') }}"
                                             alt="alt text" />
                                         <!-- Icon for the contact us button. -->
-                                    </button>
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -680,7 +682,7 @@
                     </div>
                     <hr class="horizontalRule51" size="1" />
                 </div>
-                <button class="goBackButton">
+                <button class="goBackButton" id="goBackBtn">
                     <!-- TODO -->
                     Go Back
                 </button>
@@ -689,7 +691,9 @@
                 <span class="assistanceSubtitle">
                     <span class="assistanceSubtitle_span0">Got questions or need assistance?
                     </span>
-                    <span class="assistanceSubtitle_span1">Contact us</span>
+                    <a href="{{ route('contact') }}" class="text-decoration-none">
+                        <span class="assistanceSubtitle_span1">Contact us</span>
+                    </a>
                     <span class="assistanceSubtitle_span2">
                         anytime and we’ll get back to you as soon as
                         possible.</span>

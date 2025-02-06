@@ -12,3 +12,9 @@ function selectImage(element, imageSrc, title, position) {
     document.getElementById("mainTitle").textContent = title;
     document.getElementById("mainPosition").textContent = position;
 }
+
+// Button GoBack scroll to top
+let goBackBtn = document.getElementById("goBackBtn");
+goBackBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});

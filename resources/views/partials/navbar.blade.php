@@ -4,26 +4,27 @@
         <!-- Container for the main flex rows in the about us section. -->
         <div class="flexRowTop">
             <!-- Top row containing image and navigation options. -->
-            <img class="companyLogoImg" src="{{ asset('assets/43fa406488b93e476db137757b3e31be.png') }}" alt="alt text"
-                onclick="window.open('{{ url('/') }}', '_self')" />
+            <a href="{{ route('home') }}">
+                <img class="companyLogoImg" src="{{ asset('assets/43fa406488b93e476db137757b3e31be.png') }}" alt="alt text"/>
+            </a>
             <div class="flexRowNav">
                 <!-- Navigation items related to the company. -->
-                <p class="aboutText" onclick="window.open('{{ url('/') }}', '_self')">
+                <a href="{{ route('home') }}" class="aboutText text-decoration-none" >
                     <!-- Text indicating the &#x27;About&#x27; section. -->
                     ABOUT
-                </p>
-                <p class="productText" onclick="window.open('{{ url('/product') }}', '_self')">
+                </a>
+                <a href="#" class="productText text-decoration-none" >
                     <!-- Text indicating the &#x27;Product&#x27; section. -->
                     PRODUCT
-                </p>
-                <p class="sustainabilityText" onclick="window.open('{{ url('/sustainability') }}', '_self')">
+                </a>
+                <a href="{{ route('sustainability') }}" class="sustainabilityText text-decoration-none">
                     <!-- Button to learn more about sustainability efforts. -->
-                    SUSTAINBILITY
-                </p>
-                <p class="careerText" onclick="window.open('{{ url('/career') }}', '_self')">
+                    SUSTAINABILITY
+                </a>
+                <a href="{{ route('career') }}" class="careerText text-decoration-none">
                     <!-- Text indicating the &#x27;Career&#x27; section. -->
                     CAREER
-                </p>
+                </a>
             </div>
         </div>
         <div class="flexRowBottom">
