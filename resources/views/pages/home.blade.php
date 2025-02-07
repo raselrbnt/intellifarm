@@ -19,46 +19,51 @@
                     <div class="showcaseSubRowDiv">
                         <!-- Sub-row containing main image and controls. -->
                         <a href="{{ route('home') }}">
-                            <img class="showcaseMainImageFig"
-                                src="{{ asset('assets/43fa406488b93e476db137757b3e31be.png') }}" alt="alt text" />
+                            <img class="companyLogoImg" src="{{ asset('assets/farmhub-logo.png') }}" alt="Logo Intellifarm"/>
                         </a>
                         <!-- Main showcase image. -->
-                        <div class="showcaseControlsDiv">
-                            <!-- Controls for navigating through showcase. -->
-                            <a class="aboutBtn text-decoration-none" href="{{ route('home') }}">
-                                <!-- Button to learn more about the showcase. -->
+                        <div class="flexRowNav">
+                            <!-- Navigation items related to the company. -->
+                            <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" 
+                            href="{{ route('home') }}" >
+                                <!-- Text indicating the &#x27;About&#x27; section. -->
                                 ABOUT
                             </a>
-                            <a class="productLabelP text-decoration-none" href="#">
-                                <!-- Label for product details. -->
+                            <a class="nav-link {{ Route::currentRouteName() == 'product' ? 'active' : '' }}" 
+                            href="{{ Route::has('product') ? route('product') : '#' }}" >
+                                <!-- Text indicating the &#x27;Product&#x27; section. -->
                                 PRODUCT
                             </a>
-                            <a class="sustainabilityLabelP text-decoration-none" href="{{ route('sustainability') }}">
-                                <!-- Label for sustainability aspect. -->
+                            <a class="nav-link {{ Route::currentRouteName() == 'sustainability' ? 'active' : '' }}"
+                            href="{{ route('sustainability') }}" >
+                                <!-- Button to learn more about sustainability efforts. -->
                                 SUSTAINABILITY
                             </a>
-                            <a class="careerLabelP text-decoration-none" href="{{ route('career') }}">
-                                <!-- Label for career opportunities. -->
+                            <a class="nav-link {{ Route::currentRouteName() == 'career' ? 'active' : '' }}"
+                            href="{{ route('career') }}" >
+                                <!-- Text indicating the &#x27;Career&#x27; section. -->
                                 CAREER
                             </a>
                         </div>
                     </div>
-
-                    <div class="showcaseRowImagesDiv">
-                        <!-- Row for additional showcase images. -->
-                        <div class="contentBoxWithSearchDiv">
-                            <!-- Box containing image and search label. -->
-                            <img class="searchImageFig" src="{{ asset('assets/65ef51ababa7d8ec637a5ee78663d61c.png') }}"
-                                alt="alt text" />
-                            <!-- Image associated with the search feature. -->
-                            <p class="searchLabelP_box">
-                                <!-- Label for the search input. -->
-                                <input type="text" class="searchLabelP" placeholder="Search" />
+                    
+                    {{-- Bagian div ini diganti ama navbar --}}
+                    <div class="flexRowBottom">
+                        <!-- Bottom row containing additional content and images. -->
+                        <div class="contentBoxContainer">
+                            <!-- Container for content boxes in the bottom row. -->
+                            <div class="contentBox">
+                                <!-- Inner content box for displaying an image. -->
+                                <img class="searchIconImg" src="{{ asset('assets/65ef51ababa7d8ec637a5ee78663d61c.png') }}"
+                                    alt="alt text" />
+                            </div>
+                            <p class="searchText_box">
+                                <!-- Text prompting the search functionality. -->
+                                <input type="text" class="searchText" placeholder="Search" />
                             </p>
                         </div>
-                        <img class="additionalImage1Fig" src="{{ asset('assets/1e3e16227d24975d44b22e341c50035e.svg') }}"
+                        <img class="additionalImage" src="{{ asset('assets/1e3e16227d24975d44b22e341c50035e.svg') }}"
                             alt="alt text" />
-                        <!-- Additional image related to the showcase. -->
                     </div>
                 </div>
                 <div class="showcaseRowHeaderDiv">
@@ -140,11 +145,11 @@
                         <div class="farmHubInfoContainerDiv">
                             <!-- Container for displaying farm hub information. -->
                             <h1 class="farmHubTitleH1">
-                                <!-- Title for the FarmHUB section. -->
-                                FarmHUB Indonesia
+                                <!-- Title for the Intellifarm section. -->
+                                Intellifarm Indonesia
                             </h1>
                             <p class="farmHubDescriptionP">
-                                <!-- Description of FarmHUB. -->
+                                <!-- Description of Intellifarm. -->
                                 Committed to creating an advanced,
                                 efficient, and sustainable agricultural
                                 ecosystem through technology and
@@ -171,38 +176,38 @@
     </section>
 
     <section class="farmIntroductionSection">
-        <!-- Section introducing the FarmHUB application and its benefits for farmers. -->
+        <!-- Section introducing the Intellifarm application and its benefits for farmers. -->
         <div class="flex_row">
             <div class="flex-row1">
                 <h3 class="featuresSubtitle">
-                    <!-- Subtitle indicating the section for FarmHUB features. -->
+                    <!-- Subtitle indicating the section for Intellifarm features. -->
                     01
                 </h3>
                 <div class="flex_col">
                     <h1 class="introductionTitle">
-                        <!-- Main title for the introduction of the FarmHUB application. -->
+                        <!-- Main title for the introduction of the Intellifarm application. -->
                         Let Us Introduce
                     </h1>
                     <p class="applicationOverview">
-                        <!-- Paragraph describing the FarmHUB application and its key features. -->
-                        FarmHUB is an innovative application that
+                        <!-- Paragraph describing the Intellifarm application and its key features. -->
+                        Intellifarm is an innovative application that
                         utilizes the latest Internet of Things (IoT)
                         technology to transform farm management,
                         designed specifically for modern farmers. With
-                        FarmHUB, farmers can easily manage all their
+                        Intellifarm, farmers can easily manage all their
                         farming operations, such as monitoring soil
                         moisture, temperature, and weather conditions,
-                        all from the app. FarmHUB makes farms more
+                        all from the app. Intellifarm makes farms more
                         efficient and productive! This application is
                         also very helpful for eco-friendly farming by
                         conserving water and fertilizers.
                     </p>
                     <p class="iotContribution">
                         <!-- Paragraph outlining how IoT technology contributes to farming efficiency. -->
-                        Through its IoT technology, FarmHUB contributes
+                        Through its IoT technology, Intellifarm contributes
                         to improving crop quality and operational
                         efficiency, making it an essential tool for
-                        today&#x27;s farmers. The FarmHUB application
+                        today&#x27;s farmers. The Intellifarm application
                         aims to explore smart farming technology to make
                         farming and plantations in Indonesia more
                         efficient and productive. This smart farming
@@ -213,7 +218,7 @@
                     </p>
                     <p class="dataDrivenFarming">
                         <!-- Paragraph explaining how data analysis improves farming decisions. -->
-                        FarmHUB&#x27;s smart farming technology also
+                        Intellifarm&#x27;s smart farming technology also
                         helps farmers make informed decisions based on
                         data. With advanced data analysis, farmers can
                         better understand plant growth trends, water
@@ -226,7 +231,7 @@
             <div class="flex_col1">
                 <div class="flex_row2">
                     <h1 class="featuresTitle">
-                        <!-- Title for the features section of the FarmHUB application. -->
+                        <!-- Title for the features section of the Intellifarm application. -->
                         Features
                     </h1>
                     <div class="flex_row3">
@@ -290,7 +295,7 @@
                                 </div>
                                 <p class="aiOptimizationDescription">
                                     <!-- Description of how AI optimizes farming practices. -->
-                                    FarmHUB leverages AI to predict crop
+                                    Intellifarm leverages AI to predict crop
                                     needs based on collected data. AI
                                     helps in optimizing resource use,
                                     increasing crop yields and ensuring
@@ -318,7 +323,7 @@
                             alt="alt text" />
                         <h1 class="heroTitle">
                             <!-- Main title for the team section. -->
-                            Meet  The  Team
+                            Our  Team
                         </h1>
                     </div>
                     <h3 class="sectionSubtitle">
@@ -532,7 +537,7 @@
                 <h1 class="productHeroTitle_box">
                     <!-- Main title for the products showcased. -->
                     <span class="productHeroTitle">
-                        <span class="productHeroTitle_span0">Our</span>
+                        <span class="productHeroTitle_span0">OUR</span>
                         <span class="productHeroTitle_span1"> </span>
                         <span class="productHeroTitle_span2" style="font-size: 60px"><strong>PRODUCT</strong></span>
                     </span>
@@ -567,8 +572,8 @@
                             IoT Technology
                         </button>
                         <button class="farmHubAppButton">
-                            <!-- Button to access the FarmHUB App. -->
-                            FarmHUB App
+                            <!-- Button to access the Intellifarm App. -->
+                            Intellifarm App
                         </button>
                         <button class="agroMarketButton">
                             <!-- Button to explore the Agro Market. -->
@@ -599,7 +604,7 @@
                         </h1>
                         <p class="ioTTechnologyDescription">
                             <!-- Description of IoT technology used in products. -->
-                            FarmHUB leverages Internet of Things (IoT)
+                            Intellifarm leverages Internet of Things (IoT)
                             technology to provide advanced solutions in
                             farm management. IoT is a network of
                             physical devices equipped with technology to
@@ -610,7 +615,7 @@
                             access real-time data.
                             <br />
                             <br />
-                            FarmHUB&#x27;s IoT technology is an
+                            Intellifarm&#x27;s IoT technology is an
                             innovative solution that transforms the way
                             farmers manage their fields, making it an
                             essential tool for more efficient and
@@ -639,7 +644,7 @@
             <!-- Flex container for product offerings description. -->
             <p class="productRangeDescription">
                 <!-- Description of the range of products offered. -->
-                At FarmHUB, we offer a range of innovative products
+                At Intellifarm, we offer a range of innovative products
                 designed to enhance and simplify modern farming
                 practices. Our solutions integrate the latest in IoT
                 technology, data analytics, and AI to provide farmers

@@ -15,9 +15,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 23px auto 58px;
+    margin: 23px 25px 58px 25px;
     width: 97.78%;
-    max-width: 1408px;
+    max-width: 1508px;
     background: var(--src) center center / cover no-repeat;
 }
 
@@ -113,223 +113,143 @@
     }
 }
 
-.showcaseMainImageFig {
+/* Ikut Style navbar.css dari sini */
+.companyLogoImg {
     width: 32px;
     height: 52px;
     aspect-ratio: 0.62;
+    cursor: pointer;
     -o-object-fit: contain;
     object-fit: contain;
 }
 
-.showcaseControlsDiv {
+.flexRowNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0 10px;
-    width: 623px;
+    width: 604px;
     min-width: 0;
 }
-
-@media (max-width: 767px) {
-    .showcaseControlsDiv {
+@media (max-width: 991px) {
+    .flexRowNav {
         display: none;
     }
 }
-
-.aboutBtn {
-    display: flex;
-    justify-content: center;
-    min-width: 103px;
+.nav-link {
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(30 30 30);
+    color: rgb(30, 30, 30);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+    padding: 8px;
+}
+.nav-link.active,
+.nav-link:hover {
+    display: flex;
     text-align: center;
+    justify-content: center;
+    color: rgb(30, 30, 30);
     border-radius: 10px;
     padding: 7.5px 18px;
     outline: 2px solid #4e9f3d;
     outline-offset: -2px;
 }
 
-.productLabelP {
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(30 30 30);
-    cursor: pointer;
-    transition-duration: 0.3s;
-    transition-property: box-shadow;
-    padding: 8px;
-}
-
-@media (max-width: 991px) {
-    .productLabelP {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-}
-
-.productLabelP:hover {
-    box-shadow: inset 0 0 0 1.5px #4e9f3d, 0 0 1px rgb(0 0 0 / 0%);
-    border-radius: 10px;
-}
-
-.sustainabilityLabelP {
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(30 30 30);
-    cursor: pointer;
-    transition-duration: 0.3s;
-    transition-property: box-shadow;
-    padding: 8px;
-}
-
-@media (max-width: 991px) {
-    .sustainabilityLabelP {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-}
-
-.sustainabilityLabelP:hover {
-    box-shadow: inset 0 0 0 1.5px #4e9f3d, 0 0 1px rgb(0 0 0 / 0%);
-    border-radius: 10px;
-}
-
-.careerLabelP {
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(30 30 30);
-    cursor: pointer;
-    transition-duration: 0.3s;
-    transition-property: box-shadow;
-    padding: 8px;
-}
-
-@media (max-width: 991px) {
-    .careerLabelP {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-}
-
-.careerLabelP:hover {
-    box-shadow: inset 0 0 0 1.5px #4e9f3d, 0 0 1px rgb(0 0 0 / 0%);
-    border-radius: 10px;
-}
-
-.showcaseRowImagesDiv {
+.flexRowBottom {
     display: flex;
     gap: 0 23px;
     width: 432px;
     min-width: 0;
 }
-
-@media (max-width: 1399px) {
-    .showcaseRowImagesDiv {
-        -moz-column-gap: 20px;
-        column-gap: 20px;
-        width: 390px;
-    }
-}
-
 @media (max-width: 575px) {
-    .showcaseRowImagesDiv {
+    .flexRowBottom {
         -moz-column-gap: 16px;
         column-gap: 16px;
     }
 }
-
 @media (max-width: 479px) {
-    .showcaseRowImagesDiv {
+    .flexRowBottom {
         width: auto;
     }
 }
-
 @media (max-width: 383px) {
-    .showcaseRowImagesDiv {
+    .flexRowBottom {
         -moz-column-gap: 8px;
         column-gap: 8px;
     }
 }
-
-.contentBoxWithSearchDiv {
+.contentBoxContainer {
     position: relative;
     display: flex;
-    flex-direction: column;
     width: 315px;
     min-width: 0;
-    border-radius: 16.5px;
-    outline: 1px solid rgb(250 250 250);
-    outline-offset: -1px;
+    min-height: 33px;
 }
-
-@media (max-width: 1399px) {
-    .contentBoxWithSearchDiv {
-        flex: 0 1 auto;
-        margin: 0 0 0 10px;
-        width: 280px;
-    }
-}
-
 @media (max-width: 479px) {
-    .contentBoxWithSearchDiv {
+    .contentBoxContainer {
         display: none;
     }
 }
-
-.searchImageFig {
+.contentBox {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    border-radius: 16.5px;
+    outline: 1px solid #fafafa;
+    outline-offset: -1px;
+    transform: translate(-50%, 0);
+}
+.searchIconImg {
     position: relative;
     margin: 0 0 0 auto;
     width: 39px;
     height: 33px;
     aspect-ratio: 1.18;
+    -o-object-fit: cover;
     object-fit: cover;
 }
-
-.searchLabelP_box {
+.searchText_box {
     position: absolute;
     top: 4px;
-    left: 19.01251220703125px;
+    left: 19px;
     width: 76%;
     height: 21px;
     /* opacity: 0.5; */
 }
-
 @media (max-width: 991px) {
-    .searchLabelP_box {
+    .searchText_box {
         align-items: flex-start;
     }
 }
-
-.searchLabelP {
+.searchText {
     width: 100%;
-    font: 450 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(0, 0, 0);
+    font: 400 17px/1.23 Montserrat, Helvetica, Arial, serif;
+    color: rgb(30, 30, 30);
     background-color: transparent;
     border: 0;
     padding: 0;
     vertical-align: top;
 }
-
 @media (max-width: 991px) {
-    .searchLabelP {
+    .searchText {
         font-size: 16px;
     }
 }
-
-.searchLabelP:focus {
+.searchText:focus {
     outline: none;
 }
-
-.additionalImage1Fig {
+.additionalImage {
     width: 94px;
     min-width: 0;
     height: 33px;
+    -o-object-fit: cover;
     object-fit: cover;
 }
-
-@media (max-width: 1399px) {
-    .additionalImage1Fig {
-        width: 90px;
-        -o-object-fit: fill;
-        object-fit: fill;
-    }
-}
+/* Sampai Sini */
 
 .showcaseRowHeaderDiv {
     display: flex;

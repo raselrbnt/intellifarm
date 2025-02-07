@@ -73,7 +73,7 @@
             </div>
             <p class="copyrightNotice">
                 <!-- Copyright information for the site. -->
-                © 2024 FarmHUB. All rights reserved.
+                © 2024 Intellifarm. All rights reserved.
             </p>
         </div>
     </div>

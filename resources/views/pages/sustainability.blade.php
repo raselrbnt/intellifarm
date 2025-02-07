@@ -251,7 +251,7 @@
                             </div>
                             <p class="descriptionIoT">
                                 <!-- Description of how IoT technology is used for agricultural efficiency. -->
-                                FarmHUB utilizes Internet of Things
+                                Intellifarm utilizes Internet of Things
                                 (IoT) technology to connect various
                                 tools and sensors in the field. This
                                 allows farmers to obtain real-time data
@@ -298,7 +298,7 @@
                             <p class="descriptionEmissionReduction">
                                 <!-- Description of how the technology helps reduce carbon emissions. -->
                                 With automated irrigation systems and
-                                smart monitoring, FarmHUB helps reduce
+                                smart monitoring, Intellifarm helps reduce
                                 carbon emissions in the agricultural
                                 sector. Efficient resource use means
                                 less wasted energy and an overall
@@ -361,7 +361,7 @@
                     <!-- Subtitle that emphasizes the achievements and impact. -->
                     We are proud of these achievements and continue to
                     strive for a positive impact on agriculture and the
-                    environment. Thank you for supporting FarmHUB on our
+                    environment. Thank you for supporting Intellifarm on our
                     journey towards more sustainable farming.
                 </h3>
                 <button class="supportButton">

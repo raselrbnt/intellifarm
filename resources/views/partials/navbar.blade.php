@@ -5,23 +5,27 @@
         <div class="flexRowTop">
             <!-- Top row containing image and navigation options. -->
             <a href="{{ route('home') }}">
-                <img class="companyLogoImg" src="{{ asset('assets/43fa406488b93e476db137757b3e31be.png') }}" alt="alt text"/>
+                <img class="companyLogoImg" src="{{ asset('assets/farmhub-logo.png') }}" alt="Logo Intellifarm"/>
             </a>
             <div class="flexRowNav">
                 <!-- Navigation items related to the company. -->
-                <a href="{{ route('home') }}" class="aboutText text-decoration-none" >
+                <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" 
+                href="{{ route('home') }}" >
                     <!-- Text indicating the &#x27;About&#x27; section. -->
                     ABOUT
                 </a>
-                <a href="#" class="productText text-decoration-none" >
+                <a class="nav-link {{ Route::currentRouteName() == 'product' ? 'active' : '' }}" 
+                href="{{ Route::has('product') ? route('product') : '#' }}" >
                     <!-- Text indicating the &#x27;Product&#x27; section. -->
                     PRODUCT
                 </a>
-                <a href="{{ route('sustainability') }}" class="sustainabilityText text-decoration-none">
+                <a class="nav-link {{ Route::currentRouteName() == 'sustainability' ? 'active' : '' }}"
+                href="{{ route('sustainability') }}" >
                     <!-- Button to learn more about sustainability efforts. -->
                     SUSTAINABILITY
                 </a>
-                <a href="{{ route('career') }}" class="careerText text-decoration-none">
+                <a class="nav-link {{ Route::currentRouteName() == 'career' ? 'active' : '' }}"
+                href="{{ route('career') }}" >
                     <!-- Text indicating the &#x27;Career&#x27; section. -->
                     CAREER
                 </a>
@@ -46,3 +50,7 @@
         </div>
     </div>
 </section>
+
+@push('styles')
+    <link rel="stylesheet" type="text/css " href="{{ asset('css/navbar.css') }}" />    
+@endpush
