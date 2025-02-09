@@ -146,7 +146,7 @@
                 </h1>
                 <p class="yearHighlightText">
                     <!-- Supporting text highlighting the year 2024. -->
-                    2024
+                    {{ date('Y') }}
                 </p>
             </div>
         </div>
@@ -339,7 +339,7 @@
                         <!-- Content box providing details about research for 2024. -->
                         <p class="highlightResearch2024">
                             <!-- Highlight text for research focused initiatives for 2024. -->
-                            Reasearch 2024
+                            Reasearch {{ date('Y') }}
                         </p>
                     </div>
                 </div>

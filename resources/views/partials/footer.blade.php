@@ -1,6 +1,6 @@
 <section class="contactUsSection">
     <!-- This section contains contact information and links to various company categories. -->
-    <div class="content-Box1">
+    <div class="content-Box1 mb-4">
         <!-- Container for content and visual elements. -->
         <hr class="dividerLine" size="1" />
         <div class="flexColumn1">
@@ -99,34 +99,8 @@
             </div>
             <p class="copyrightNotice">
                 <!-- Copyright information for the site. -->
-                © 2024 Intellifarm. All rights reserved.
+                © {{ date('Y') }} Intellifarm. All rights reserved.
             </p>
-        </div>
-    </div>
-    <div class="contentBox11">
-        <!-- Container for the cookie consent message and action buttons. -->
-        <div class="flex-Row3">
-            <!-- Row for the cookie consent message. -->
-            <p class="cookieConsentMessage">
-                <!-- Message informing users about cookies. -->
-                We use cookies to improve website performance and
-                ensure you get the best experience.
-            </p>
-            <div class="flex-Row4">
-                <!-- Container for action buttons related to cookie consent. -->
-                <a href="#" class="text-decoration-none">
-                    <button class="customizeButton">
-                        <!-- TODO -->
-                        CUSTOMIZE
-                    </button>
-                </a>
-                <a href="#" class="text-decoration-none">
-                    <button class="acceptButton">
-                        <!-- TODO -->
-                        ACCEPT
-                    </button>
-                </a>
-            </div>
         </div>
     </div>
 </section>

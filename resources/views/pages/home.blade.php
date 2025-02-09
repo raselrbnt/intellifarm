@@ -140,7 +140,7 @@
                             <!-- Image related to the event. -->
                             <h1 class="yearTitleH1">
                                 <!-- Title displaying the year of the event. -->
-                                2024
+                                {{ date('Y') }}
                             </h1>
                         </div>
                         <div class="farmHubInfoContainerDiv">
