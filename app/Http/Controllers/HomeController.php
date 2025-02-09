@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Department;
+use App\Models\JobVacancy;
 use App\Models\Report;
 use Illuminate\View\View;
 
@@ -21,7 +23,10 @@ class HomeController extends Controller
 
     public function career(): View
     {
-        return view('pages/career');
+        $departments = Department::all();
+        $jobVacancies = JobVacancy::all();
+
+        return view('pages/career', compact('departments', 'jobVacancies'));
     }
 
     public function contact(): View
