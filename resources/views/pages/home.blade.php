@@ -48,8 +48,8 @@
                         </div>
                     </div>
 
-                    {{-- Bagian div ini diganti ama navbar --}}
-                    <div class="flexRowBottom">
+                    {{-- TODO: Next feature --}}
+                    {{-- <div class="flexRowBottom">
                         <!-- Bottom row containing additional content and images. -->
                         <div class="contentBoxContainer">
                             <!-- Container for content boxes in the bottom row. -->
@@ -65,7 +65,7 @@
                         </div>
                         <img class="additionalImage" src="{{ asset('assets/1e3e16227d24975d44b22e341c50035e.svg') }}"
                             alt="alt text" />
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="showcaseRowHeaderDiv">
                     <!-- Header row for the showcase section. -->
@@ -85,7 +85,7 @@
                                 <!-- Flex row container for rating scores. -->
                                 <h2 class="ratingScoreH2">
                                     <!-- Rating score displayed for the showcase. -->
-                                    4.88
+                                    {{ $report->best_review ?? 0 }}
                                 </h2>
                                 <div class="ratingCommentDiv">
                                     <!-- Container for the rating comment. -->
@@ -108,7 +108,7 @@
                                             <span class="clientsTitleH1_span0">OUR
                                             </span>
                                             <span class="clientsTitleH1_span1">
-                                                15k+
+                                                {{ $report->total_clients ?? 0 }}
                                                 <br />
                                             </span>
                                             <span class="clientsTitleH1_span2">Clients</span>

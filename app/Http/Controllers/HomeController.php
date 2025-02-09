@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Report;
 use Illuminate\View\View;
 
 class HomeController extends Controller
 {
     public function home(): View
     {
-        return view('pages/home');
+        $report = Report::latest()->first();
+
+        return view('pages/home', compact('report'));
     }
 
     public function sustainability(): View
