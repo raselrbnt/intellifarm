@@ -19,34 +19,35 @@
                     <div class="showcaseSubRowDiv">
                         <!-- Sub-row containing main image and controls. -->
                         <a href="{{ route('home') }}">
-                            <img class="companyLogoImg" src="{{ asset('assets/farmhub-logo.png') }}" alt="Logo Intellifarm"/>
+                            <img class="companyLogoImg" src="{{ asset('assets/farmhub-logo.png') }}"
+                                alt="Logo Intellifarm" />
                         </a>
                         <!-- Main showcase image. -->
                         <div class="flexRowNav">
                             <!-- Navigation items related to the company. -->
-                            <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" 
-                            href="{{ route('home') }}" >
+                            <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                                href="{{ route('home') }}">
                                 <!-- Text indicating the &#x27;About&#x27; section. -->
                                 ABOUT
                             </a>
-                            <a class="nav-link {{ Route::currentRouteName() == 'product' ? 'active' : '' }}" 
-                            href="{{ Route::has('product') ? route('product') : '#' }}" >
+                            <a class="nav-link {{ Route::currentRouteName() == 'product' ? 'active' : '' }}"
+                                href="{{ Route::has('product') ? route('product') : '#' }}">
                                 <!-- Text indicating the &#x27;Product&#x27; section. -->
                                 PRODUCT
                             </a>
                             <a class="nav-link {{ Route::currentRouteName() == 'sustainability' ? 'active' : '' }}"
-                            href="{{ route('sustainability') }}" >
+                                href="{{ route('sustainability') }}">
                                 <!-- Button to learn more about sustainability efforts. -->
                                 SUSTAINABILITY
                             </a>
                             <a class="nav-link {{ Route::currentRouteName() == 'career' ? 'active' : '' }}"
-                            href="{{ route('career') }}" >
+                                href="{{ route('career') }}">
                                 <!-- Text indicating the &#x27;Career&#x27; section. -->
                                 CAREER
                             </a>
                         </div>
                     </div>
-                    
+
                     {{-- Bagian div ini diganti ama navbar --}}
                     <div class="flexRowBottom">
                         <!-- Bottom row containing additional content and images. -->
@@ -116,14 +117,14 @@
                                     <hr class="separatorLineHR" size="1" />
                                     <a href="{{ route('contact') }}" class="text-decoration-none">
                                         <button class="contactUsBtn">
-                                        <!-- Button to contact for more information. -->
-                                        <div class="contactUsBtnTextDiv">
-                                            Contact Us
-                                        </div>
-                                        <img class="contactUsBtnIconImg"
-                                            src="{{ asset('assets/9e2f256a748bb3e9be50c1dae6c41687.png') }}"
-                                            alt="alt text" />
-                                        <!-- Icon for the contact us button. -->
+                                            <!-- Button to contact for more information. -->
+                                            <div class="contactUsBtnTextDiv">
+                                                Contact Us
+                                            </div>
+                                            <img class="contactUsBtnIconImg"
+                                                src="{{ asset('assets/9e2f256a748bb3e9be50c1dae6c41687.png') }}"
+                                                alt="alt text" />
+                                            <!-- Icon for the contact us button. -->
                                         </button>
                                     </a>
                                 </div>
