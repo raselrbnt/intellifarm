@@ -5,7 +5,8 @@
     overflow: hidden;
 }
 
-/* Section smartagrikultur */
+/* Navbar Home */
+/* Section 1 smartagrikultur */
 .smartAgricultureSection {
     display: flex;
     flex-direction: column;
@@ -730,7 +731,7 @@
     aspect-ratio: 0.76;
 }
 
-/* section farmintroduction */
+/* section 2 farmintroduction */
 .farmIntroductionSection {
     display: flex;
     flex-direction: column;
@@ -1303,7 +1304,7 @@
     text-align: justify;
 }
 
-/* section meettheteamsection */
+/* section 3 meettheteamsection */
 .meetTheTeamSection {
     display: flex;
     flex-direction: column;
@@ -2522,7 +2523,7 @@
     }
 }
 
-/* section productoverview */
+/* section 4 productoverview */
 .productOverviewSection {
     display: flex;
     flex-direction: column;
@@ -3288,7 +3289,7 @@
     }
 }
 
-/* section trustedcompanies */
+/* section 5 trustedcompanies */
 .trustedCompaniesSection {
     display: flex;
     flex-direction: column;
@@ -3625,6 +3626,7 @@
     color: rgb(30 30 30);
 }
 
+/* Bagian Footer */
 /* section contactus */
 .contactUsSection {
     display: flex;

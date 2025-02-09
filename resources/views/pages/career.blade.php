@@ -36,8 +36,8 @@
                     Benefits
                 </button>
                 <h2 class="whyJoinTitle">
-                    <!-- Title explaining the advantages of joining FarmHUB -->
-                    Why Join FarmHUB
+                    <!-- Title explaining the advantages of joining Intellifarm -->
+                    Why Join Intellifarm
                 </h2>
             </div>
         </div>
@@ -61,7 +61,7 @@
                         <!-- Image representing the company’s advancements in technology. -->
                     </div>
                     <p class="leadingTechnologyDescription">
-                        Joining FarmHUB means being part of a team that
+                        Joining Intellifarm means being part of a team that
                         implements advanced technologies like IoT and AI
                         in agriculture. You will work with the latest
                         innovations that are transforming farming
@@ -102,7 +102,7 @@
                         <!-- Image showcasing the collaborative workplace. -->
                     </div>
                     <p class="dynamicWorkEnvDescription">
-                        FarmHUB offers a dynamic and collaborative work
+                        Intellifarm offers a dynamic and collaborative work
                         environment. You will work with passionate and
                         dedicated professionals who are creating
                         efficient and sustainable farming solutions.
@@ -120,7 +120,7 @@
                         <!-- Image showcasing global project opportunities. -->
                     </div>
                     <p class="globalOpportunitiesDescription">
-                        FarmHUB operates in various regions and offers
+                        Intellifarm operates in various regions and offers
                         opportunities to work on international projects.
                         You will have the chance to contribute on a
                         global scale and expand your professional
@@ -142,7 +142,7 @@
                         <!-- Image representing the culture of innovation. -->
                     </div>
                     <p class="cultureOfInnovationDescription">
-                        FarmHUB fosters a culture of innovation where
+                        Intellifarm fosters a culture of innovation where
                         new and creative ideas are highly valued. You
                         will have the opportunity to contribute to
                         innovative projects that bring real change to
@@ -233,7 +233,7 @@
                                     <span class="frontEndDeveloperDescription_span1">
                                         :
                                         <br />
-                                        Develop and maintain the FarmHUB
+                                        Develop and maintain the Intellifarm
                                         web and mobile application
                                         interfaces.
                                         <br />

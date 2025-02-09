@@ -6,7 +6,7 @@
     @include('partials.navbar')
 
     <section class="contactUsSection">
-        <!-- This section provides a contact form for users to get in touch with FarmHUB. -->
+        <!-- This section provides a contact form for users to get in touch with Intellifarm. -->
         <div class="flexRowContainer1">
             <!-- This container arranges its children in a horizontal row. -->
             <div class="contactInfoGroup">
@@ -24,7 +24,7 @@
                     <p class="contactDescription">
                         <!-- Description text providing additional information about the service. -->
                         We’re here to help you transform your farming
-                        experience with FarmHUB’s innovative technology.
+                        experience with Intellifarm’s innovative technology.
                         Whether you have questions about our products,
                         need support, or just want to learn more, we’d
                         love to hear from you!
@@ -43,7 +43,7 @@
                             <span class="contactInfoTitle_span1">
                                 Phone         : +1 (123) 456-7890
                                 <br />
-                                Email          : farmhubidn@gmail.com
+                                Email          : Intellifarmidn@gmail.com
                                 <br />
                                 Address       : 123 Greenfield Lane,
                                 AgriCity, Jakarta
@@ -158,7 +158,7 @@
                                 <div class="reviewTextContainer">
                                     <p class="clientReviewText">
                                         The smart farming technology
-                                        from FarmHUB is a game-changer.
+                                        from Intellifarm is a game-changer.
                                         It helps me make informed
                                         decisions and boosts crop yields
                                         significantly.
@@ -206,21 +206,21 @@
                                 <img class="linkedInLogo"
                                     src="{{ asset('assets/eb4d26631a1303e52e7befd177ca9d15.png') }}" alt="alt text" />
                                 <p class="linkedInProfileText">
-                                    linkedin.com/company/farmhub-indonesia
+                                    linkedin.com/company/Intellifarm-indonesia
                                 </p>
                             </div>
                             <div class="instagramImageLink">
                                 <img class="instagramLogo"
                                     src="{{ asset('assets/92ccb8107fe76f09399b82f8e33d05b6.png') }}" alt="alt text" />
                                 <p class="instagramProfileText">
-                                    @farmhubindonesia
+                                    @Intellifarmindonesia
                                 </p>
                             </div>
                             <div class="facebookImageLink">
                                 <img class="facebookLogo"
                                     src="{{ asset('assets/e13c85156e49abcc56c7d03c11eaa7e9.png') }}" alt="alt text" />
                                 <p class="facebookProfileText">
-                                    FarmHUB Indonesia
+                                    Intellifarm Indonesia
                                 </p>
                             </div>
                         </h2>
@@ -259,7 +259,7 @@
                             <p class="visitUsDescription">
                                 If you’re in the area, feel free to
                                 visit our office. We’d love to meet you
-                                and show you how FarmHUB can make a
+                                and show you how Intellifarm can make a
                                 difference in your farming operations.
                             </p>
                         </div>

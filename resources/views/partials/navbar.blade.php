@@ -4,30 +4,34 @@
         <!-- Container for the main flex rows in the about us section. -->
         <div class="flexRowTop">
             <!-- Top row containing image and navigation options. -->
-            <img class="companyLogoImg" src="{{ asset('assets/43fa406488b93e476db137757b3e31be.png') }}" alt="alt text"
-                onclick="window.open('{{ url('/') }}', '_self')" />
+            <a href="{{ route('home') }}">
+                <img class="companyLogoImg" src="{{ asset('assets/farmhub-logo.png') }}" alt="Logo Intellifarm" />
+            </a>
             <div class="flexRowNav">
                 <!-- Navigation items related to the company. -->
-                <p class="aboutText" onclick="window.open('{{ url('/') }}', '_self')">
+                <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" href="{{ route('home') }}">
                     <!-- Text indicating the &#x27;About&#x27; section. -->
                     ABOUT
-                </p>
-                <p class="productText" onclick="window.open('{{ url('/product') }}', '_self')">
+                </a>
+                <a class="nav-link {{ Route::currentRouteName() == 'product' ? 'active' : '' }}"
+                    href="{{ Route::has('product') ? route('product') : '#' }}">
                     <!-- Text indicating the &#x27;Product&#x27; section. -->
                     PRODUCT
-                </p>
-                <p class="sustainabilityText" onclick="window.open('{{ url('/sustainability') }}', '_self')">
+                </a>
+                <a class="nav-link {{ Route::currentRouteName() == 'sustainability' ? 'active' : '' }}"
+                    href="{{ route('sustainability') }}">
                     <!-- Button to learn more about sustainability efforts. -->
-                    SUSTAINBILITY
-                </p>
-                <p class="careerText" onclick="window.open('{{ url('/career') }}', '_self')">
+                    SUSTAINABILITY
+                </a>
+                <a class="nav-link {{ Route::currentRouteName() == 'career' ? 'active' : '' }}"
+                    href="{{ route('career') }}">
                     <!-- Text indicating the &#x27;Career&#x27; section. -->
                     CAREER
-                </p>
+                </a>
             </div>
         </div>
         <div class="flexRowBottom">
-            <!-- Bottom row containing additional content and images. -->
+            {{-- <!-- Bottom row containing additional content and images. -->
             <div class="contentBoxContainer">
                 <!-- Container for content boxes in the bottom row. -->
                 <div class="contentBox">
@@ -41,7 +45,11 @@
                 </p>
             </div>
             <img class="additionalImage" src="{{ asset('assets/302958ef4a6811348969a2badbfad7ac.svg') }}"
-                alt="alt text" />
+                alt="alt text" /> --}}
         </div>
     </div>
 </section>
+
+@push('styles')
+    <link rel="stylesheet" type="text/css " href="{{ asset('css/navbar.css') }}" />
+@endpush
