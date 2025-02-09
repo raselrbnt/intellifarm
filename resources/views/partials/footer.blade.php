@@ -106,5 +106,5 @@
 </section>
 
 @push('styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/footer.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/partials/footer.css') }}" />
 @endpush

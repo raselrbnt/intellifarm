@@ -17,35 +17,7 @@
                 <div class="showcaseRowContainerDiv">
                     <!-- Row container for showcasing different elements. -->
                     <div class="showcaseSubRowDiv">
-                        <!-- Sub-row containing main image and controls. -->
-                        <a href="{{ route('home') }}">
-                            <img class="companyLogoImg" src="{{ asset('assets/farmhub-logo.png') }}"
-                                alt="Logo Intellifarm" />
-                        </a>
-                        <!-- Main showcase image. -->
-                        <div class="flexRowNav">
-                            <!-- Navigation items related to the company. -->
-                            <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
-                                href="{{ route('home') }}">
-                                <!-- Text indicating the &#x27;About&#x27; section. -->
-                                ABOUT
-                            </a>
-                            <a class="nav-link {{ Route::currentRouteName() == 'product' ? 'active' : '' }}"
-                                href="{{ Route::has('product') ? route('product') : '#' }}">
-                                <!-- Text indicating the &#x27;Product&#x27; section. -->
-                                PRODUCT
-                            </a>
-                            <a class="nav-link {{ Route::currentRouteName() == 'sustainability' ? 'active' : '' }}"
-                                href="{{ route('sustainability') }}">
-                                <!-- Button to learn more about sustainability efforts. -->
-                                SUSTAINABILITY
-                            </a>
-                            <a class="nav-link {{ Route::currentRouteName() == 'career' ? 'active' : '' }}"
-                                href="{{ route('career') }}">
-                                <!-- Text indicating the &#x27;Career&#x27; section. -->
-                                CAREER
-                            </a>
-                        </div>
+                        @include('partials/navbar-items')
                     </div>
 
                     {{-- TODO: Next feature --}}
@@ -67,6 +39,7 @@
                             alt="alt text" />
                     </div> --}}
                 </div>
+
                 <div class="showcaseRowHeaderDiv">
                     <!-- Header row for the showcase section. -->
                     <div class="heroTitleContainerDiv">
@@ -689,7 +662,6 @@
                     <hr class="horizontalRule51" size="1" />
                 </div>
                 <button class="goBackButton" id="goBackBtn">
-                    <!-- TODO -->
                     Go Back
                 </button>
             </div>

@@ -1,0 +1,32 @@
+.cookieConsentMessage {
+    font: 400 16px/1.6 Play, Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+}
+@media (max-width: 1199px) {
+    .cookieConsentMessage {
+        width: 100%;
+    }
+}
+.customizeButton {
+    display: flex;
+    justify-content: center;
+    min-width: 109px;
+    font: 500 14px/1.17 "Work Sans", Helvetica, Arial, serif;
+    color: rgb(30, 30, 30);
+    text-align: center;
+    border-radius: 13px;
+    padding: 5px 12px;
+    outline: 1px solid rgb(78, 159, 61);
+    outline-offset: -1px;
+}
+.acceptButton {
+    display: flex;
+    justify-content: center;
+    min-width: 84px;
+    font: 500 14px/1.17 "Work Sans", Helvetica, Arial, serif;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    background-color: rgb(78, 159, 61);
+    border-radius: 13px;
+    padding: 5px 14px;
+}

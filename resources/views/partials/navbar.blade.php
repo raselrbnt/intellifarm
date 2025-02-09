@@ -3,35 +3,11 @@
     <div class="flexRowContainer">
         <!-- Container for the main flex rows in the about us section. -->
         <div class="flexRowTop">
-            <!-- Top row containing image and navigation options. -->
-            <a href="{{ route('home') }}">
-                <img class="companyLogoImg" src="{{ asset('assets/farmhub-logo.png') }}" alt="Logo Intellifarm" />
-            </a>
-            <div class="flexRowNav">
-                <!-- Navigation items related to the company. -->
-                <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" href="{{ route('home') }}">
-                    <!-- Text indicating the &#x27;About&#x27; section. -->
-                    ABOUT
-                </a>
-                <a class="nav-link {{ Route::currentRouteName() == 'product' ? 'active' : '' }}"
-                    href="{{ Route::has('product') ? route('product') : '#' }}">
-                    <!-- Text indicating the &#x27;Product&#x27; section. -->
-                    PRODUCT
-                </a>
-                <a class="nav-link {{ Route::currentRouteName() == 'sustainability' ? 'active' : '' }}"
-                    href="{{ route('sustainability') }}">
-                    <!-- Button to learn more about sustainability efforts. -->
-                    SUSTAINABILITY
-                </a>
-                <a class="nav-link {{ Route::currentRouteName() == 'career' ? 'active' : '' }}"
-                    href="{{ route('career') }}">
-                    <!-- Text indicating the &#x27;Career&#x27; section. -->
-                    CAREER
-                </a>
-            </div>
+            @include('partials/navbar-items')
         </div>
-        <div class="flexRowBottom">
-            {{-- <!-- Bottom row containing additional content and images. -->
+
+        {{-- <div class="flexRowBottom">
+            <!-- Bottom row containing additional content and images. -->
             <div class="contentBoxContainer">
                 <!-- Container for content boxes in the bottom row. -->
                 <div class="contentBox">
@@ -45,8 +21,8 @@
                 </p>
             </div>
             <img class="additionalImage" src="{{ asset('assets/302958ef4a6811348969a2badbfad7ac.svg') }}"
-                alt="alt text" /> --}}
-        </div>
+                alt="alt text" />
+        </div> --}}
     </div>
 </section>
 
