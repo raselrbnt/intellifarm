@@ -9,4 +9,5 @@ Route::controller(HomeController::class)
         Route::get('/sustainability', 'sustainability')->name('sustainability');
         Route::get('/career', 'career')->name('career');
         Route::get('/contact', 'contact')->name('contact');
+        Route::get('/redirect/{platform}', 'redirect')->name('redirect.store');
     });

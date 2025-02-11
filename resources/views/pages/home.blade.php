@@ -132,7 +132,7 @@
                                 farmers, consumers, and the environment,
                                 building a greener future.
                             </p>
-                            <button class="getTheAppBtn">
+                            <button class="getTheAppBtn" id="downloadButton">
                                 <!-- Button to download the app. -->
                                 <p class="getTheAppBtnTextP">
                                     <!-- Text label for the download app button. -->
@@ -149,7 +149,7 @@
         </div>
     </section>
 
-    <section class="farmIntroductionSection">
+    <section class="farmIntroductionSection mb-5">
         <!-- Section introducing the Intellifarm application and its benefits for farmers. -->
         <div class="flex_row">
             <div class="flex-row1">
@@ -283,402 +283,374 @@
         </div>
     </section>
 
-    <section class="meetTheTeamSection">
-        <!-- Main section to introduce team members and provide a contact form. -->
-        <div class="flexContainer">
-            <!-- Flex container for arranging team content. -->
-            <div class="teamOverviewColumn">
-                <!-- Column for the main team overview. -->
-                <div class="teamHeaderRow">
-                    <!-- Row containing the &#x27;Meet The Team&#x27; main heading and subtitle. -->
-                    <div class="heroContentRow">
-                        <!-- Row for hero title and images. -->
-                        <img class="teamImage" src="{{ asset('assets/43233b275bb5d90bccc0d14a9813ed42.png') }}"
-                            alt="alt text" />
-                        <h1 class="heroTitle">
-                            <!-- Main title for the team section. -->
-                            Our  Team
-                        </h1>
-                    </div>
-                    <h3 class="sectionSubtitle">
-                        <!-- Subtitle for the team section. -->
-                        02
-                    </h3>
-                </div>
-                <div class="teamMemberRow">
-                    <!-- Row containing team members and their details. -->
-                    <div class="teamImagesColumn">
-                        <!-- Column containing team images. -->
-                        <div class="imageGalleryRow">
-                            <!-- Row for displaying images of team members. -->
-                            <img class="memberImage1" src="{{ asset('assets/cb4e08cee3d1794afe3b6b267380dfee.png') }}"
-                                alt="member-img1"
-                                onclick="selectImage(this, '{{ asset('assets/cb4e08cee3d1794afe3b6b267380dfee.png') }}', 'Orang 1', 'Leader')" />
-                            <img class="memberImage2" src="{{ asset('assets/3a8b79939f00c09c608dc39296a19b20.png') }}"
-                                alt="alt text"
-                                onclick="selectImage(this, '{{ asset('assets/3a8b79939f00c09c608dc39296a19b20.png') }}', 'Orang 2', 'Co-Leader')" />
-                            <img class="memberImage3" src="{{ asset('assets/fbcf7565f85696cc569636a81786c61f.png') }}"
-                                alt="alt text"
-                                onclick="selectImage(this, '{{ asset('assets/fbcf7565f85696cc569636a81786c61f.png') }}', 'Orang 2', 'Assistant')" />
-                            <img class="memberImage4" src="{{ asset('assets/6ee876c665651b2a8f2489cf75a21d4f.png') }}"
-                                alt="alt text"
-                                onclick="selectImage(this, '{{ asset('assets/6ee876c665651b2a8f2489cf75a21d4f.png') }}', 'Orang 2', 'Co-Assistant')" />
-                        </div>
-
-                        <div class="contactFormBox"
-                            style="
-                                    --src: url('{{ asset('assets/cb26cb916d47bd0a57ddeda8d6a0c941.png') }}');
-                                    ">
-                            <!-- Box containing the contact form for sending messages. -->
-                            <div class="contactFormRow">
-                                <!-- Row for the contact form elements. -->
-                                <h3 class="contactFormTitle">
-                                    <!-- Title for the contact form. -->
-                                    send massage
-                                </h3>
-                                <div class="contactInputBox">
-                                    <!-- Box for the contact form input and button. -->
-                                    <p class="contactInputLabel_box">
-                                        <!-- Label for input field in the contact form. -->
-                                        <input type="text" class="contactInputLabel" placeholder="Type" />
-                                    </p>
-                                    <button class="sendButton">
-                                        <!-- Button to send the message from the contact form. -->
-                                        Send
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="teamMembersColumn">
-                                <!-- Column containing individual team member details. -->
-                                <div class="individualMemberImageColumn">
-                                    <!-- Column for a team member&#x27;s image. -->
-                                    <img id="mainImage" class="individualMemberImage"
-                                        src="{{ asset('assets/434bd661506628de1d7108a43c7945c3.png') }}"
-                                        alt="alt text" />
-                                    <div class="memberDetailsColumn">
-                                        <!-- Column for displaying team member details. -->
-                                        <h3 id="mainTitle" class="memberName">
-                                            <!-- Name of the team member. -->
-                                            Richard Sean
-                                        </h3>
-                                        <p id="mainPosition" class="memberPosition">
-                                            <!-- Position of the team member. -->
-                                            ( President Commissioner )
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="additionalImagesContainer">
-                                    <!-- Container for additional images of team members. -->
-                                    <div class="additionalImagesRow">
-                                        <!-- Row for displaying additional team member images. -->
-                                        <img class="additionalImage1"
-                                            src="{{ asset('assets/9219bb42433fb7b3e1cb1f9e89d64dcc.png') }}"
-                                            alt="alt text" />
-                                        <img class="additionalImage2"
-                                            src="{{ asset('assets/61f864c946f7d38125947b8b8daccad6.png') }}"
-                                            alt="alt text" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="teamQuoteRow">
-                        <!-- Row containing the motivational quote and join button. -->
-                        <div class="quoteColumn">
-                            <!-- Column containing the quote content. -->
-                            <img class="quoteImage" src="{{ asset('assets/8308732b423b578053460bbdd052c506.png') }}"
+    @if (count($teams))
+        <section class="meetTheTeamSection">
+            <!-- Main section to introduce team members and provide a contact form. -->
+            <div class="flexContainer">
+                <!-- Flex container for arranging team content. -->
+                <div class="teamOverviewColumn">
+                    <!-- Column for the main team overview. -->
+                    <div class="teamHeaderRow">
+                        <!-- Row containing the &#x27;Meet The Team&#x27; main heading and subtitle. -->
+                        <div class="heroContentRow">
+                            <!-- Row for hero title and images. -->
+                            <img class="teamImage" src="{{ asset('assets/43233b275bb5d90bccc0d14a9813ed42.png') }}"
                                 alt="alt text" />
-                            <p class="quoteText">
-                                <!-- Inspirational quote about sustainability. -->
-                                “ We are not only working for today but
-                                for a better future. Sustainability is
-                                our commitment to the Earth and future
-                                generations. “
-                            </p>
-                            <div class="joinButtonContainer" onclick="window.open('{{ url('/Career') }}', `_self`)">
-                                <!-- Container for join button element. -->
-                                <button class="joinTeamButton" onclick="window.open('{{ url('/Career') }}', `_self`)">
-                                    <!-- Button to join the team. -->
-                                    Join Our Team
-                                </button>
-                                <img class="joinButtonImage"
-                                    src="{{ asset('assets/a1abb782cb16e447ba9ce7954fea1b2a.png') }}" alt="alt text"
-                                    onclick="window.open('{{ url('/Career') }}', `_self`)" />
-                            </div>
-                        </div>
-                        <div class="teamStatisticsContainer">
-                            <!-- Container for displaying team statistics. -->
-                            <div class="statisticsColumn">
-                                <!-- Column containing various team statistics. -->
-                                <div class="consultationTeamStatsRow">
-                                    <!-- Row for consultation team statistics. -->
-                                    <h3 class="consultationTeamCount">
-                                        <!-- Number of consultation team members. -->
-                                        2+
-                                    </h3>
-                                    <h3 class="consultationTeamTitle">
-                                        <!-- Title for consultation team. -->
-                                        Consultation Team
-                                    </h3>
-                                </div>
-                                <div class="marketingTeamStatsRow">
-                                    <!-- Row for marketing team statistics. -->
-                                    <h3 class="marketingTeamCount">
-                                        <!-- Number of marketing team members. -->
-                                        7+
-                                    </h3>
-                                    <h3 class="marketingTeamTitle">
-                                        <!-- Title for marketing team. -->
-                                        Marketing Team
-                                    </h3>
-                                </div>
-                                <div class="managementTeamStatsRow">
-                                    <!-- Row for management team statistics. -->
-                                    <h3 class="managementTeamCount">
-                                        <!-- Number of management team members. -->
-                                        4+
-                                    </h3>
-                                    <h3 class="managementTeamTitle">
-                                        <!-- Title for management team. -->
-                                        Management and Administration
-                                    </h3>
-                                </div>
-                                <div class="fieldTechniciansStatsRow">
-                                    <!-- Row for field technicians team statistics. -->
-                                    <h3 class="fieldTechniciansCount">
-                                        <!-- Number of field technicians. -->
-                                        6+
-                                    </h3>
-                                    <h3 class="fieldTechniciansTitle">
-                                        <!-- Title for field technicians. -->
-                                        Field Technicians
-                                    </h3>
-                                </div>
-                                <div class="iotSpecialistsStatsRow">
-                                    <!-- Row for IoT specialists team statistics. -->
-                                    <h3 class="iotSpecialistsCount">
-                                        <!-- Number of IoT specialists. -->
-                                        4+
-                                    </h3>
-                                    <h3 class="iotSpecialistsTitle">
-                                        <!-- Title for IoT specialists. -->
-                                        IoT Specialist Team
-                                    </h3>
-                                </div>
-                                <div class="customerSupportStatsRow">
-                                    <!-- Row for customer support team statistics. -->
-                                    <h3 class="customerSupportCount">
-                                        <!-- Number of customer support members. -->
-                                        8+
-                                    </h3>
-                                    <h3 class="customerSupportTitle">
-                                        <!-- Title for customer support team. -->
-                                        Customer Support
-                                    </h3>
-                                </div>
-                                <div class="logisticsOperationsStatsRow">
-                                    <!-- Row for logistics and operations team statistics. -->
-                                    <h3 class="logisticsOperationsCount">
-                                        <!-- Number of logistics and operations team members. -->
-                                        4+
-                                    </h3>
-                                    <h3 class="logisticsOperationsTitle">
-                                        <!-- Title for logistics and operations team. -->
-                                        Logistics and Operations Team
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="decorativeGroup"
-                style="
-                        --src: url('{{ asset('assets/0a380a417543988e9eb63fc474442010.png') }}');">
-                <!-- Group for decorative elements. -->
-                <img class="decorativeImage" src="{{ asset('assets/a565f3cffdb5eded4c6775846a5e36c9.svg') }}"
-                    alt="alt text" />
-            </div>
-        </div>
-    </section>
-
-    <section class="productOverviewSection">
-        <!-- Main section showcasing the product offerings. -->
-        <div class="flexRow1">
-            <!-- First horizontal flex container for product highlights. -->
-            <div class="flexCol1">
-                <!-- First vertical flex container within the product section. -->
-                <h1 class="productHeroTitle_box">
-                    <!-- Main title for the products showcased. -->
-                    <span class="productHeroTitle">
-                        <span class="productHeroTitle_span0">OUR</span>
-                        <span class="productHeroTitle_span1"> </span>
-                        <span class="productHeroTitle_span2" style="font-size: 60px"><strong>PRODUCT</strong></span>
-                    </span>
-                </h1>
-                <div class="flex-row">
-                    <div class="rect22"></div>
-                    <div class="rect23"></div>
-                    <div class="rect23"></div>
-                    <div class="rect24"></div>
-                </div>
-            </div>
-            <div class="flex_row1">
-                <img class="productImage1" src="{{ asset('assets/eec8b7add76f850595e494037df7f050.png') }}"
-                    alt="alt text" />
-                <!-- Image representing the first product. -->
-                <img class="productImage2" src="{{ asset('assets/80bff0aecf7412c69fd52bd875ef5e31.png') }}"
-                    alt="alt text" />
-                <!-- Image representing the second product. -->
-            </div>
-        </div>
-        <div class="contentBox2"
-            style="
-                        --src: url('{{ asset('assets/872ea7074f98b71c60e44801189526e3.png') }}');">
-            <!-- Container for buttons and additional product details. -->
-            <div class="flex-col">
-                <div class="flexRow3">
-                    <!-- Flex container for buttons related to products. -->
-                    <div class="flexRow4">
-                        <!-- Flex container for action buttons. -->
-                        <button class="ioTTechnologyButton">
-                            <!-- Button to learn more about IoT Technology. -->
-                            IoT Technology
-                        </button>
-                        <button class="farmHubAppButton">
-                            <!-- Button to access the Intellifarm App. -->
-                            Intellifarm App
-                        </button>
-                        <button class="agroMarketButton">
-                            <!-- Button to explore the Agro Market. -->
-                            Agro Market
-                        </button>
-                        <button class="greenAcademyButton">
-                            <!-- Button for Green+ Academy. -->
-                            Green+ Academy
-                        </button>
-                    </div>
-                    <div class="flexRow5">
-                        <!-- Flex container for viewing more products. -->
-                        <h3 class="viewMoreSubtitle">
-                            <!-- Subtitle for additional product view action. -->
-                            View More
-                        </h3>
-                        <img class="image28" src="{{ asset('assets/d8c3ab07ca06eb446f4c4e6f1a99ffda.png') }}"
-                            alt="alt text" />
-                    </div>
-                </div>
-                <div class="flexRow6">
-                    <!-- Flex container for displaying technology overview. -->
-                    <div class="flexCol2">
-                        <!-- Vertical flex container for IoT product details. -->
-                        <h1 class="ioTTechnologyTitle">
-                            <!-- Title for the IoT Technology section. -->
-                            IoT Technology
-                        </h1>
-                        <p class="ioTTechnologyDescription">
-                            <!-- Description of IoT technology used in products. -->
-                            Intellifarm leverages Internet of Things (IoT)
-                            technology to provide advanced solutions in
-                            farm management. IoT is a network of
-                            physical devices equipped with technology to
-                            communicate and exchange data with other
-                            devices and systems over the internet. This
-                            technology connects various tools and
-                            sensors in the field, allowing farmers to
-                            access real-time data.
-                            <br />
-                            <br />
-                            Intellifarm&#x27;s IoT technology is an
-                            innovative solution that transforms the way
-                            farmers manage their fields, making it an
-                            essential tool for more efficient and
-                            responsive modern agriculture.
-                        </p>
-                    </div>
-                    <div class="contentBox1">
-                        <!-- Container for additional resources and images. -->
-                        <div class="flexRow7">
-                            <!-- Flex container for product images. -->
-                            <img class="productImage3" src="{{ asset('assets/bca69fdc89bac0d8bfbce80d0d7e52b4.png') }}"
-                                alt="alt text" />
-                            <!-- Image representing another product. -->
-                            <img class="productImage4" src="{{ asset('assets/7e94f69f337b4b674f0a3d82ed71ece6.png') }}"
-                                alt="alt text" />
-                            <!-- Image representing another product. -->
-                            <img class="productImage5" src="{{ asset('assets/bca69fdc89bac0d8bfbce80d0d7e52b4.png') }}"
-                                alt="alt text" />
-                            <!-- Image representing another product. -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flexRow8">
-            <!-- Flex container for product offerings description. -->
-            <p class="productRangeDescription">
-                <!-- Description of the range of products offered. -->
-                At Intellifarm, we offer a range of innovative products
-                designed to enhance and simplify modern farming
-                practices. Our solutions integrate the latest in IoT
-                technology, data analytics, and AI to provide farmers
-                with the tools they need to succeed.
-            </p>
-            <h3 class="productAgeSubtitle">
-                <!-- Subtitle for product age indicator. -->
-                03
-            </h3>
-        </div>
-        <div class="additionalInfoRect"></div>
-        <!-- Rectangular section for additional information. -->
-    </section>
-
-    <section class="trustedCompaniesSection">
-        <!-- Section displaying trusted companies and related information. -->
-        <div class="flexContainerCol">
-            <div class="flexContainerCol1">
-                <div class="flexContainerCol2">
-                    <hr class="horizontalRule5" size="1" />
-                    <div class="flexContainerCol3">
-                        <div class="flexContainerCol4">
-                            <h3 class="sectionSubtitle04">04</h3>
-                            <h1 class="trustedByCompaniesTitle">
-                                TRUSTED BY MANY COMPANY
+                            <h1 class="heroTitle">
+                                <!-- Main title for the team section. -->
+                                Our  Team
                             </h1>
                         </div>
-                        <div class="flexContainerRow">
-                            <img class="trustedCompanyLogo1"
-                                src="{{ asset('assets/fe91d9425af2d7895d0b688241db37ff.png') }}" alt="alt text" />
-                            <img class="trustedCompanyLogo2"
-                                src="{{ asset('assets/623bcab14d80e5723575ee1efc5a0f09.png') }}" alt="alt text" />
-                            <img class="trustedCompanyLogo3"
-                                src="{{ asset('assets/66b9dca326f4a70ab787c36284073a9a.png') }}" alt="alt text" />
-                            <img class="trustedCompanyLogo4"
-                                src="{{ asset('assets/f7770fae54be05492c19b543d37f34d1.png') }}" alt="alt text" />
-                            <img class="trustedCompanyLogo5"
-                                src="{{ asset('assets/6c75dbf832009c90d2804e1108745a47.png') }}" alt="alt text" />
+                        <h3 class="sectionSubtitle">
+                            <!-- Subtitle for the team section. -->
+                            02
+                        </h3>
+                    </div>
+                    <div class="teamMemberRow">
+                        <!-- Row containing team members and their details. -->
+                        <div class="teamImagesColumn">
+                            <!-- Column containing team images. -->
+                            <div class="imageGalleryRow">
+                                <!-- Row for displaying images of team members. -->
+                                <img class="memberImage1"
+                                    src="{{ asset('assets/cb4e08cee3d1794afe3b6b267380dfee.png') }}" alt="member-img1"
+                                    onclick="selectImage(this, '{{ asset('assets/cb4e08cee3d1794afe3b6b267380dfee.png') }}', 'Orang 1', 'Leader')" />
+                                <img class="memberImage2"
+                                    src="{{ asset('assets/3a8b79939f00c09c608dc39296a19b20.png') }}" alt="alt text"
+                                    onclick="selectImage(this, '{{ asset('assets/3a8b79939f00c09c608dc39296a19b20.png') }}', 'Orang 2', 'Co-Leader')" />
+                                <img class="memberImage3"
+                                    src="{{ asset('assets/fbcf7565f85696cc569636a81786c61f.png') }}" alt="alt text"
+                                    onclick="selectImage(this, '{{ asset('assets/fbcf7565f85696cc569636a81786c61f.png') }}', 'Orang 2', 'Assistant')" />
+                                <img class="memberImage4"
+                                    src="{{ asset('assets/6ee876c665651b2a8f2489cf75a21d4f.png') }}" alt="alt text"
+                                    onclick="selectImage(this, '{{ asset('assets/6ee876c665651b2a8f2489cf75a21d4f.png') }}', 'Orang 2', 'Co-Assistant')" />
+                            </div>
+
+                            <div class="contactFormBox"
+                                style="
+                                        --src: url('{{ asset('assets/cb26cb916d47bd0a57ddeda8d6a0c941.png') }}');
+                                        ">
+                                <!-- Box containing the contact form for sending messages. -->
+                                <div class="contactFormRow">
+                                    <!-- Row for the contact form elements. -->
+                                    <h3 class="contactFormTitle">
+                                        <!-- Title for the contact form. -->
+                                        send massage
+                                    </h3>
+                                    <div class="contactInputBox">
+                                        <!-- Box for the contact form input and button. -->
+                                        <p class="contactInputLabel_box">
+                                            <!-- Label for input field in the contact form. -->
+                                            <input type="text" class="contactInputLabel" placeholder="Type" />
+                                        </p>
+                                        <button class="sendButton">
+                                            <!-- Button to send the message from the contact form. -->
+                                            Send
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="teamMembersColumn">
+                                    <!-- Column containing individual team member details. -->
+                                    <div class="individualMemberImageColumn">
+                                        <!-- Column for a team member&#x27;s image. -->
+                                        <img id="mainImage" class="individualMemberImage"
+                                            src="{{ asset('assets/434bd661506628de1d7108a43c7945c3.png') }}"
+                                            alt="alt text" />
+                                        <div class="memberDetailsColumn">
+                                            <!-- Column for displaying team member details. -->
+                                            <h3 id="mainTitle" class="memberName">
+                                                <!-- Name of the team member. -->
+                                                Richard Sean
+                                            </h3>
+                                            <p id="mainPosition" class="memberPosition">
+                                                <!-- Position of the team member. -->
+                                                ( President Commissioner )
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="additionalImagesContainer">
+                                        <!-- Container for additional images of team members. -->
+                                        <div class="additionalImagesRow">
+                                            <!-- Row for displaying additional team member images. -->
+                                            <img class="additionalImage1"
+                                                src="{{ asset('assets/9219bb42433fb7b3e1cb1f9e89d64dcc.png') }}"
+                                                alt="alt text" />
+                                            <img class="additionalImage2"
+                                                src="{{ asset('assets/61f864c946f7d38125947b8b8daccad6.png') }}"
+                                                alt="alt text" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamQuoteRow">
+                            <!-- Row containing the motivational quote and join button. -->
+                            <div class="quoteColumn">
+                                <!-- Column containing the quote content. -->
+                                <img class="quoteImage" src="{{ asset('assets/8308732b423b578053460bbdd052c506.png') }}"
+                                    alt="alt text" />
+                                <p class="quoteText">
+                                    <!-- Inspirational quote about sustainability. -->
+                                    “ We are not only working for today but
+                                    for a better future. Sustainability is
+                                    our commitment to the Earth and future
+                                    generations. “
+                                </p>
+                                <div class="joinButtonContainer" onclick="window.open('{{ url('/Career') }}', `_self`)">
+                                    <!-- Container for join button element. -->
+                                    <button class="joinTeamButton"
+                                        onclick="window.open('{{ url('/Career') }}', `_self`)">
+                                        <!-- Button to join the team. -->
+                                        Join Our Team
+                                    </button>
+                                    <img class="joinButtonImage"
+                                        src="{{ asset('assets/a1abb782cb16e447ba9ce7954fea1b2a.png') }}" alt="alt text"
+                                        onclick="window.open('{{ url('/Career') }}', `_self`)" />
+                                </div>
+                            </div>
+                            <div class="teamStatisticsContainer">
+                                <!-- Container for displaying team statistics. -->
+                                <div class="statisticsColumn">
+                                    <!-- Column containing various team statistics. -->
+                                    <div class="consultationTeamStatsRow">
+                                        <!-- Row for consultation team statistics. -->
+                                        <h3 class="consultationTeamCount">
+                                            <!-- Number of consultation team members. -->
+                                            2+
+                                        </h3>
+                                        <h3 class="consultationTeamTitle">
+                                            <!-- Title for consultation team. -->
+                                            Consultation Team
+                                        </h3>
+                                    </div>
+                                    <div class="marketingTeamStatsRow">
+                                        <!-- Row for marketing team statistics. -->
+                                        <h3 class="marketingTeamCount">
+                                            <!-- Number of marketing team members. -->
+                                            7+
+                                        </h3>
+                                        <h3 class="marketingTeamTitle">
+                                            <!-- Title for marketing team. -->
+                                            Marketing Team
+                                        </h3>
+                                    </div>
+                                    <div class="managementTeamStatsRow">
+                                        <!-- Row for management team statistics. -->
+                                        <h3 class="managementTeamCount">
+                                            <!-- Number of management team members. -->
+                                            4+
+                                        </h3>
+                                        <h3 class="managementTeamTitle">
+                                            <!-- Title for management team. -->
+                                            Management and Administration
+                                        </h3>
+                                    </div>
+                                    <div class="fieldTechniciansStatsRow">
+                                        <!-- Row for field technicians team statistics. -->
+                                        <h3 class="fieldTechniciansCount">
+                                            <!-- Number of field technicians. -->
+                                            6+
+                                        </h3>
+                                        <h3 class="fieldTechniciansTitle">
+                                            <!-- Title for field technicians. -->
+                                            Field Technicians
+                                        </h3>
+                                    </div>
+                                    <div class="iotSpecialistsStatsRow">
+                                        <!-- Row for IoT specialists team statistics. -->
+                                        <h3 class="iotSpecialistsCount">
+                                            <!-- Number of IoT specialists. -->
+                                            4+
+                                        </h3>
+                                        <h3 class="iotSpecialistsTitle">
+                                            <!-- Title for IoT specialists. -->
+                                            IoT Specialist Team
+                                        </h3>
+                                    </div>
+                                    <div class="customerSupportStatsRow">
+                                        <!-- Row for customer support team statistics. -->
+                                        <h3 class="customerSupportCount">
+                                            <!-- Number of customer support members. -->
+                                            8+
+                                        </h3>
+                                        <h3 class="customerSupportTitle">
+                                            <!-- Title for customer support team. -->
+                                            Customer Support
+                                        </h3>
+                                    </div>
+                                    <div class="logisticsOperationsStatsRow">
+                                        <!-- Row for logistics and operations team statistics. -->
+                                        <h3 class="logisticsOperationsCount">
+                                            <!-- Number of logistics and operations team members. -->
+                                            4+
+                                        </h3>
+                                        <h3 class="logisticsOperationsTitle">
+                                            <!-- Title for logistics and operations team. -->
+                                            Logistics and Operations Team
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <hr class="horizontalRule51" size="1" />
                 </div>
-                <button class="goBackButton" id="goBackBtn">
-                    Go Back
-                </button>
+                <div class="decorativeGroup"
+                    style="
+                            --src: url('{{ asset('assets/0a380a417543988e9eb63fc474442010.png') }}');">
+                    <!-- Group for decorative elements. -->
+                    <img class="decorativeImage" src="{{ asset('assets/a565f3cffdb5eded4c6775846a5e36c9.svg') }}"
+                        alt="alt text" />
+                </div>
             </div>
-            <h3 class="assistanceSubtitle_box">
-                <span class="assistanceSubtitle">
-                    <span class="assistanceSubtitle_span0">Got questions or need assistance?
+        </section>
+    @endif
+
+    @if (count($products))
+        <section class="productOverviewSection">
+            <!-- Main section showcasing the product offerings. -->
+            <div class="flexRow1">
+                <!-- First horizontal flex container for product highlights. -->
+                <div class="flexCol1">
+                    <!-- First vertical flex container within the product section. -->
+                    <h1 class="productHeroTitle_box">
+                        <!-- Main title for the products showcased. -->
+                        <span class="productHeroTitle">
+                            <span class="productHeroTitle_span0">OUR</span>
+                            <span class="productHeroTitle_span1"> </span>
+                            <span class="productHeroTitle_span2" style="font-size: 60px"><strong>PRODUCT</strong></span>
+                        </span>
+                    </h1>
+                    <div class="flex-row">
+                        @foreach ($products as $product)
+                            <div class="rect22"></div>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="flex_row1">
+                    @if (count($products))
+                        <img class="productImage1" src="{{ asset('assets/eec8b7add76f850595e494037df7f050.png') }}"
+                            alt="alt text" />
+                        <!-- Image representing the first product. -->
+                        <img class="productImage2" src="{{ asset('assets/80bff0aecf7412c69fd52bd875ef5e31.png') }}"
+                            alt="alt text" />
+                        <!-- Image representing the second product. -->
+                    @endif
+                </div>
+            </div>
+            <div class="contentBox2"
+                style="
+                        --src: url('{{ asset('assets/872ea7074f98b71c60e44801189526e3.png') }}');">
+                <!-- Container for buttons and additional product details. -->
+                <div class="flex-col">
+                    <div class="flexRow3">
+                        <!-- Flex container for buttons related to products. -->
+                        <div class="flexRow4">
+                            @foreach ($products as $product)
+                                <!-- Flex container for action buttons. -->
+                                <button class="ioTTechnologyButton">
+                                    <!-- Button to learn more about IoT Technology. -->
+                                    {{ $product->name }}
+                                </button>
+                            @endforeach
+                        </div>
+                        <div class="flexRow5">
+                            <!-- Flex container for viewing more products. -->
+                            <h3 class="viewMoreSubtitle">
+                                <!-- Subtitle for additional product view action. -->
+                                View More
+                            </h3>
+                            <img class="image28" src="{{ asset('assets/d8c3ab07ca06eb446f4c4e6f1a99ffda.png') }}"
+                                alt="alt text" />
+                        </div>
+                    </div>
+                    <div class="flexRow6">
+                        <!-- Flex container for displaying technology overview. -->
+                        <div class="flexCol2">
+                            <!-- Vertical flex container for IoT product details. -->
+                            <h1 class="ioTTechnologyTitle">
+                                <!-- Title for the IoT Technology section. -->
+                                @if (count($products))
+                                    {{ $products[0]->name ?? null }}
+                                @endif
+                            </h1>
+                            <p class="ioTTechnologyDescription">
+                                @if (count($products))
+                                    {{ $products[0]->description ?? null }}
+                                @endif
+                            </p>
+                        </div>
+                        <div class="contentBox1">
+                            <!-- Container for additional resources and images. -->
+                            <div class="flexRow7">
+                                @if (count($products))
+                                    {{ $products[0]->image ?? null }}
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flexRow8">
+                <!-- Flex container for product offerings description. -->
+                <p class="productRangeDescription">
+                    <!-- Description of the range of products offered. -->
+                    At Intellifarm, we offer a range of innovative products
+                    designed to enhance and simplify modern farming
+                    practices. Our solutions integrate the latest in IoT
+                    technology, data analytics, and AI to provide farmers
+                    with the tools they need to succeed.
+                </p>
+                <h3 class="productAgeSubtitle">
+                    <!-- Subtitle for product age indicator. -->
+                    03
+                </h3>
+            </div>
+            <div class="additionalInfoRect"></div>
+            <!-- Rectangular section for additional information. -->
+        </section>
+    @endif
+
+    @if (count($companies))
+        <section class="trustedCompaniesSection">
+            <!-- Section displaying trusted companies and related information. -->
+            <div class="flexContainerCol">
+                <div class="flexContainerCol1">
+                    <div class="flexContainerCol2">
+                        <hr class="horizontalRule5" size="1" />
+                        <div class="flexContainerCol3">
+                            <div class="flexContainerCol4">
+                                <h3 class="sectionSubtitle04">04</h3>
+                                <h1 class="trustedByCompaniesTitle">
+                                    TRUSTED BY MANY COMPANY
+                                </h1>
+                            </div>
+                            <div class="flexContainerRow">
+                                @foreach ($companies as $company)
+                                    <img class="trustedCompanyLogo1" src="{{ asset($company->logo) }}" alt="alt text" />
+                                @endforeach
+                            </div>
+                        </div>
+                        <hr class="horizontalRule51" size="1" />
+                    </div>
+                    <button class="goBackButton" id="goBackBtn">
+                        Go Back
+                    </button>
+                </div>
+                <h3 class="assistanceSubtitle_box">
+                    <span class="assistanceSubtitle">
+                        <span class="assistanceSubtitle_span0">Got questions or need assistance?
+                        </span>
+                        <a href="{{ route('contact') }}" class="text-decoration-none">
+                            <span class="assistanceSubtitle_span1">Contact us</span>
+                        </a>
+                        <span class="assistanceSubtitle_span2">
+                            anytime and we’ll get back to you as soon as
+                            possible.</span>
                     </span>
-                    <a href="{{ route('contact') }}" class="text-decoration-none">
-                        <span class="assistanceSubtitle_span1">Contact us</span>
-                    </a>
-                    <span class="assistanceSubtitle_span2">
-                        anytime and we’ll get back to you as soon as
-                        possible.</span>
-                </span>
-            </h3>
-        </div>
-    </section>
+                </h3>
+            </div>
+        </section>
+    @endif
 
     @include('partials.footer')
 @endsection
