@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Team;
-use App\Models\Report;
 use App\Models\Company;
-use App\Models\Product;
-use Illuminate\View\View;
+use App\Models\CompanyInfo;
 use App\Models\Department;
 use App\Models\JobVacancy;
-use App\Models\CompanyInfo;
-use App\Models\SocialMediaAccount;
+use App\Models\Product;
+use App\Models\Report;
+use App\Models\Team;
 use Illuminate\Http\RedirectResponse;
+use App\Models\SocialMediaAccount;
+use Illuminate\View\View;
 
 class HomeController extends Controller
 {
