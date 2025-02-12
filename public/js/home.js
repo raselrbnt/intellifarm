@@ -18,3 +18,15 @@ let goBackBtn = document.getElementById("goBackBtn");
 goBackBtn.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+document.getElementById('downloadButton').addEventListener('click', function() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = '{{ route("redirect.store", ["platform" => "ios"]) }}';
+    } else if (/android/i.test(userAgent)) {
+        window.location.href = '{{ route("redirect.store", ["platform" => "android"]) }}';
+    } else {
+        window.location.href = '{{ route("redirect.store", ["platform" => "web"]) }}';
+    }
+});
