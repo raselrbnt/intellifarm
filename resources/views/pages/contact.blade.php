@@ -202,7 +202,15 @@
                         <!-- Row layout for social media connections. -->
                         <h2 class="socialMediaTitle">
                             Connect With Us On Social Media
-                            <div class="linkedInImageLink">
+                            @foreach ($socialMediaAccounts as $account)
+                                <div class="{{ strtolower($account->name) }}ImageLink">
+                                    <img class="{{ strtolower($account->name) }}Logo" src="{{ asset('assets/' . $account->icon) }}" alt="alt text">
+                                    <a href="{{ $account->url }}" class="{{ strtolower($account->name) }}ProfileText hover-underline" target="_blank">
+                                        {{ $account->url }}
+                                    </a>
+                                </div>
+                            @endforeach
+                            {{-- <div class="linkedInImageLink">
                                 <img class="linkedInLogo"
                                     src="{{ asset('assets/eb4d26631a1303e52e7befd177ca9d15.png') }}" alt="alt text" />
                                 <p class="linkedInProfileText">
@@ -222,7 +230,7 @@
                                 <p class="facebookProfileText">
                                     Intellifarm Indonesia
                                 </p>
-                            </div>
+                            </div> --}}
                         </h2>
                         <div class="flexColumnForAudienceStats"
                             style="

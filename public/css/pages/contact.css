@@ -1050,32 +1050,38 @@
         font-size: 20px;
     }
 }
-.linkedInImageLink {
+.hover-underline {
+    text-decoration: none;
+}
+.hover-underline:hover {
+    text-decoration: underline;
+}
+.linkedinImageLink {
     display: flex;
     gap: 0 18px;
     margin: 25px 0 0;
     width: 96.96%;
 }
 @media (max-width: 1399px) {
-    .linkedInImageLink {
+    .linkedinImageLink {
         margin: 20px 40px 0 0;
         width: 320px;
     }
 }
 @media (max-width: 575px) {
-    .linkedInImageLink {
+    .linkedinImageLink {
         -moz-column-gap: 16px;
         column-gap: 16px;
     }
 }
 @media (max-width: 383px) {
-    .linkedInImageLink {
+    .linkedinImageLink {
         flex-direction: column;
         align-items: center;
         gap: 30px 8px;
     }
 }
-.linkedInLogo {
+.linkedinLogo {
     width: 27px;
     height: 27px;
     aspect-ratio: 1;
@@ -1083,30 +1089,30 @@
     object-fit: cover;
 }
 @media (max-width: 1399px) {
-    .linkedInLogo {
+    .linkedinLogo {
         width: 25px;
         height: 25px;
     }
 }
 @media (max-width: 383px) {
-    .linkedInLogo {
+    .linkedinLogo {
         width: 100%;
         max-width: 27px;
     }
 }
-.linkedInProfileText {
+.linkedinProfileText {
     margin: 0 0 3px;
     font: 400 15px/1.6 "Work Sans", Helvetica, Arial, serif;
     color: rgb(250, 250, 250);
 }
 @media (max-width: 1399px) {
-    .linkedInProfileText {
+    .linkedinProfileText {
         align-items: flex-start;
         font-size: 13px;
     }
 }
 @media (max-width: 383px) {
-    .linkedInProfileText {
+    .linkedinProfileText {
         margin: 0;
         width: 100%;
     }
@@ -1159,31 +1165,31 @@
         font-size: 13px;
     }
 }
-.facebookImageLink {
+.xImageLink {
     display: flex;
     gap: 0 18px;
     margin: 18px 0 0;
     width: 96.96%;
 }
 @media (max-width: 1399px) {
-    .facebookImageLink {
+    .xImageLink {
         margin: 16px 40px 0 0;
         width: 320px;
     }
 }
 @media (max-width: 575px) {
-    .facebookImageLink {
+    .xImageLink {
         -moz-column-gap: 16px;
         column-gap: 16px;
     }
 }
 @media (max-width: 383px) {
-    .facebookImageLink {
+    .xImageLink {
         -moz-column-gap: 8px;
         column-gap: 8px;
     }
 }
-.facebookLogo {
+.xLogo {
     width: 27px;
     height: 27px;
     aspect-ratio: 1;
@@ -1191,18 +1197,18 @@
     object-fit: cover;
 }
 @media (max-width: 1399px) {
-    .facebookLogo {
+    .xLogo {
         width: 25px;
         height: 25px;
     }
 }
-.facebookProfileText {
+.xProfileText {
     margin: 2px 0 1px;
     font: 400 15px/1.6 "Work Sans", Helvetica, Arial, serif;
     color: rgb(250, 250, 250);
 }
 @media (max-width: 1399px) {
-    .facebookProfileText {
+    .xProfileText {
         align-items: flex-start;
         font-size: 13px;
     }

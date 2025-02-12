@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Department;
 use App\Models\JobVacancy;
 use App\Models\Report;
+use App\Models\SocialMediaAccount;
 use Illuminate\View\View;
 
 class HomeController extends Controller
@@ -31,6 +32,8 @@ class HomeController extends Controller
 
     public function contact(): View
     {
-        return view('pages/contact');
+        $socialMediaAccounts = SocialMediaAccount::all();
+        
+        return view('pages/contact', compact('socialMediaAccounts'));
     }
 }
