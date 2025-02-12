@@ -8,9 +8,9 @@ use App\Models\Department;
 use App\Models\JobVacancy;
 use App\Models\Product;
 use App\Models\Report;
+use App\Models\SocialMediaAccount;
 use App\Models\Team;
 use Illuminate\Http\RedirectResponse;
-use App\Models\SocialMediaAccount;
 use Illuminate\View\View;
 
 class HomeController extends Controller
@@ -41,7 +41,7 @@ class HomeController extends Controller
     public function contact(): View
     {
         $socialMediaAccounts = SocialMediaAccount::all();
-        
+
         return view('pages/contact', compact('socialMediaAccounts'));
     }
 
