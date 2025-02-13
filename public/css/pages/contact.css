@@ -1056,140 +1056,32 @@
 .hover-underline:hover {
     text-decoration: underline;
 }
-.linkedinImageLink {
-    display: flex;
-    gap: 0 18px;
-    margin: 25px 0 0;
-    width: 96.96%;
-}
-@media (max-width: 1399px) {
-    .linkedinImageLink {
-        margin: 20px 40px 0 0;
-        width: 320px;
-    }
-}
-@media (max-width: 575px) {
-    .linkedinImageLink {
-        -moz-column-gap: 16px;
-        column-gap: 16px;
-    }
-}
-@media (max-width: 383px) {
-    .linkedinImageLink {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px 8px;
-    }
-}
-.linkedinLogo {
-    width: 27px;
-    height: 27px;
-    aspect-ratio: 1;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-@media (max-width: 1399px) {
-    .linkedinLogo {
-        width: 25px;
-        height: 25px;
-    }
-}
-@media (max-width: 383px) {
-    .linkedinLogo {
-        width: 100%;
-        max-width: 27px;
-    }
-}
-.linkedinProfileText {
-    margin: 0 0 3px;
-    font: 400 15px/1.6 "Work Sans", Helvetica, Arial, serif;
-    color: rgb(250, 250, 250);
-}
-@media (max-width: 1399px) {
-    .linkedinProfileText {
-        align-items: flex-start;
-        font-size: 13px;
-    }
-}
-@media (max-width: 383px) {
-    .linkedinProfileText {
-        margin: 0;
-        width: 100%;
-    }
-}
-.instagramImageLink {
-    display: flex;
-    gap: 0 18px;
-    margin: 16px 0 0;
-    width: 96.96%;
-}
-@media (max-width: 1399px) {
-    .instagramImageLink {
-        margin: 14px 40px 0 0;
-        width: 320px;
-    }
-}
-@media (max-width: 575px) {
-    .instagramImageLink {
-        -moz-column-gap: 16px;
-        column-gap: 16px;
-    }
-}
-@media (max-width: 383px) {
-    .instagramImageLink {
-        -moz-column-gap: 8px;
-        column-gap: 8px;
-    }
-}
-.instagramLogo {
-    width: 27px;
-    height: 27px;
-    aspect-ratio: 1;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-@media (max-width: 1399px) {
-    .instagramLogo {
-        width: 25px;
-        height: 25px;
-    }
-}
-.instagramProfileText {
-    margin: 2px 0 1px;
-    font: 400 15px/1.6 "Work Sans", Helvetica, Arial, serif;
-    color: rgb(250, 250, 250);
-}
-@media (max-width: 1399px) {
-    .instagramProfileText {
-        align-items: flex-start;
-        font-size: 13px;
-    }
-}
-.xImageLink {
+.imageLink {
     display: flex;
     gap: 0 18px;
     margin: 18px 0 0;
     width: 96.96%;
 }
 @media (max-width: 1399px) {
-    .xImageLink {
-        margin: 16px 40px 0 0;
+    .imageLink {
+        margin: 20px 40px 0 0;
         width: 320px;
     }
 }
 @media (max-width: 575px) {
-    .xImageLink {
+    .imageLink {
         -moz-column-gap: 16px;
         column-gap: 16px;
     }
 }
 @media (max-width: 383px) {
-    .xImageLink {
-        -moz-column-gap: 8px;
-        column-gap: 8px;
+    .imageLink {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 8px;
     }
 }
-.xLogo {
+.logo {
     width: 27px;
     height: 27px;
     aspect-ratio: 1;
@@ -1197,20 +1089,32 @@
     object-fit: cover;
 }
 @media (max-width: 1399px) {
-    .xLogo {
+    .logo {
         width: 25px;
         height: 25px;
     }
 }
-.xProfileText {
+@media (max-width: 383px) {
+    .logo {
+        width: 100%;
+        max-width: 27px;
+    }
+}
+.profileText {
     margin: 2px 0 1px;
     font: 400 15px/1.6 "Work Sans", Helvetica, Arial, serif;
     color: rgb(250, 250, 250);
 }
 @media (max-width: 1399px) {
-    .xProfileText {
+    .profileText {
         align-items: flex-start;
         font-size: 13px;
+    }
+}
+@media (max-width: 383px) {
+    .profileText {
+        margin: 0;
+        width: 100%;
     }
 }
 .flexColumnForAudienceStats {

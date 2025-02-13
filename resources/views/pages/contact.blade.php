@@ -203,34 +203,13 @@
                         <h2 class="socialMediaTitle">
                             Connect With Us On Social Media
                             @foreach ($socialMediaAccounts as $account)
-                                <div class="{{ strtolower($account->name) }}ImageLink">
-                                    <img class="{{ strtolower($account->name) }}Logo" src="{{ asset('assets/' . $account->icon) }}" alt="alt text">
-                                    <a href="{{ $account->url }}" class="{{ strtolower($account->name) }}ProfileText hover-underline" target="_blank">
+                                <div class="imageLink">
+                                    <img class="logo" src="{{ asset($account->icon) }}" alt="alt text">
+                                    <a href="{{ $account->url }}" class="profileText hover-underline" target="_blank">
                                         {{ $account->url }}
                                     </a>
                                 </div>
                             @endforeach
-                            {{-- <div class="linkedInImageLink">
-                                <img class="linkedInLogo"
-                                    src="{{ asset('assets/eb4d26631a1303e52e7befd177ca9d15.png') }}" alt="alt text" />
-                                <p class="linkedInProfileText">
-                                    linkedin.com/company/Intellifarm-indonesia
-                                </p>
-                            </div>
-                            <div class="instagramImageLink">
-                                <img class="instagramLogo"
-                                    src="{{ asset('assets/92ccb8107fe76f09399b82f8e33d05b6.png') }}" alt="alt text" />
-                                <p class="instagramProfileText">
-                                    @Intellifarmindonesia
-                                </p>
-                            </div>
-                            <div class="facebookImageLink">
-                                <img class="facebookLogo"
-                                    src="{{ asset('assets/e13c85156e49abcc56c7d03c11eaa7e9.png') }}" alt="alt text" />
-                                <p class="facebookProfileText">
-                                    Intellifarm Indonesia
-                                </p>
-                            </div> --}}
                         </h2>
                         <div class="flexColumnForAudienceStats"
                             style="
