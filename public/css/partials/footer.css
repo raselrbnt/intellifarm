@@ -9,16 +9,6 @@
         gap: 50px 0;
     }
 }
-.contentBox1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1440px;
-    background-color: rgb(30, 30, 30);
-    border-radius: 20px;
-}
 .dividerLine {
     position: absolute;
     bottom: 60px;
@@ -246,80 +236,6 @@
     color: #ffffff;
     font-weight: 500;
 }
-
-/* .categoryAgriculture {
-    margin: 0 21px 0 0;
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(173, 173, 173);
-}
-@media (max-width: 991px) {
-    .categoryAgriculture {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-}
-@media (max-width: 575px) {
-    .categoryAgriculture {
-        margin: 0 16px 0 0;
-    }
-}
-@media (max-width: 383px) {
-    .categoryAgriculture {
-        margin: 0 8px 0 0;
-    }
-}
-.categoryInfrastructure {
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(173, 173, 173);
-}
-@media (max-width: 991px) {
-    .categoryInfrastructure {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-}
-.categoryTechnology {
-    margin: 0 19px 0 0;
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(173, 173, 173);
-}
-@media (max-width: 991px) {
-    .categoryTechnology {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-}
-@media (max-width: 575px) {
-    .categoryTechnology {
-        margin: 0 16px 0 0;
-    }
-}
-@media (max-width: 383px) {
-    .categoryTechnology {
-        margin: 0 8px 0 0;
-    }
-}
-.categoryEducation {
-    margin: 0 31px 0 0;
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(173, 173, 173);
-}
-@media (max-width: 991px) {
-    .categoryEducation {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-}
-@media (max-width: 575px) {
-    .categoryEducation {
-        margin: 0 16px 0 0;
-    }
-}
-@media (max-width: 383px) {
-    .categoryEducation {
-        margin: 0 8px 0 0;
-    }
-} */
 .flexColumn3 {
     display: flex;
     flex-direction: column;
@@ -365,58 +281,6 @@
     color: #ffffff;
     font-weight: 500;
 }
-/* .aboutLink {
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(173, 173, 173);
-}
-@media (max-width: 991px) {
-    .aboutLink {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-}
-.productLink {
-    margin: 0 38px 0 0;
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(173, 173, 173);
-}
-@media (max-width: 991px) {
-    .productLink {
-        align-items: flex-start;
-        margin: 0 32px 0 0;
-        font-size: 16px;
-    }
-}
-@media (max-width: 575px) {
-    .productLink {
-        margin: 0 16px 0 0;
-    }
-}
-@media (max-width: 383px) {
-    .productLink {
-        margin: 0 8px 0 0;
-    }
-}
-.sustainabilityLink {
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(173, 173, 173);
-}
-@media (max-width: 991px) {
-    .sustainabilityLink {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-}
-.careerLink {
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(173, 173, 173);
-}
-@media (max-width: 991px) {
-    .careerLink {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-} */
 .flexColumn4 {
     display: flex;
     flex-direction: column;
@@ -462,7 +326,7 @@
     color: #ffffff;
     font-weight: 500;
 }
-/* 
+/*
 .contactUsLink {
     margin: 0 38px 0 0;
     font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
@@ -525,7 +389,7 @@
     color: #ffffff;
     font-weight: 500;
 }
-/* .legalsLink {
+.legalsLink {
     font: 600 19px/1.21 Montserrat, Helvetica, Arial, serif;
     color: rgb(255, 255, 255);
 }
@@ -540,47 +404,6 @@
         font-size: 16px;
     }
 }
-.fAQLink {
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(173, 173, 173);
-}
-@media (max-width: 991px) {
-    .fAQLink {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-}
-.privacyPolicyLink {
-    margin: 0 31px 0 0;
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(173, 173, 173);
-}
-@media (max-width: 991px) {
-    .privacyPolicyLink {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-}
-@media (max-width: 575px) {
-    .privacyPolicyLink {
-        margin: 0 16px 0 0;
-    }
-}
-@media (max-width: 383px) {
-    .privacyPolicyLink {
-        margin: 0 8px 0 0;
-    }
-}
-.termsConditionLink {
-    font: 600 17px/1.23 Montserrat, Helvetica, Arial, serif;
-    color: rgb(173, 173, 173);
-}
-@media (max-width: 991px) {
-    .termsConditionLink {
-        align-items: flex-start;
-        font-size: 16px;
-    }
-} */
 .copyrightNotice {
     font: 400 16px/1.6 Play, Helvetica, Arial, serif;
     color: rgb(250, 250, 250);

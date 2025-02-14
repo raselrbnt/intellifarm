@@ -1,8 +1,13 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'pages/home')->name('home');
-Route::view('/career', 'pages/career')->name('career');
-Route::view('/sustainability', 'pages/sustainability')->name('sustainability');
-Route::view('/contact', 'pages/contact')->name('contact');
+Route::controller(HomeController::class)
+    ->group(function () {
+        Route::get('/', 'home')->name('home');
+        Route::get('/sustainability', 'sustainability')->name('sustainability');
+        Route::get('/career', 'career')->name('career');
+        Route::get('/contact', 'contact')->name('contact');
+        Route::get('/redirect/{platform}', 'redirect')->name('redirect.store');
+    });

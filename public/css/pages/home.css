@@ -15,7 +15,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 23px 25px 58px 25px;
+    /* margin: 23px 25px 58px 25px; */
     width: 97.78%;
     max-width: 1508px;
     background: var(--src) center center / cover no-repeat;

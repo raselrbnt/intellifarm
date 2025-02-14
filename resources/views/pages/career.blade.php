@@ -31,10 +31,10 @@
             </div>
             <div class="flexColumnLayout1">
                 <!-- Another flexible column layout for additional content -->
-                <button class="benefitsButton">
+                <h1 class="benefitsButton">
                     <!-- Button to learn more about the benefits -->
                     Benefits
-                </button>
+                </h1>
                 <h2 class="whyJoinTitle">
                     <!-- Title explaining the advantages of joining Intellifarm -->
                     Why Join Intellifarm
@@ -187,10 +187,10 @@
             </div>
             <div class="flexColumnLayout2">
                 <!-- Column layout for buttons and titles. -->
-                <button class="openPositionButton">
+                <h1 class="openPositionButton">
                     <!-- Button for opening job positions. -->
                     Open Position
-                </button>
+                </h1>
                 <h2 class="joinTeamTitle">
                     <!-- Title inviting the user to join the team. -->
                     Want To Join Team?
@@ -207,143 +207,58 @@
                 <!-- Container for job categories such as Developer, Marketing, etc. -->
                 <div class="jobCategoryList">
                     <!-- Lists the job categories available. -->
-                    <div class="jobTitleContainer">
-                        <!-- Container for individual job titles. -->
-                        <h2 class="developerJobTitle">Developer</h2>
-                        <hr class="dividerLine2" size="1" />
-                        <!-- Horizontal line separator. -->
-                    </div>
-                    <h2 class="marketingJobTitle">Marketing</h2>
-                    <h2 class="designerJobTitle">Designer</h2>
-                    <h2 class="researcherJobTitle">Researcher</h2>
+                    @foreach ($departments as $department)
+                        {{-- <div class="jobTitleContainer">
+                            <!-- Container for individual job titles. -->
+                            <h2 class="developerJobTitle">Developer</h2>
+                            <hr class="dividerLine2" size="1" />
+                            <!-- Horizontal line separator. -->
+                        </div> --}}
+                        <h2 class="researcherJobTitle">{{ $department->name }}</h2>
+                    @endforeach
                 </div>
                 <div class="jobOpeningsContainer">
                     <!-- Container for job openings under each category. -->
-                    <div class="jobOpeningBlock">
-                        <!-- Block for a specific job opening. -->
-                        <div class="frontEndDeveloperBlock">
-                            <!-- Block for Front-end Developer job role details. -->
-                            <h3 class="frontEndDeveloperSubtitle">
-                                Front-end Developer
-                            </h3>
-                            <p class="frontEndDeveloperDescription_box">
-                                <!-- Description of Front-end Developer role, responsibilities and qualifications. -->
-                                <span class="frontEndDeveloperDescription">
-                                    <span class="frontEndDeveloperDescription_span0">Responsibilities</span>
-                                    <span class="frontEndDeveloperDescription_span1">
-                                        :
-                                        <br />
-                                        Develop and maintain the Intellifarm
-                                        web and mobile application
-                                        interfaces.
-                                        <br />
-                                        <br />
+                    @foreach ($jobVacancies as $jobVacancy)
+                        <div class="jobOpeningBlock">
+                            <!-- Block for a specific job opening. -->
+                            <div class="frontEndDeveloperBlock">
+                                <!-- Block for Front-end Developer job role details. -->
+                                <h3 class="frontEndDeveloperSubtitle">
+                                    {{ $jobVacancy->title }}
+                                </h3>
+                                <p class="frontEndDeveloperDescription_box">
+                                    <!-- Description of Front-end Developer role, responsibilities and qualifications. -->
+                                    <span class="frontEndDeveloperDescription">
+                                        <span class="frontEndDeveloperDescription_span0">Responsibilities</span>
+                                        <span class="frontEndDeveloperDescription_span1">
+                                            :
+                                            <br />
+                                            {{ $jobVacancy->description }}
+                                            <br />
+                                            <br />
+                                        </span>
+                                        <span class="frontEndDeveloperDescription_span2">Qualifications
+                                        </span>
+                                        <span class="frontEndDeveloperDescription_span3">
+                                            :
+                                            <br />
+                                            {{ $jobVacancy->requirement }}
+                                        </span>
                                     </span>
-                                    <span class="frontEndDeveloperDescription_span2">Qualifications
-                                    </span>
-                                    <span class="frontEndDeveloperDescription_span3">
-                                        :
-                                        <br />
-                                        Experience with HTML, CSS,
-                                        JavaScript, and frameworks like
-                                        React or Angular
-                                    </span>
-                                </span>
-                            </p>
+                                </p>
+                            </div>
+                            <div class="frontEndApplyGroup">
+                                <!-- Group for the apply button and associated images. -->
+                                <button class="frontEndApplyButton">
+                                    <!-- TODO -->
+                                    Apply Now
+                                </button>
+                                <img class="frontEndImage" src="{{ asset('assets/1773846b0f1294531cbb071420e66054.png') }}"
+                                    alt="alt text" />
+                            </div>
                         </div>
-                        <div class="frontEndApplyGroup">
-                            <!-- Group for the apply button and associated images. -->
-                            <button class="frontEndApplyButton">
-                                <!-- TODO -->
-                                Apply Now
-                            </button>
-                            <img class="frontEndImage" src="{{ asset('assets/1773846b0f1294531cbb071420e66054.png') }}"
-                                alt="alt text" />
-                        </div>
-                    </div>
-                    <div class="backEndDeveloperBlock">
-                        <!-- Block for Back-end Developer job role details. -->
-                        <div class="backEndDeveloperInnerBlock">
-                            <!-- Inner block specific to Back-end Developer. -->
-                            <h3 class="backEndDeveloperSubtitle">
-                                Back-end Developer
-                            </h3>
-                            <p class="backEndDeveloperDescription_box">
-                                <!-- Description of Back-end Developer role, responsibilities and qualifications. -->
-                                <span class="backEndDeveloperDescription">
-                                    <span class="backEndDeveloperDescription_span0">Responsibilities</span>
-                                    <span class="backEndDeveloperDescription_span1">
-                                        :
-                                        <br />
-                                        Build and manage servers,
-                                        databases, and backend
-                                        application systems.
-                                        <br />
-                                        <br />
-                                    </span>
-                                    <span class="backEndDeveloperDescription_span2">Qualifications
-                                    </span>
-                                    <span class="backEndDeveloperDescription_span3">
-                                        :
-                                        <br />
-                                        Experience with programming
-                                        languages such as Python, Java,
-                                        or Node.js, and database
-                                        management (SQL/NoSQL).
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="group">
-                            <button class="backEndApplyButton">
-                                <!-- TODO -->
-                                Apply Now
-                            </button>
-                            <img class="backEndImage" src="{{ asset('assets/1773846b0f1294531cbb071420e66054.png') }}"
-                                alt="alt text" />
-                        </div>
-                    </div>
-                    <div class="ioTDeveloperBlock">
-                        <!-- Block for IoT Engineer job role details. -->
-                        <div class="ioTDeveloperInnerBlock">
-                            <!-- Inner block specific to IoT Engineer. -->
-                            <h3 class="ioTDeveloperSubtitle">
-                                IoT Engineer
-                            </h3>
-                            <p class="ioTDeveloperDescription_box">
-                                <!-- Description of IoT Engineer role, responsibilities and qualifications. -->
-                                <span class="ioTDeveloperDescription">
-                                    <span class="ioTDeveloperDescription_span0">Responsibilities</span>
-                                    <span class="ioTDeveloperDescription_span1">
-                                        :
-                                        <br />
-                                        Develop and maintain IoT
-                                        hardware and software solutions
-                                        for agriculture.
-                                        <br />
-                                        <br />
-                                    </span>
-                                    <span class="ioTDeveloperDescription_span2">Qualifications
-                                    </span>
-                                    <span class="ioTDeveloperDescription_span3">
-                                        :
-                                        <br />
-                                        Experience with IoT technology,
-                                        sensors, and communication
-                                        protocols such as MQTT.
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="group">
-                            <button class="ioTApplyButton">
-                                <!-- TODO -->
-                                Apply Now
-                            </button>
-                            <img class="ioTImage" src="{{ asset('assets/1773846b0f1294531cbb071420e66054.png') }}"
-                                alt="alt text" />
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <p class="revolutionTagline_box">
