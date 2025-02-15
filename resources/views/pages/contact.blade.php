@@ -7,57 +7,55 @@
 
     <section class="contactUsSection">
         <!-- This section provides a contact form for users to get in touch with Intellifarm. -->
-        <div class="flexRowContainer1">
+        <div class="flexRowContainer1 gap-5">
             <!-- This container arranges its children in a horizontal row. -->
-            <div class="contactInfoGroup">
-                <div class="contentColumnPrimary">
-                    <!-- This column contains the primary content including images and text. -->
-                    <div class="heroGroup">
-                        <!-- Group for the hero image and title. -->
-                        <img class="contactHeroImage" src="{{ asset('assets/b5510b7b3074b63cad04b957e9b75dc7.png') }}"
-                            alt="alt text" />
-                        <h1 class="contactHeroTitle">
-                            <!-- Main title to attract user&#x27;s attention. -->
-                            LET’S TALK
-                        </h1>
-                    </div>
-                    <p class="contactDescription">
-                        <!-- Description text providing additional information about the service. -->
-                        We’re here to help you transform your farming
-                        experience with Intellifarm’s innovative technology.
-                        Whether you have questions about our products,
-                        need support, or just want to learn more, we’d
-                        love to hear from you!
-                    </p>
+            {{-- <div class="contactInfoGroup"> --}}
+            <div class="contentColumnPrimary">
+                <!-- This column contains the primary content including images and text. -->
+                <div class="heroGroup">
+                    <!-- Group for the hero image and title. -->
+                    <img class="contactHeroImage" src="{{ asset('assets/b5510b7b3074b63cad04b957e9b75dc7.png') }}"
+                        alt="alt text" />
+                    <h1 class="contactHeroTitle">
+                        <!-- Main title to attract user&#x27;s attention. -->
+                        LET’S TALK
+                    </h1>
                 </div>
-                <div class="flexColumnSecondary">
-                    <!-- This column contains the contact information and office hours. -->
-                    <hr class="dividerLine1" size="1" />
-                    <h2 class="contactInfoTitle_box">
-                        <!-- Title for the contact information section. -->
-                        <span class="contactInfoTitle">
-                            <span class="contactInfoTitle_span0">
-                                Contact Information:
-                                <br />
-                            </span>
-                            <span class="contactInfoTitle_span1">
-                                Phone         : +1 (123) 456-7890
-                                <br />
-                                Email          : Intellifarmidn@gmail.com
-                                <br />
-                                Address       : 123 Greenfield Lane,
-                                AgriCity, Jakarta
-                                <br />
-                                <br />
-                                Office Hours :
-                                <br />
-                                Monday to Friday : 9 AM - 5 PM (WIB)
-                            </span>
-                        </span>
-                    </h2>
-                </div>
+                <p class="contactDescription">
+                    <!-- Description text providing additional information about the service. -->
+                    We’re here to help you transform your farming
+                    experience with Intellifarm’s innovative technology.
+                    Whether you have questions about our products,
+                    need support, or just want to learn more, we’d
+                    love to hear from you!
+                </p>
             </div>
-            <div class="content_box4"
+            <div class="flexColumnSecondary">
+                <!-- This column contains the contact information and office hours. -->
+                <hr class="dividerLine1" size="1" />
+                <h2 class="contactInfoTitle_box">
+                    <!-- Title for the contact information section. -->
+                    <span class="contactInfoTitle">
+                        <span class="contactInfoTitle_span0">
+                            Contact Information:
+                            <br />
+                        </span>
+                        <span class="contactInfoTitle_span1">
+                            Phone         : {{ $companyInfo->phone ?? null }}
+                            <br />
+                            Email          : {{ $companyInfo->email ?? null }}
+                            <br />
+                            Address       : {{ $companyInfo->address ?? null }}
+                            <br />
+                            <br />
+                            Office Hours : {{ $companyInfo->office_hours ?? null }}
+                        </span>
+                    </span>
+                </h2>
+            </div>
+            {{-- </div> --}}
+            {{-- HOLD --}}
+            {{-- <div class="content_box4"
                 style="
                             --src: url('{{ asset('assets/6453bd894582a42b3fe18abf7ce2fbaf.png') }}');">
                 <div class="flexColumnTertiary">
@@ -122,7 +120,7 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 
@@ -146,22 +144,16 @@
                         style="
                                     --src: url('{{ asset('assets/f350cb88e8a3fad958b3ecef0f661e50.png') }}');">
                         <div class="flexColumnForDetails">
-                            <div class="flexRowForClientDetails"
-                                style="
-                                            --src: url('{{ asset('assets/9ee71b1a214c6f6bb94eee838976c47a.png') }}');">
+                            <div class="flexRowForClientDetails">
                                 <!-- Row layout for client name and review date. -->
-                                <h2 class="clientName">James Ronald</h2>
-                                <p class="reviewDate">01/06/24</p>
+                                <h2 class="clientName">{{ $testimonies[0]->name ?? null }}</h2>
+                                <p class="reviewDate">{{ $testimonies[0]->feedback_date ?? null }}</p>
                             </div>
                             <div class="flexRowForReviewText">
                                 <!-- Row layout for client review text and images. -->
                                 <div class="reviewTextContainer">
                                     <p class="clientReviewText">
-                                        The smart farming technology
-                                        from Intellifarm is a game-changer.
-                                        It helps me make informed
-                                        decisions and boosts crop yields
-                                        significantly.
+                                        {{ $testimonies[0]->feedback ?? null }}
                                     </p>
                                 </div>
                                 <div class="imageGalleryForClient">
@@ -176,21 +168,11 @@
                                     </div>
                                     <div class="flexRowForClientImagesBottom">
                                         <!-- Row layout for displaying the bottom set of client images. -->
-                                        <img class="clientImage3"
-                                            src="{{ asset('assets/e74fa79dd6268e5628fb2819b1f054e4.png') }}"
-                                            src="/assets/e74fa79dd6268e5628fb2819b1f054e4.png" alt="alt text" />
-                                        <img class="clientImage4"
-                                            src="{{ asset('assets/e74fa79dd6268e5628fb2819b1f054e4.png') }}"
-                                            alt="alt text" />
-                                        <img class="clientImage5"
-                                            src="{{ asset('assets/e74fa79dd6268e5628fb2819b1f054e4.png') }}"
-                                            alt="alt text" />
-                                        <img class="clientImage6"
-                                            src="{{ asset('assets/e74fa79dd6268e5628fb2819b1f054e4.png') }}"
-                                            alt="alt text" />
-                                        <img class="clientImage7"
-                                            src="{{ asset('assets/3a4eb4213dfc74410ebb84ff5b10ac47.png') }}"
-                                            alt="alt text" />
+                                        @for ($i = 0; $i < 5; $i++)
+                                            <img class="clientImage7"
+                                                src="{{ asset('assets/3a4eb4213dfc74410ebb84ff5b10ac47.png') }}"
+                                                alt="alt text" />
+                                        @endfor
                                     </div>
                                 </div>
                             </div>
@@ -211,7 +193,8 @@
                                 </div>
                             @endforeach
                         </h2>
-                        <div class="flexColumnForAudienceStats"
+                        {{-- HOLD --}}
+                        {{-- <div class="flexColumnForAudienceStats"
                             style="
                                         --src: url('{{ asset('assets/ade8ebebd0719a96fcce35dd454eb377.png') }}');">
                             <div class="flexColumnForAudienceCount">
@@ -222,7 +205,7 @@
                                             style="
                                                         --src: url('{{ asset('assets/132f29eb4ad785f0283004464c3649f1.png') }}');">
                                             <p class="audienceCount">
-                                                10k+
+                                                {{ $report->total_audiences ?? 0 }}
                                             </p>
                                         </div>
                                         <img class="audienceImage1"
@@ -238,7 +221,7 @@
                                 </div>
                                 <h2 class="followUsTitle">Follow Us</h2>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="flexColumnForVisitInfo">
                         <div class="flexColumnForVisitDetails">
