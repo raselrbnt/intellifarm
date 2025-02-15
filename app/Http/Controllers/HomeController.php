@@ -10,6 +10,7 @@ use App\Models\Product;
 use App\Models\Report;
 use App\Models\SocialMediaAccount;
 use App\Models\Team;
+use App\Models\Testimony;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
 
@@ -40,9 +41,12 @@ class HomeController extends Controller
 
     public function contact(): View
     {
+        $companyInfo = CompanyInfo::first();
         $socialMediaAccounts = SocialMediaAccount::all();
+        $testimonies = Testimony::latest()->get();
+        $report = Report::latest()->first();
 
-        return view('pages/contact', compact('socialMediaAccounts'));
+        return view('pages/contact', compact('companyInfo', 'socialMediaAccounts', 'testimonies', 'report'));
     }
 
     public function redirect(string $platform): RedirectResponse

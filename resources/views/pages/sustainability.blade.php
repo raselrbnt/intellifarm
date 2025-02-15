@@ -40,10 +40,10 @@
                                             business practices.
                                         </p>
                                     </div>
-                                    <button class="readMoreButton">
+                                    {{-- <button class="readMoreButton">
                                         <!-- Button for reading more details on sustainability. -->
                                         READ MORE
-                                    </button>
+                                    </button> --}}
                                 </div>
                                 <div class="content_box">
                                     <h3 class="reportSubtitle">
@@ -364,10 +364,10 @@
                     environment. Thank you for supporting Intellifarm on our
                     journey towards more sustainable farming.
                 </h3>
-                <button class="supportButton">
+                <a class="supportButton" href={{ route('contact') }}>
                     <!-- Button for users to support the initiative. -->
                     Support
-                </button>
+                </a>
             </div>
         </div>
     </section>
