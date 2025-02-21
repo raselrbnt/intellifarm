@@ -1,4 +1,4 @@
-// BAGIAN MEET TEAM //
+// MEET TEAM //
 function selectImage(element, imageSrc, title, position) {
     // Reset the active state for all images
     const images = document.querySelectorAll(".imageGalleryRow img");
@@ -13,6 +13,15 @@ function selectImage(element, imageSrc, title, position) {
     document.getElementById("mainPosition").textContent = position;
 }
 
+// Carousel Companies
+document.addEventListener("DOMContentLoaded", function () {
+    const sliderItems = document.querySelectorAll(".slider .item");
+
+    sliderItems.forEach((item, index) => {
+        item.style.animationDelay = "${(10 / sliderItems.length) * index}s";
+    });
+});
+
 // Button GoBack scroll to top
 let goBackBtn = document.getElementById("goBackBtn");
 if (goBackBtn) {
@@ -21,21 +30,26 @@ if (goBackBtn) {
     });
 }
 
-let downloadBtn = document.getElementById('downloadButton');
+let downloadBtn = document.getElementById("downloadButton");
 if (downloadBtn) {
-    downloadBtn.addEventListener('click', function() {
+    downloadBtn.addEventListener("click", function () {
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
         if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            window.location.href = '{{ route("redirect.store", ["platform" => "ios"]) }}';
+            window.location.href =
+                '{{ route("redirect.store", ["platform" => "ios"]) }}';
         } else if (/android/i.test(userAgent)) {
-            window.location.href = '{{ route("redirect.store", ["platform" => "android"]) }}';
+            window.location.href =
+                '{{ route("redirect.store", ["platform" => "android"]) }}';
         } else if (/Macintosh|Mac OS X/.test(userAgent)) {
-            window.location.href = '{{ route("redirect.store", ["platform" => "ios"]) }}';
+            window.location.href =
+                '{{ route("redirect.store", ["platform" => "ios"]) }}';
         } else if (/Windows NT/.test(userAgent)) {
-            window.location.href = '{{ route("redirect.store", ["platform" => "android"]) }}';
+            window.location.href =
+                '{{ route("redirect.store", ["platform" => "android"]) }}';
         } else {
-            window.location.href = '{{ route("redirect.store", ["platform" => "web"]) }}';
+            window.location.href =
+                '{{ route("redirect.store", ["platform" => "web"]) }}';
         }
     });
 }
