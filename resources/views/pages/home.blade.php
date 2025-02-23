@@ -611,45 +611,83 @@
     @endif
 
     @if (count($companies))
-        <section class="trustedCompaniesSection">
-            <!-- Section displaying trusted companies and related information. -->
-            <div class="flexContainerCol">
-                <div class="flexContainerCol1">
-                    <div class="flexContainerCol2">
-                        <hr class="horizontalRule5" size="1" />
-                        <div class="flexContainerCol3">
-                            <div class="flexContainerCol4">
-                                <h3 class="sectionSubtitle04">04</h3>
-                                <h1 class="trustedByCompaniesTitle">
-                                    TRUSTED BY MANY COMPANY
-                                </h1>
-                            </div>
-                            <div class="flexContainerRow">
-                                @foreach ($companies as $company)
-                                    <img class="trustedCompanyLogo1" src="{{ asset($company->logo) }}" alt="alt text" />
+    <section class="trustedCompaniesSection">
+        <!-- Section displaying trusted companies and related information. -->
+        <div class="flexContainerCol">
+            <div class="flexContainerCol1">
+                <div class="flexContainerCol2">
+                    <hr class="horizontalRule5" size="1" />
+                    <div class="flexContainerCol3">
+                        <div class="flexContainerCol4">
+                            <h3 class="sectionSubtitle04">04</h3>
+                            <h1 class="trustedByCompaniesTitle">
+                                TRUSTED BY MANY COMPANY
+                            </h1>
+                        </div>
+                        {{-- Carousel Slider --}}
+                        <div class="slider" style="--width: 150px; --height: 100px; --quantity: {{ count($companies) }}">
+                            <div class="list">
+                                @foreach ($companies as $key => $company)
+                                    <div class="item" style="--position: {{ $key + 1 }}">
+                                        <img src="{{ asset($company->logo) }}" alt="{{ $company->name }}" />
+                                    </div>
                                 @endforeach
                             </div>
                         </div>
-                        <hr class="horizontalRule51" size="1" />
+                        {{-- <div id="companiesCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-flex justify-content-center">
+                                        <img class="trustedCompanyLogo1 mx-2" src="/assets/company1.png" alt="Company Logo" />
+                                        <img class="trustedCompanyLogo1 mx-2" src="/assets/company2.png" alt="Company Logo" />
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex justify-content-center">
+                                        <img class="trustedCompanyLogo1 mx-2" src="/assets/company3.png" alt="Company Logo" />
+                                        <img class="trustedCompanyLogo1 mx-2" src="/assets/company4.png" alt="Company Logo" />
+                                    </div>
+                                </div>
+                                {{-- @foreach ($companies->chunk(5) as $chunk)
+                                    <div class="carousel-item @if ($loop->first) active @endif" data-bs-interval="2000">
+                                        <div class="d-flex justify-content-center">
+                                            @foreach ($chunk as $company)
+                                                <img class="trustedCompanyLogo1 mx-2" src="{{ asset($company->logo) }}" alt="Company Logo" />
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                @endforeach 
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#companiesCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#companiesCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div> --}}
                     </div>
-                    <button class="goBackButton" id="goBackBtn">
-                        Go Back
-                    </button>
+                    <hr class="horizontalRule51" size="1" />
                 </div>
-                <h3 class="assistanceSubtitle_box">
-                    <span class="assistanceSubtitle">
-                        <span class="assistanceSubtitle_span0">Got questions or need assistance?
-                        </span>
-                        <a href="{{ route('contact') }}" class="text-decoration-none">
-                            <span class="assistanceSubtitle_span1">Contact us</span>
-                        </a>
-                        <span class="assistanceSubtitle_span2">
-                            anytime and we’ll get back to you as soon as
-                            possible.</span>
-                    </span>
-                </h3>
+                <button class="goBackButton" id="goBackBtn">
+                    Go Back
+                </button>
             </div>
-        </section>
+            <h3 class="assistanceSubtitle_box">
+                <span class="assistanceSubtitle">
+                    <span class="assistanceSubtitle_span0">Got questions or need assistance?
+                    </span>
+                    <a href="{{ route('contact') }}" class="text-decoration-none">
+                        <span class="assistanceSubtitle_span1">Contact us</span>
+                    </a>
+                    <span class="assistanceSubtitle_span2">
+                        anytime and we’ll get back to you as soon as
+                        possible.</span>
+                </span>
+            </h3>
+        </div>
+    </section>
     @endif
 
     @include('partials.footer')

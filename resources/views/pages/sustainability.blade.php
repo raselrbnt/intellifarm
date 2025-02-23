@@ -364,7 +364,7 @@
                     environment. Thank you for supporting Intellifarm on our
                     journey towards more sustainable farming.
                 </h3>
-                <a class="supportButton" href={{ route('contact') }}>
+                <a class="supportButton text-decoration-none" href={{ route('contact') }}>
                     <!-- Button for users to support the initiative. -->
                     Support
                 </a>
