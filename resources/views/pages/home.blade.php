@@ -688,7 +688,7 @@
             </h3>
         </div>
     </section>
-@endif
+    @endif
 
     @include('partials.footer')
 @endsection

@@ -11,17 +11,19 @@
                         Follow &amp; Contact Us
                     </p>
                     <div class="flex-Row1">
-                        <!-- Row for containing images. -->
-                        <a href="#" class="text-decoration-none"><img class="companyImage1"
-                                src="{{ asset('assets/155bd93fa984ed3a383e63be7bad347e.png') }}" alt="alt text" /></a>
-                        <a href="#" class="text-decoration-none"><img class="companyImage2"
-                                src="{{ asset('assets/72dc44cac0dffdc22e6e0de8a5752d0b.png') }}" alt="alt text" /></a>
-                        <a href="#" class="text-decoration-none"><img class="companyImage3"
-                                src="{{ asset('assets/aeb5aa60ade29595c63a901b2deb3572.png') }}" alt="alt text" /></a>
-                        <a href="#" class="text-decoration-none"><img class="companyImage4"
-                                src="{{ asset('assets/8ee3c1cbaf22d387f3241067cb8118b6.png') }}" alt="alt text" /></a>
-                        <a href="#" class="text-decoration-none"><img class="companyImage5"
-                                src="{{ asset('assets/7650ee1dcc2bdf1e27be2ba3c78df8d9.png') }}" alt="alt text" /></a>
+                        @foreach ($socialMediaAccounts as $account)
+                            <!-- Row for containing images. -->
+                            <a href="{{ $account->url }}" class="text-decoration-none" target="_blank"><img class="companyImage1"
+                                    src="{{ asset($account->icon) }}" alt="{{ $account->name }}"/></a>
+                            {{-- <a href="#" class="text-decoration-none"><img class="companyImage2"
+                                    src="{{ asset('assets/72dc44cac0dffdc22e6e0de8a5752d0b.png') }}" alt="alt text" /></a>
+                            <a href="#" class="text-decoration-none"><img class="companyImage3"
+                                    src="{{ asset('assets/aeb5aa60ade29595c63a901b2deb3572.png') }}" alt="alt text" /></a>
+                            <a href="#" class="text-decoration-none"><img class="companyImage4"
+                                    src="{{ asset('assets/8ee3c1cbaf22d387f3241067cb8118b6.png') }}" alt="alt text" /></a>
+                            <a href="#" class="text-decoration-none"><img class="companyImage5"
+                                    src="{{ asset('assets/7650ee1dcc2bdf1e27be2ba3c78df8d9.png') }}" alt="alt text" /></a> --}}
+                        @endforeach
                     </div>
                 </div>
                 <div class="flexRow2">

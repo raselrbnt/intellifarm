@@ -22,6 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Carousel Produk
+let currentProduct = 0;
+const products = document.querySelectorAll(".carousel-item");
+
+function changeProduct(direction) {
+    products[currentProduct].classList.remove("active");
+    currentProduct =
+        (currentProduct + direction + products.length) % products.length;
+    products[currentProduct].classList.add("active");
+}
+
 // Button GoBack scroll to top
 let goBackBtn = document.getElementById("goBackBtn");
 if (goBackBtn) {

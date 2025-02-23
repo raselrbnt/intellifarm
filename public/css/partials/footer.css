@@ -84,18 +84,18 @@
         margin: 0 8px 0 3px;
     }
 }
-.flexRow1 {
+.flex-Row1 {
     display: flex;
     gap: 0 19px;
 }
 @media (max-width: 575px) {
-    .flexRow1 {
+    .flex-Row1 {
         -moz-column-gap: 16px;
         column-gap: 16px;
     }
 }
 @media (max-width: 383px) {
-    .flexRow1 {
+    .flex-Row1 {
         -moz-column-gap: 8px;
         column-gap: 8px;
     }
@@ -111,57 +111,6 @@
     transition-property: transform;
 }
 .companyImage1:hover {
-    transform: scale(1.1);
-}
-.companyImage2 {
-    margin: 0 0 1px;
-    width: 25px;
-    height: 25px;
-    aspect-ratio: 1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    transition-duration: 0.3s;
-    transition-property: transform;
-}
-.companyImage2:hover {
-    transform: scale(1.1);
-}
-.companyImage3 {
-    margin: 0 0 1px;
-    width: 25px;
-    height: 25px;
-    aspect-ratio: 1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    transition-duration: 0.3s;
-    transition-property: transform;
-}
-.companyImage3:hover {
-    transform: scale(1.1);
-}
-.companyImage4 {
-    margin: 0 0 1px;
-    width: 25px;
-    height: 25px;
-    aspect-ratio: 1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    transition-duration: 0.3s;
-    transition-property: transform;
-}
-.companyImage4:hover {
-    transform: scale(1.1);
-}
-.companyImage5 {
-    width: 26px;
-    height: 26px;
-    aspect-ratio: 1;
-    -o-object-fit: cover;
-    object-fit: cover;
-    transition-duration: 0.3s;
-    transition-property: transform;
-}
-.companyImage5:hover {
     transform: scale(1.1);
 }
 .flexRow2 {
