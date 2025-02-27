@@ -949,67 +949,36 @@
     }
 }
 
-.iotButton {
-    display: flex;
-    justify-content: center;
-    font: 500 14px/1.17 "Work Sans", Helvetica, Arial, serif;
-    color: rgb(30 30 30);
-    text-align: center;
-    background-color: rgb(250 250 250 / 49.8%);
-    border-radius: 10px;
-    padding: 10px 22px;
-    outline: 1px solid rgb(78 159 61);
-    outline-offset: -1px;
+.feature-next-button,
+.feature-prev-button {
+    cursor: pointer;
 }
 
-.aiButton {
+.feature-button {
     display: flex;
     justify-content: center;
     font: 500 14px/1.17 "Work Sans", Helvetica, Arial, serif;
-    color: rgb(250 250 250);
     text-align: center;
-    background-color: rgb(78 159 61);
-    border-radius: 10px;
-    padding: 10px 14px;
-}
-
-.sensorTechnologyButton {
-    display: flex;
-    justify-content: center;
-    font: 500 14px/1.17 "Work Sans", Helvetica, Arial, serif;
-    color: rgb(30 30 30);
-    text-align: center;
-    background-color: rgb(250 250 250 / 49.8%);
     border-radius: 10px;
     padding: 10px 20px;
-    outline: 1px solid rgb(78 159 61);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.feature-button.outlined {
+    color: rgb(30 30 30);
+    background-color: rgba(250, 250, 250, 0.5);
+    outline: 1px solid rgb(78, 159, 61);
     outline-offset: -1px;
 }
 
-.irrigationButton {
-    display: flex;
-    justify-content: center;
-    font: 500 14px/1.17 "Work Sans", Helvetica, Arial, serif;
-    color: rgb(30 30 30);
-    text-align: center;
-    background-color: rgb(250 250 250 / 49.8%);
-    border-radius: 10px;
-    padding: 10px 26px;
-    outline: 1px solid rgb(78 159 61);
-    outline-offset: -1px;
+.feature-button.filled {
+    color: rgb(250, 250, 250);
+    background-color: rgb(78, 159, 61);
 }
 
-.dataAnalysisButton {
-    display: flex;
-    justify-content: center;
-    font: 500 14px/1.17 "Work Sans", Helvetica, Arial, serif;
-    color: rgb(30 30 30);
-    text-align: center;
-    background-color: rgb(250 250 250 / 49.8%);
-    border-radius: 10px;
-    padding: 10px 38px;
-    outline: 1px solid rgb(78 159 61);
-    outline-offset: -1px;
+.feature-button:hover {
+    background-color: rgb(78, 159, 61);
+    color: rgb(250, 250, 250);
 }
 
 .flex_row5 {
@@ -1216,7 +1185,7 @@
     background-color: rgb(78 159 61);
 }
 
-.aiOptimizationDescription {
+.feature-description {
     margin: 35px 0 0;
     font: 400 12px/1.14 Ubuntu, Helvetica, Arial, serif;
     color: rgb(30 30 30);
@@ -3462,7 +3431,7 @@
     min-width: 0;
     aspect-ratio: 1.09;
     -o-object-fit: cover;
-    object-fit: contain; /* maybe contain 
+    object-fit: contain; /* maybe contain
     transition-duration: 0.3s;
     transition-property: transform;
 }
